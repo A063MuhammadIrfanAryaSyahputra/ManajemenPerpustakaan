@@ -1,4 +1,12 @@
 <?php
+session_start();
+
+// cek session
+if (!isset($_SESSION['user_id'])) {
+    header("Location: ../auth/login.php"); // Redirect to login page if not logged in
+    exit();
+}
+
 $servername = "localhost";
 $username = "root";
 $password = "";
@@ -11,4 +19,3 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
     die("Koneksi gagal: " . $conn->connect_error);
 }
-?>

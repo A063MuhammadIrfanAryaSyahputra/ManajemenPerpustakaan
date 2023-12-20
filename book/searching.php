@@ -62,6 +62,8 @@
             <th>Tahun</th>
             <th>No</th>
             <th>Kategori</th>
+            <th>Opsi</th>
+
         </tr>
         <?php
     // koneksi.php: include your database connection code here
@@ -88,10 +90,13 @@
                 echo "<td>" . $row["tahun_buku"] . "</td>";
                 echo "<td>" . $row["isbn"] . "</td>";
                 echo "<td>" . $row["kategori_buku"] . "</td>";
+                
                 echo "<td><a href='edit.php?id=" . $row["id"] . "'>Edit</a> | <a href='hapus.php?id=" . $row["id"] . "'>Hapus</a></td>";
                 echo "</tr>";
             }
-        } else {
+        } 
+        else 
+        {
             echo "<tr><td colspan='6'>Tidak ada hasil untuk kata kunci '$cari'</td></tr>";
         }
     }

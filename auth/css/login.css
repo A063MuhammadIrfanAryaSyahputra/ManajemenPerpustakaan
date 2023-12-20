@@ -1,0 +1,67 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+form {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: left;
+    max-width: 400px;
+    /* Set maximum width for better readability */
+    margin: 0 auto;
+    /* Center the form within its container */
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    /* Add space between labels */
+}
+
+input[type="text"],
+input[type="password"],
+input[type="submit"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    /* Include padding in width */
+}
+
+.reg-button {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    /* Include padding in width */
+}
+
+.log-button {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    /* Include padding in width */
+    background: none;
+    border: none;
+}
+
+.form-reg {
+    text-align: center;
+    width: 300px; /* Adjust this value as needed */
+}
+
+.title-reg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0%;
+    /* height: 100vh; */
+    margin-bottom: 1px;
+    /* margin: 0; */
+    font-family: Arial, sans-serif;
+}
