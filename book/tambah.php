@@ -9,7 +9,7 @@
     <div>
     <h2>Tambah Buku Baru</h2>
 
-    <form action="proses_tambah.php" method="post">
+    <form action="proses/proses_tambah.php" method="post">
                 <input type="hidden" name="id" value="<?php echo $row['id']; ?>">
 
                 <label for="judul_buku">Judul Buku:</label> 

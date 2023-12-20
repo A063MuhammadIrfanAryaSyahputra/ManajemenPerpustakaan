@@ -21,7 +21,7 @@
         if ($result->num_rows > 0) {
             $row = $result->fetch_assoc();
         ?>
-            <form action="proses_edit.php" method="post">
+            <form action="proses/proses_edit.php" method="post">
                 <input type="hidden" name="id" value="<?php echo $row['id']; ?>">
 
                 <label for="judul_buku">Judul Buku:</label> 
