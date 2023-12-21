@@ -26,6 +26,8 @@
 
         echo "Halo, " . $_SESSION['username'] . "! .";
         ?>
+        <a href="../auth/dashboard.php">Dashboard</a>
+
         <a href="../auth/proses_logout.php">Logout</a><br><br>
 
     </div>
@@ -39,7 +41,7 @@
 
         <a href="searching.php">Cari Buku</a><br><br>
         <a href="tambah.php">Tambah Buku Baru</a><br><br>
-        <a href="../auth/dashboard.php">Dashboard</a><br><br>
+        <!-- <a href="../auth/dashboard.php">Dashboard</a><br><br> -->
 
 
         <div style="max-height: 500px; overflow-y: auto;">

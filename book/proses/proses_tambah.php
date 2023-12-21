@@ -1,4 +1,7 @@
 <?php
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
 include '../koneksi.php';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") 
@@ -12,7 +15,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
     $kategori = $_POST["kategori_buku"];
     $stok = $_POST["stok"];
 
-    $sql = "INSERT INTO buku (judul_buku, pengarang_buku, penerbit_buku, tahun_buku, isbn, kategori_buku) VALUES ('$judul', '$pengarang', '$penerbit', '$tahun', '$isbn', '$kategori', '$stok')";
+    $sql = "INSERT INTO buku (judul_buku, pengarang_buku, penerbit_buku, tahun_buku, isbn, kategori_buku, stok) VALUES ('$judul', '$pengarang', '$penerbit', '$tahun', '$isbn', '$kategori', '$stok')";
 
     if ($conn->query($sql) === TRUE) 
     {

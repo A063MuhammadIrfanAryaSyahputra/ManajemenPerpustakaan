@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>My Borrowed Books</title>
+    <title>Peminjam</title>
     <link rel="stylesheet" href="css/pinjam_lihat.css">
 
 </head>
@@ -10,12 +10,15 @@
 <body>
     <!-- opening -->
     <div class="center">
-    <h1 >Buku Dipinjam</h1>
+    <h1 >Peminjam Buku</h1>
 
     </div>
-    <a href="index.php">Kembali</a>
+    <a href="../auth/dashboard.php">Kembali</a>
 
     <?php
+    ini_set('display_errors', 1);
+    ini_set('display_startup_errors', 1);
+    error_reporting(E_ALL);
 
     session_start();
 
@@ -34,7 +37,14 @@
 
     // Fetch borrowed books for the current user
     // $sql = "SELECT buku.judul_buku, buku.pengarang_buku FROM pinjam_buku INNER JOIN buku ON pinjam_buku.book_id = buku.id WHERE pinjam_buku.user_id = $user_id";
-    $sql = "SELECT buku.id, buku.judul_buku, buku.pengarang_buku FROM pinjam_buku INNER JOIN buku ON pinjam_buku.book_id = buku.id WHERE pinjam_buku.user_id = $user_id AND pinjam_buku.returned=0";
+    // $sql = "SELECT buku.id, buku.judul_buku, buku.pengarang_buku, user.username FROM pinjam_buku INNER JOIN buku ON pinjam_buku.book_id = buku.id  INNER JOIN user ON pinjam_buku.user_id = user.id  WHERE pinjam_buku.user_id = $user_id AND pinjam_buku.returned=0";
+    // $sql = "SELECT * FROM pinjam_buku INNER JOIN buku ON pinjam_buku.book_id = buku.id WHERE pinjam_buku.returned=0";
+    $sql = "SELECT buku.id, buku.judul_buku, buku.pengarang_buku, user.username 
+        FROM pinjam_buku 
+        INNER JOIN buku ON pinjam_buku.book_id = buku.id 
+        INNER JOIN user ON pinjam_buku.user_id = user.user_id 
+        WHERE  pinjam_buku.returned = 0";
+
 
     $result = $conn->query($sql);
 
@@ -42,11 +52,12 @@
         // echo "<h2>Buku Saya</h2>";
         echo "<ul>";
         while ($row = $result->fetch_assoc()) {
-            echo "<li>{$row['judul_buku']} by {$row['pengarang_buku']} <a href='kembali.php?book_id={$row['id']}'>Kembalikan</a></li>";
+            echo "<li>{$row['judul_buku']} Dipinjam Oleh {$row['username']} </li>";
         }
         echo "</ul>";
-    } else {
-        echo "You haven't borrowed any books yet.";
+    } else 
+    {
+        echo "Tidak Ada Peminjam Buku.";
     }
 
     $conn->close();

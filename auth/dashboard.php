@@ -19,11 +19,18 @@
     echo '<div class="dashboard-content">';
     // echo "Halo, " . $_SESSION['user_id'] . "! Anda sedang login.";
 
-    echo "Halo, " . $_SESSION['username'] . "! Anda sedang login.";
-    echo '<br><a href="../peminjaman/index.php">Pinjam</a>';
+    echo "Halo, " . $_SESSION['username'] . "!. <br><br>";
 
-    echo '<br><a href="../book/index.php">Cek Katalog Buku</a>';
-    echo '<br><a href="proses_logout.php">Logout</a>';
+
+    echo '<a href="../peminjaman/index.php">Pinjam Buku</a>';
+    echo '<a>  ||  </a>';
+    echo '<a href="../book/index.php">Cek Katalog Buku</a>';
+    echo '<a>  ||  </a>';
+
+    echo '<a href="../peminjaman/peminjam.php">Cek Peminjam Buku</a>';
+    echo '<a>  ||  </a>';
+
+    echo '<a href="proses_logout.php">Logout</a>';
     echo '</div>';
     ?>
 </body>

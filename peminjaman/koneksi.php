@@ -1,5 +1,4 @@
 <?php
-session_start();
 
 // cek session
 if (!isset($_SESSION['user_id'])) {
