@@ -10,8 +10,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
     $tahun = $_POST["tahun_buku"];
     $isbn = $_POST["isbn"];
     $kategori = $_POST["kategori_buku"];
+    $stok = $_POST["stok"];
 
-    $sql = "UPDATE buku SET judul_buku='$judul', pengarang_buku='$pengarang', penerbit_buku='$penerbit', tahun_buku='$tahun', isbn='$isbn', kategori_buku='$kategori' WHERE id=$id";
+
+    $sql = "UPDATE buku SET judul_buku='$judul', pengarang_buku='$pengarang', penerbit_buku='$penerbit', tahun_buku='$tahun', isbn='$isbn', kategori_buku='$kategori', stok='$stok' WHERE id=$id";
 
     if ($conn->query($sql) === TRUE) {
         header("Location: ../index.php");

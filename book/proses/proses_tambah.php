@@ -10,8 +10,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
     $tahun = $_POST["tahun_buku"];
     $isbn = $_POST["isbn"];
     $kategori = $_POST["kategori_buku"];
+    $stok = $_POST["stok"];
 
-    $sql = "INSERT INTO buku (judul_buku, pengarang_buku, penerbit_buku, tahun_buku, isbn, kategori_buku) VALUES ('$judul', '$pengarang', '$penerbit', '$tahun', '$isbn', '$kategori')";
+    $sql = "INSERT INTO buku (judul_buku, pengarang_buku, penerbit_buku, tahun_buku, isbn, kategori_buku) VALUES ('$judul', '$pengarang', '$penerbit', '$tahun', '$isbn', '$kategori', '$stok')";
 
     if ($conn->query($sql) === TRUE) 
     {

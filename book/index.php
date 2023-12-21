@@ -51,6 +51,7 @@
                     <th>Tahun</th>
                     <th>No</th>
                     <th>Kategori</th>
+                    <th>Stok</th>
                     <th>Opsi</th>
                 </tr>
 
@@ -83,6 +84,7 @@
                         echo "<td>" . $row["tahun_buku"] . "</td>";
                         echo "<td>" . $row["isbn"] . "</td>";
                         echo "<td>" . $row["kategori_buku"] . "</td>";
+                        echo "<td>" . $row["stok"] . "</td>";
                         echo "<td><a href='edit.php?id=" . $row["id"] . "'>Edit</a> | <a href='hapus.php?id=" . $row["id"] . "'>Hapus</a></td>";
                         echo "</tr>";
                     }

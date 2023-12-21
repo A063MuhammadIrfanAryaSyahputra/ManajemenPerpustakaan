@@ -42,6 +42,10 @@
                 <label for="kategori_buku">Kategori Buku:</label>
                 <input type="text" name="kategori_buku" value="<?php echo $row['kategori_buku']; ?>"><br>
 
+                <label for="stok">Stok Buku:</label>
+                <input type="text" name="stok" value="<?php echo $row['stok']; ?>"><br>
+
+
                 <input type="submit" value="Simpan">
             </form>
         <?php
