@@ -21,7 +21,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Check if the username already exists
     $check_query = "SELECT username FROM user WHERE username = '$username'";
     $check_result = $conn->query($check_query);
-    session_start();
+    session_start(); 
     $userInput = $_POST['captcha'];
     $captchaText = isset($_SESSION['captcha']) ? $_SESSION['captcha'] : '';
     if ($userInput === $captchaText) 
