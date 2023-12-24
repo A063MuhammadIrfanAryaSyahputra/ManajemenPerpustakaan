@@ -18,23 +18,29 @@ if (isset($_GET['book_id'])) {
     // Update the status of the returned book in borrowed_books table
     $user_id = $_SESSION['user_id']; // Replace this with your actual user ID logic
 
-    $return_book_sql = "UPDATE pinjam_buku SET returned = 1 WHERE user_id = $user_id AND book_id = $book_id AND returned = 0 LIMIT 1";
+    $sql = "UPDATE pinjam_buku SET returned = 1 WHERE user_id = $user_id AND book_id = $book_id AND returned = 0 LIMIT 1";
 
-    $return_result = $conn->query($return_book_sql);
+    $return_result = $conn->query($sql);
 
     if ($return_result && $conn->affected_rows > 0) {
-        // Increment the book stock upon successful return
-        $update_stock_sql = "UPDATE buku SET stok = stok + 1 WHERE id = $book_id";
-        $update_stock_result = $conn->query($update_stock_sql);
+        
+        $update_stok_sql = "UPDATE buku SET stok = stok + 1 WHERE id = $book_id";
 
-        if ($update_stock_result) {
-            echo "Book returned successfully!";
-        } else {
+        $update_stok_result = $conn->query($update_stok_sql);
+
+        if ($update_stok_result) {
+            echo "Book Dikembalikan";
+            header("Location: pinjam_lihat.php");
+        } 
+        
+        else 
+        {
             echo "Error updating book stock: " . $conn->error;
         }
     } elseif ($return_result && $conn->affected_rows === 0) {
         echo "Book already returned or not borrowed by the user";
-    } else {
+    } else 
+    {
         echo "Error returning book: " . $conn->error;
     }
 

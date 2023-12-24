@@ -4,8 +4,8 @@ ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 include 'koneksi.php';
 
-$id = $_GET["id"];
-$sql = "DELETE FROM buku WHERE id=$id";
+$id_buku = $_GET["id"];
+$sql = "DELETE FROM buku WHERE id=$id_buku";
 
 if ($conn->query($sql) === TRUE) {
     header("Location: index.php");

@@ -27,15 +27,22 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $row = $result->fetch_assoc();
         
         // Verify password
-        if (password_verify($password, $row['password'])) {
+        if (password_verify($password, $row['password'])) 
+        {
             $_SESSION['user_id'] = $row['user_id'];
             $_SESSION['username'] = $row['username'];
             header("Location: dashboard.php"); // Redirect to the dashboard or another page upon successful login
         } 
-        else {
+        
+        else 
+        {
             echo "Invalid password";
         }
-    } else {
+
+    } 
+    
+    else 
+    {
         echo "User not found";
     }
 }

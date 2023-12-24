@@ -1,12 +1,18 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Dashboard</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="../global.css">
 
 </head>
+
 <body>
+
     <?php
+
     session_start();
 
     // Check if the user is logged in
@@ -14,24 +20,23 @@
         header("Location: login.php"); // Redirect to login page if not logged in
         exit();
     }
-
-    // Display dashboard content
-    echo '<div class="dashboard-content">';
-    // echo "Halo, " . $_SESSION['user_id'] . "! Anda sedang login.";
-
-    echo "Halo, " . $_SESSION['username'] . "!. <br><br>";
-
-
-    echo '<a href="../peminjaman/index.php">Pinjam Buku</a>';
-    echo '<a>  ||  </a>';
-    echo '<a href="../book/index.php">Cek Katalog Buku</a>';
-    echo '<a>  ||  </a>';
-
-    echo '<a href="../peminjaman/peminjam.php">Cek Peminjam Buku</a>';
-    echo '<a>  ||  </a>';
-
-    echo '<a href="proses_logout.php">Logout</a>';
-    echo '</div>';
     ?>
+
+    <div class="container mt-4">
+        <div class="dashboard-content">
+            <p>Halo, <?php echo $_SESSION['username']; ?>! <br><br></p>
+
+            <div class="btn-group">
+                <a href="../peminjaman/index.php" class="btn btn-primary">Pinjam Buku</a>
+                <a href="../peminjaman/pinjam_lihat.php" class="btn btn-primary">Kembalikan Buku</a>
+                <a href="../book/index.php" class="btn btn-primary">Cek Katalog Buku</a>
+                <a href="../peminjaman/peminjam.php" class="btn btn-primary">Cek Peminjam Buku</a>
+                <a href="proses_logout.php" class="btn btn-danger">Logout</a>
+            </div>
+        </div>
+    </div>
+
+    <?php include '../footer.php'; ?>
 </body>
+
 </html>

@@ -40,6 +40,8 @@ if (isset($_GET['book_id'])) {
                 $insert_borrow_sql = "INSERT INTO pinjam_buku (user_id, book_id, returned) VALUES ($user_id, $book_id, 0)";
                 if ($conn->query($insert_borrow_sql) === TRUE) {
                     echo "Book borrowed successfully!";
+                    header("Location: index.php");
+
                 } else 
                 {
                     echo "Error borrowing book: " . $conn->error;
