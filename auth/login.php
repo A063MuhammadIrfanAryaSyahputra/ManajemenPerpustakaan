@@ -31,7 +31,6 @@
                     <a >Belum Punya Akun?</a>
                     </div> -->
                    
-
                     <button class="log-button btn btn-success" onclick="window.location.href='register.php'">Register</button>
                 </div>
             </form>

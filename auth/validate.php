@@ -21,6 +21,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Clear the CAPTCHA session
     unset($_SESSION['captcha']);
 } else {
-    echo 'Please submit the form to validate the CAPTCHA.';
+    echo 'Tolong Submit Captcha.';
 }
 ?>

@@ -4,7 +4,6 @@ ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 session_start();
 
-
 // Check if the user is logged in
 if (!isset($_SESSION['user_id'])) {
     header("Location: ../auth/login.php"); // Redirect to login page if not logged in
@@ -18,10 +17,12 @@ if (isset($_GET['book_id'])) {
     // Database connection
     include 'koneksi.php';
 
-
     // Check book availability before borrowing
-    $check_stock_sql = "SELECT stok FROM buku WHERE id = $book_id";
-    $result = $conn->query($check_stock_sql);
+    $check_stock_sql = "SELECT stok FROM buku WHERE id = ?";
+    $stmt = $conn->prepare($check_stock_sql);
+    $stmt->bind_param("i", $book_id);
+    $stmt->execute();
+    $result = $stmt->get_result();
 
     if ($result && $result->num_rows > 0) {
         $row = $result->fetch_assoc();
@@ -29,26 +30,23 @@ if (isset($_GET['book_id'])) {
 
         if ($current_stock > 0) {
             // Decrement the book stock
-            $update_stock_sql = "UPDATE buku SET stok = stok - 1 WHERE id = $book_id";
-            $update_result = $conn->query($update_stock_sql);
+            $update_stock_sql = "UPDATE buku SET stok = stok - 1 WHERE id = ?";
+            $stmt = $conn->prepare($update_stock_sql);
+            $stmt->bind_param("i", $book_id);
+            $update_result = $stmt->execute();
 
-            if ($update_result) 
-            {
-                // Insert the borrowed book into the borrowed_books table (assuming user_id as 1, replace with your user ID logic)
-                $user_id = $_SESSION['user_id']; // Replace this with your actual user ID logic
+            if ($update_result) {
+                // Insert the borrowed book into the borrowed_books table
+                $user_id = $_SESSION['user_id'];
 
-                $insert_borrow_sql = "INSERT INTO pinjam_buku (user_id, book_id, returned) VALUES ($user_id, $book_id, 0)";
-                if ($conn->query($insert_borrow_sql) === TRUE) {
-                    echo "Book borrowed successfully!";
-                    header("Location: index.php");
+                $insert_borrow_sql = "INSERT INTO pinjam_buku (user_id, book_id, returned) VALUES (?, ?, 0)";// Prepare the SQL statement
+                $stmt = $conn->prepare($insert_borrow_sql);// Prepare the SQL statement
+                $stmt->bind_param("ii", $user_id, $book_id);// Bind the user ID and book ID
+                $stmt->execute(); // Execute the prepared query
 
-                } else 
-                {
-                    echo "Error borrowing book: " . $conn->error;
-                }
-            } 
-            else 
-            
+                header("Location: index.php");
+                exit();
+            } else 
             {
                 echo "Error updating book stock: " . $conn->error;
             }
@@ -63,3 +61,4 @@ if (isset($_GET['book_id'])) {
 } else {
     echo "Invalid book selection";
 }
+?>

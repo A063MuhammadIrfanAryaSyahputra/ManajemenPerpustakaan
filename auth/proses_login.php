@@ -1,18 +1,8 @@
 <?php
 session_start();
 
-// Establish database connection
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "perpus1";
+include('koneksi.php');
 
-$conn = new mysqli($servername, $username, $password, $dbname);
-
-// Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
 
 // Process login form data
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -36,14 +26,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         
         else 
         {
-            echo "Invalid password";
+            echo "Password salah";
         }
 
     } 
     
     else 
     {
-        echo "User not found";
+        echo "User tidak ditemukan";
     }
 }
 

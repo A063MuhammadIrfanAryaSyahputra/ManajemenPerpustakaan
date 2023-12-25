@@ -59,6 +59,17 @@
     color: red !important;
 }
 
+.tombol-blue {
+
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    /* Include padding in width */
+    text-decoration: none !important;
+    color: blue !important;
+}
+
 .no-rounded-corner
 {
     border-radius: 0!important;

@@ -15,7 +15,7 @@
 
     session_start();
 
-    // Check if the user is logged in
+    // periksa user sudah login atau belum
     if (!isset($_SESSION['user_id'])) {
         header("Location: login.php"); // Redirect to login page if not logged in
         exit();
@@ -24,7 +24,7 @@
 
     <div class="container mt-4">
         <div class="dashboard-content">
-            <p>Halo, <?php echo $_SESSION['username']; ?>! <br><br></p>
+            <p>Halo, <?php echo $_SESSION['username']; ?><br><br></p>
 
             <div class="btn-group">
                 <a href="../peminjaman/index.php" class="btn btn-primary">Pinjam Buku</a>
