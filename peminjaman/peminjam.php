@@ -17,6 +17,8 @@
         <h1>Peminjam Buku</h1>
     </div>
     <a href="../auth/dashboard.php">Kembali</a>
+    <a href="print.php">Print Laporan</a>
+
 
     <div style="max-height: 500px; overflow-y: auto;">
         <table class="table table-bordered">
