@@ -41,7 +41,7 @@
                     
                     <div class="captcha-container">
                         <img src="captcha.php" alt="CAPTCHA">
-                        <input type="text" id="captcha" name="captcha" required="" placeholder="" oninvalid="this.setCustomValidity('Mohon masukkan captcha')"> 
+                        <input type="text" id="captcha" name="captcha"> 
                     </div>
 
                     <input type="submit" value="Register" class="btn btn-warning">

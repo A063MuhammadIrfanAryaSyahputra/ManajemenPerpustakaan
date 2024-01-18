@@ -18,6 +18,8 @@
         <?php
         include 'koneksi.php';
 
+        
+
         $id = $_GET["id"];
         $sql = "SELECT * FROM buku WHERE id=$id";
         $result = $conn->query($sql);
@@ -38,7 +40,9 @@
                 <input type="text" name="penerbit_buku" value="<?php echo $row['penerbit_buku']; ?>"><br>
 
                 <label for="tahun_buku">Tahun Buku:</label>
+                
                 <input type="text" name="tahun_buku" value="<?php echo $row['tahun_buku']; ?>"><br>
+                
 
                 <label for="isbn">ISBN:</label>
                 <input type="text" name="isbn" value="<?php echo $row['isbn']; ?>"><br>
