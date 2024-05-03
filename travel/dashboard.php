@@ -13,7 +13,7 @@
 
     <h2>Tambah Paket Haji</h2>
     <form action="proses_dashboard.php" method="post">
-        Nama: <input type="text" name="paket_nama"><br>
+        Nama : <input type="text" name="paket_nama"><br>
         Deskripsi: <input type="text" name="paket_deskripsi"><br>
         Harga: <input type="text" name="paket_harga"><br>
         <input type="submit" name="tambah" value="Tambah Paket Haji">
