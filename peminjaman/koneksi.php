@@ -9,7 +9,7 @@ if (!isset($_SESSION['user_id'])) {
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "perpus1";
+$dbname = "travelDB";
 
 // Buat koneksi
 $conn = new mysqli($servername, $username, $password, $dbname);

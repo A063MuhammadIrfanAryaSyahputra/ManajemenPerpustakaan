@@ -35,7 +35,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         } else 
         {
             // Insert user data into the database
-            $sql = "INSERT INTO user (username, password) VALUES ('$username', '$hashedPassword')";
+            $sql = "INSERT INTO user(username, password) VALUES ('$username', '$hashedPassword')";
     
             if ($conn->query($sql) === TRUE) 
             {

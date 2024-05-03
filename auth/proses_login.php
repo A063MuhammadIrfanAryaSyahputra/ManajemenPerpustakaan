@@ -10,7 +10,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $password = $_POST['password'];
     
     // Retrieve user 
-    $sql = "SELECT user_id, username, password FROM user WHERE username='$username'";
+    $sql = "SELECT id_user, username, password FROM user WHERE username='$username'";
     $result = $conn->query($sql);
     
     if ($result->num_rows == 1) {
@@ -19,9 +19,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Verify password
         if (password_verify($password, $row['password'])) 
         {
-            $_SESSION['user_id'] = $row['user_id'];
+            $_SESSION['id_user'] = $row['id_user'];
             $_SESSION['username'] = $row['username'];
             header("Location: dashboard.php"); // Redirect ke dashboard
+            echo "Login Berhasil";
         } 
         
         else 

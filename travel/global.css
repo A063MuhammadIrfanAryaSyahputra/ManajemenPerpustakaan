@@ -1,0 +1,87 @@
+.footermain {
+    text-decoration: none;
+    color: #737373;
+}
+
+.more-space {
+    margin-bottom: 20px;
+    /* Adjust the margin to create the desired space */
+}
+
+#footer {
+    text-align: center;
+    margin: auto;
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    left: 0px;
+    bottom: 0px;
+    background-color: rgb(255, 255, 255);
+    font-size: small;
+    /* font-style: italic; */
+    color: rgb(0, 0, 0);
+    font-family: "Times New Roman", "Rubik", "Segoe UI", sans-serif;
+}
+
+#footer-2 {
+    text-align: center;
+    margin: auto;
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    left: 0px;
+    bottom: 0px;
+    background-color: white;
+    font-size: small;
+    font-style: italic;
+    color: rgb(0, 0, 0);
+    font-family: "Helvetica", "Rubik", "Segoe UI", sans-serif;
+}
+
+
+.btn-tengah {
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+    /* Additional styling for button appearance */
+    padding: 10px 20px;
+    /* Add any other necessary styling */
+}
+
+.tombol-red {
+
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    /* Include padding in width */
+    text-decoration: none !important;
+    color: red !important;
+}
+
+.tombol-blue {
+
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    /* Include padding in width */
+    text-decoration: none !important;
+    color: blue !important;
+}
+
+.no-rounded-corner
+{
+    border-radius: 0!important;
+}
+
+.spin {
+    display: inline-block;
+    animation: spin 2s infinite linear;
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}

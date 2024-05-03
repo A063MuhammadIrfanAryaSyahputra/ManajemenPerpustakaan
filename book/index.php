@@ -100,7 +100,6 @@
                         echo "<td>" . $row["kategori_buku"] . "</td>";
                         echo "<td>" . $row["stok"] . "</td>";
 
-
                         echo "<td><a href='edit.php?id=" . $row["id"] . "' class='btn btn-warning btn-sm'>Edit</a> | 
                                   <a href='hapus.php?id=" . $row["id"] . "' class='btn btn-danger btn-sm'>
                         
