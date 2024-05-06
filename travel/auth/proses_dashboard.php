@@ -1,17 +1,6 @@
 <?php
 // Konfigurasi database
-$servername = "localhost"; // Ganti dengan nama server MySQL Anda
-$username = "root"; // Ganti dengan username MySQL Anda
-$password = ""; // Ganti dengan password MySQL Anda
-$dbname = "DBHaji"; // Ganti dengan nama database Anda
-
-// Membuat koneksi ke database
-$conn = new mysqli($servername, $username, $password, $dbname);
-
-// Memeriksa koneksi
-if ($conn->connect_error) {
-    die("Koneksi gagal: " . $conn->connect_error);
-}
+include '../koneksi.php';
 
 // Mendapatkan data dari form atau sumber lainnya
 $nama_haji = $_POST['nama_haji'];
@@ -25,6 +14,9 @@ VALUES ('$nama_haji', '$detail_haji', '$harga_haji', '$jenis_haji')";
 
 if ($conn->query($sql) === TRUE) {
     echo "Data berhasil dimasukkan";
+    header("Location: ../dashboard.php"); // Sesuaikan dengan halaman tujuan
+    exit(); // Penting untuk menghentikan eksekusi skrip setelah mengarahkan
+
 } else {
     echo "Error: " . $sql . "<br>" . $conn->error;
 }
