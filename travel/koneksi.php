@@ -2,7 +2,7 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "travelDB";
+$dbname = "DBHaji";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 

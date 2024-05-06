@@ -13,13 +13,22 @@
 
 <body>
 
-    <!-- <h2>Tambah Paket Haji</h2>
-    <form action="proses_dashboard.php" method="post">
-        Nama : <input type="text" name="paket_nama"><br>
-        Deskripsi: <input type="text" name="paket_deskripsi"><br>
-        Harga: <input type="text" name="paket_harga"><br>
-        <input type="submit" name="tambah" value="Tambah Paket Haji">
-    </form> -->
+    <h2>Tambah Paket Haji</h2>
+    <form action="auth/proses_dashboard.php" method="post"> <!-- Ganti "proses.php" dengan nama file PHP yang berisi skrip untuk memproses data -->
+        <label for="nama_haji">Nama Haji:</label><br>
+        <input type="text" id="nama_haji" name="nama_haji"><br><br>
+        
+        <label for="detail_haji">Detail Haji:</label><br>
+        <textarea id="detail_haji" name="detail_haji"></textarea><br><br>
+        
+        <label for="harga_haji">Harga Haji:</label><br>
+        <input type="text" id="harga_haji" name="harga_haji"><br><br>
+        
+        <label for="jenis_haji">Jenis Haji:</label><br>
+        <input type="text" id="jenis_haji" name="jenis_haji"><br><br>
+        
+        <input type="submit" value="Submit">
+    </form>
 
 
     <hr>
@@ -39,7 +48,7 @@
 
             // Tampilkan daftar paket haji
             // $paketHaji = tampilkanPaketHaji();
-            $sql = "SELECT * FROM paket1";
+            $sql = "SELECT * FROM paket_haji";
             $result = $conn->query($sql);
 
 
@@ -47,9 +56,9 @@
             if ($result->num_rows > 0) { {
                     while ($row = $result->fetch_assoc()) {
                         echo "<tr>";
-                        echo "<td>" . $row["paket_nama"] . "</td>";
-                        echo "<td>" . $row["paket_deskripsi"] . "</td>";
-                        echo "<td>Rp. " . number_format($row["paket_harga"], 0, ',', '.') . "</td>";
+                        echo "<td>" . $row["nama_haji"] . "</td>";
+                        echo "<td>" . $row["detail_haji"] . "</td>";
+                        echo "<td>Rp. " . number_format($row["harga_haji"], 0, ',', '.') . "</td>";
 
                         echo "<td><a href='edit.php?id=" . $row["paket_id"] . "' class='btn btn-warning btn-sm'>Edit</a> | 
                                   <a href='hapus.php?paket_id=" . $row["paket_id"] . "' class='btn btn-danger btn-sm'>
