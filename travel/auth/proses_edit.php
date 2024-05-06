@@ -9,25 +9,25 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
     $harga_haji = $_POST["harga_haji"];
     $jenis_haji = $_POST["jenis_haji"];
 
-
-    // Validasi tahun & Stok
+    // Validasi harga_haji (price)
     if (!is_numeric($harga_haji)) {
-        echo "<div style='position: absolute; top: 48%; left: 50%; transform: translate(-50%, -50%); text-align: center;'>
-        Error : Harga Harus Berupa Angka</div>";
-        // echo "<meta http-equiv='refresh' content='1.3;url=../edit.php?id=$id'>"; // Redirects 
-
+        echo "<div style='position: absolute; top: 48%; left: 50%; transform: translate(-50%, -50%); text-align: center;'>Error : Harga Harus Berupa Angka</div>";
         exit;
     }
 
+    // Prepared statement to prevent SQL injection
+    $sql = "UPDATE paket_haji SET nama_haji=?, detail_haji=?, harga_haji=?, jenis_haji=? WHERE id_haji=?";
+    $stmt = $conn->prepare($sql);
+    $stmt->bind_param("ssisi", $nama_haji, $detail_haji, $harga_haji, $jenis_haji, $id_haji);
 
-    // Validation for stok (stock) as a number
-    $sql = "UPDATE paket_haji SET nama_haji='$nama_haji', detail_haji='$detail_haji', harga_haji='$harga_haji', jenis_haji='$jenis_haji'WHERE id_haji=$id_haji";
-
-    if ($conn->query($sql) === TRUE) {
+    if ($stmt->execute()) {
         header("Location: ../dashboard.php");
     } else {
-        echo "Error: " . $sql . "<br>" . $conn->error;
+        echo "<div style='position: absolute; top: 48%; left: 50%; transform: translate(-50%, -50%); text-align: center;'>Error: Gagal memperbarui data</div>";
+        // Log the actual error for debugging: echo "Error: " . $stmt->error;
     }
+
+    $stmt->close();
 }
 
 $conn->close();

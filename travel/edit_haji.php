@@ -25,7 +25,11 @@
     ?>
     
     <div class="form-reg">
-        <form action="auth/proses_dashboard.php" method="post">
+        <form action="auth/proses_edit.php" method="post">
+            
+            <input type="hidden" name="id_haji" value="<?php echo $id; ?>">
+
+
             <label for="nama_haji">Nama Paket Haji:</label><br>
             <input type="text" id="nama_haji" name="nama_haji" required value="<?php echo $row['nama_haji']; ?>"><br><br>
 
@@ -33,15 +37,16 @@
             <input type="text" id="detail_haji" name="detail_haji" required value="<?php echo $row['detail_haji']; ?>"></input><br><br>
 
             <label for="harga_haji">Harga Paket Haji:</label><br>
-            <input type="text" id="harga_haji" name="harga_haji" required value="<?php echo $row['detail_haji']; ?>"><br><br>
+            <input type="text" id="harga_haji" name="harga_haji" required value="<?php echo $row['harga_haji']; ?>"><br><br>
 
             <label for="jenis_haji">Jenis Haji:</label><br>
             <input type="text" id="jenis_haji" name="jenis_haji" required value="<?php echo $row['jenis_haji']; ?>"><br><br>
 
-            <input type="submit" value="Tambah" class="btn btn-primary">
-            <button class="btn btn-link tombol-red" onclick="window.location.href='index.php'">Batal</button>
+            <input type="submit" value="Simpan" class="btn btn-primary">
 
         </form>
+        <button class="btn btn-link tombol-red" onclick="window.location.href='dashboard.php'">Batal</button>
+
     </div>
 </div>
 

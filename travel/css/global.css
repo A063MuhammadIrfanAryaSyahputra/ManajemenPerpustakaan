@@ -67,7 +67,7 @@
     box-sizing: border-box;
     /* Include padding in width */
     text-decoration: none !important;
-    color: rgb(255, 255, 255) !important;
+    color: white !important;
 }
 
 .tombol-blue {

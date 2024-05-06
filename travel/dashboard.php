@@ -58,7 +58,7 @@
                         echo "<td>" . $row["jenis_haji"] . "</td>";
 
 
-                        echo "<td><a href='edit.php?id_haji=" . $row["id_haji"] . "' class='btn btn-warning btn-sm'>Edit</a> | 
+                        echo "<td><a href='edit_haji.php?id_haji=" . $row["id_haji"] . "' class='btn btn-warning btn-sm'>Edit</a> | 
                                   <a href='auth/proses_hapus.php?id_haji=" . $row["id_haji"] . "' class='btn btn-danger btn-sm'>
                         
                         <svg xmlns='' width='16' height='16' fill='currentColor' class='bi bi-trash3-fill' viewBox='0 0 16 16'>

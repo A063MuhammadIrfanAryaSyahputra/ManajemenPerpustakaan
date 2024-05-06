@@ -27,7 +27,7 @@
 
                     <input type="submit" value="Login" class="btn btn-primary">
                    
-                    <button class="log-button btn btn-success" onclick="window.location.href='register.php'">Register</button>
+                    <!-- <button class="log-button btn btn-success" onclick="window.location.href='register.php'">Register</button> -->
                 </div>
             </form>
         </div>
