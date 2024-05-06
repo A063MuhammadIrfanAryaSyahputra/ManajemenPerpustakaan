@@ -2,7 +2,7 @@
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
-include('koneksi.php');
+include '../koneksi.php';
 
 // Process register form data
 if ($_SERVER["REQUEST_METHOD"] == "POST") {

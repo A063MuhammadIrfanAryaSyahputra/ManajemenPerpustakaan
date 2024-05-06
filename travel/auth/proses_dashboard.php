@@ -1,5 +1,5 @@
 <?php
-include 'koneksi.php'; // Sesuaikan dengan nama file koneksi yang benar
+include '../koneksi.php';
 
 // Periksa apakah form telah disubmit
 if (isset($_POST['tambah'])) 

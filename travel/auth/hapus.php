@@ -1,5 +1,5 @@
 <?php
-include 'koneksi.php'; // Sesuaikan dengan nama file koneksi yang benar
+include '../koneksi.php';
 
 if(isset($_GET['paket_id'])) {
     $paket_id = $_GET['paket_id'];

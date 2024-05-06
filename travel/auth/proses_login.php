@@ -4,7 +4,7 @@ ini_set('display_errors', 1);
 
 // session_start();
 
-include('koneksi.php');
+include '../koneksi.php';
 
 // Process login form data
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
