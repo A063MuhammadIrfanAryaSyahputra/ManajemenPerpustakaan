@@ -7,7 +7,7 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
 
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-<link rel="stylesheet" href="global.css">
+<link rel="stylesheet" href="../global.css">
 
 <body>
 
@@ -33,7 +33,7 @@
 
             </tr>
             <?php
-            include 'koneksi.php'; // Sesuaikan dengan nama file koneksi yang benar
+            include 'auth/koneksi.php'; // Sesuaikan dengan nama file koneksi yang benar
 
             // Tampilkan daftar paket haji
             // $paketHaji = tampilkanPaketHaji();
