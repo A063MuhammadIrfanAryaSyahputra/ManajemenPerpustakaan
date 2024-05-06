@@ -39,6 +39,8 @@
             <input type="text" id="jenis_haji" name="jenis_haji" required value="<?php echo $row['jenis_haji']; ?>"><br><br>
 
             <input type="submit" value="Tambah" class="btn btn-primary">
+            <button class="btn btn-link tombol-red" onclick="window.location.href='index.php'">Batal</button>
+
         </form>
     </div>
 </div>

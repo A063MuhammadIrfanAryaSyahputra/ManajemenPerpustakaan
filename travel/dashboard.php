@@ -30,6 +30,7 @@
     <div style="max-height: 500px; overflow-y: auto;">
         <table class="table table-bordered">
             <tr>
+                <th>ID</th>
                 <th>Paket</th>
                 <th>Deskripsi</th>
                 <th>Biaya</th>
@@ -50,6 +51,7 @@
             if ($result->num_rows > 0) { {
                     while ($row = $result->fetch_assoc()) {
                         echo "<tr>";
+                        echo "<td>" . $row["id_haji"] . "</td>";
                         echo "<td>" . $row["nama_haji"] . "</td>";
                         echo "<td>" . $row["detail_haji"] . "</td>";
                         echo "<td>Rp. " . number_format($row["harga_haji"], 0, ',', '.') . "</td>";

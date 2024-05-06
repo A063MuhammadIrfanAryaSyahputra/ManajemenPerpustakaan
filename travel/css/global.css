@@ -59,6 +59,17 @@
     color: red !important;
 }
 
+.tombol-white {
+
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    /* Include padding in width */
+    text-decoration: none !important;
+    color: rgb(255, 255, 255) !important;
+}
+
 .tombol-blue {
 
     width: 100%;
@@ -67,7 +78,7 @@
     box-sizing: border-box;
     /* Include padding in width */
     text-decoration: none !important;
-    color: blue !important;
+    color: rgb(34, 0, 255) !important;
 }
 
 .no-rounded-corner
