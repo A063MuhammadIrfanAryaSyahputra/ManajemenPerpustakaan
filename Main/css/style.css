@@ -1,0 +1,310 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  background-color: white;
+}
+
+nav {
+  padding: 20px 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  z-index: 1;
+  background-color: #0d3c63;
+}
+nav .logo {
+  display: flex;
+  align-items: center;
+}
+nav .logo img {
+  height: 59px;
+  width: 230px;
+  margin-right: 10px;
+}
+nav .logo h1 {
+  font-size: 1.1rem;
+  color: #e0b64a;
+  background: linear-gradient(to right, #b927fc 0%, #2c64fc 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+nav ul li {
+  margin-left: 1.5rem;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 100%;
+  font-weight: bolder;
+  padding: 4px 8px;
+  border-radius: 5px;
+  color: #e0b64a;
+}
+
+nav ul li a:hover {
+  background-color: #2573b3;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.hamburger .line {
+  width: 25px;
+  height: 1px;
+  background-color: #1f1f1f;
+  display: block;
+  margin: 7px auto;
+  transition: all 0.3s ease-in-out;
+}
+.hamburger-active {
+  transition: all 0.3s ease-in-out;
+  transition-delay: 0.6s;
+  transform: rotate(45deg);
+}
+
+.hamburger-active .line:nth-child(2) {
+  width: 0px;
+}
+
+.hamburger-active .line:nth-child(1),
+.hamburger-active .line:nth-child(3) {
+  transition-delay: 0.3s;
+}
+
+.hamburger-active .line:nth-child(1) {
+  transform: translateY(12px);
+}
+
+.hamburger-active .line:nth-child(3) {
+  transform: translateY(-5px) rotate(90deg);
+}
+
+.menubar {
+  position: absolute;
+  top: 0;
+  left: -60%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 60%;
+  height: 100vh;
+  padding: 20% 0;
+  background: rgba(255, 255, 255);
+  transition: all 0.5s ease-in;
+  z-index: 2;
+}
+.active {
+  left: 0;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.menubar ul {
+  padding: 0;
+  list-style: none;
+}
+.menubar ul li {
+  margin-bottom: 32px;
+}
+
+.menubar ul li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 95%;
+  font-weight: 400;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.menubar ul li a:hover {
+  background-color: #f5f5f5;
+}
+@media screen and (max-width: 790px) {
+  .hamburger {
+    display: block;
+  }
+  nav ul {
+    display: none;
+  }
+}
+
+.containerCoverUmroh img {
+  width: 100%;
+  border-radius: 72px 13px 18px 10px;
+  -webkit-border-radius: 72px 13px 18px 10px;
+  -moz-border-radius: 72px 13px 18px 10px;
+  box-shadow: 10px 10px 51px -7px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 51px -7px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 51px -7px rgba(0, 0, 0, 0.75);
+}
+
+.parallax-1 {
+  background-image: url("../assets/umrohh.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.parallax-1 h1 {
+  font-size: 30px;
+  text-align: center;
+}
+.parallax-1 h2 {
+  font-size: 20px;
+  text-align: center;
+}
+
+.parallax-inner {
+  padding: 10% 0;
+}
+
+.containerUmroh {
+  width: 92%;
+  margin: auto;
+  height: 1650px;
+  /* border: 2px solid red; */
+  align-items: center;
+  text-align: center;
+}
+
+.containerPaketUmroh {
+  width: 92%;
+  margin: auto;
+  height: 1550px;
+  /* border: 6px solid rgb(14, 255, 74); */
+  align-items: center;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.paketUmroh {
+  width: 450px;
+  height: 800px;
+  /* background-color: rgb(255, 20, 12); */
+  padding: 1em;
+  font-weight: 700;
+  color: black;
+  text-align: center;
+  /* border: 10px solid rgb(24, 24, 24); */
+  border-radius: 10px;
+}
+
+.containerListUmrohGambar {
+  width: 150px;
+  margin: auto;
+  height: 150px;
+  /* border: 5px solid red; */
+  align-items: center;
+  text-align: center;
+}
+
+.containerDeskripsi {
+  width: 92%;
+  margin: auto;
+  height: 600px;
+  border: 6px solid rgb(14, 255, 74);
+  align-items: center;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.button33 {
+  background-color: #0d3c63;
+  border-radius: 100px;
+  box-shadow: rgba(13, 60, 99, 0.75) 0 -25px 18px -14px inset, rgba(13, 60, 99, 0.75) 0 1px 2px, rgba(13, 60, 99, 0.75) 0 2px 4px, rgba(13, 60, 99, 0.75) 0 4px 8px, rgba(13, 60, 99, 0.75) 0 8px 16px, rgba(13, 60, 99, 0.75) 0 16px 32px;
+  color: rgb(211, 211, 211);
+  cursor: pointer;
+  display: inline-block;
+  font-family: CerebriSans-Regular, -apple-system, system-ui, Roboto, sans-serif;
+  padding: 7px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button33:hover {
+  box-shadow: rgba(13, 60, 99, 0.75) 0 -25px 18px -14px inset, rgba(13, 60, 99, 0.75) 0 1px 2px, rgba(13, 60, 99, 0.75) 0 2px 4px, rgba(13, 60, 99, 0.75) 0 4px 8px, rgba(13, 60, 99, 0.75) 0 8px 16px, rgba(13, 60, 99, 0.75) 0 16px 32px;
+  transform: scale(1.05) rotate(-1deg);
+}
+
+footer {
+  background-color: #0d3c63;
+  color: #fff;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.footer-section {
+  flex: 1;
+  margin: 20px;
+  min-width: 200px;
+}
+
+.footer-section h2 {
+  margin-bottom: 20px;
+  font-size: 1.5em;
+}
+
+.footer-section p,
+.footer-section a {
+  font-size: 1em;
+  line-height: 1.6;
+  color: #ddd;
+  text-decoration: none;
+}
+
+.footer-section a:hover {
+  text-decoration: underline;
+}
+
+.footer-section img {
+  width: 30px;
+  margin: 0 10px;
+}
+
+.footer-bottom {
+  margin-top: 20px;
+  border-top: 1px solid #444;
+  padding-top: 20px;
+}
+
+.footer-bottom p {
+  margin: 0;
+  font-size: 0.9em;
+}

@@ -1,0 +1,336 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  background-color: #fbfff4;
+}
+
+nav {
+  padding: 20px 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  z-index: 1;
+  background-color: #0d3c63;
+}
+nav .logo {
+  display: flex;
+  align-items: center;
+}
+nav .logo img {
+  height: 59px;
+  width: 230px;
+  margin-right: 10px;
+}
+nav .logo h1 {
+  font-size: 1.1rem;
+  color: #e0b64a;
+  background: linear-gradient(to right, #b927fc 0%, #2c64fc 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+nav ul li {
+  margin-left: 1.5rem;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 100%;
+  font-weight: bolder;
+  padding: 4px 8px;
+  border-radius: 5px;
+  color: #e0b64a;
+}
+
+nav ul li a:hover {
+  background-color: #2573b3;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.hamburger .line {
+  width: 25px;
+  height: 1px;
+  background-color: #1f1f1f;
+  display: block;
+  margin: 7px auto;
+  transition: all 0.3s ease-in-out;
+}
+.hamburger-active {
+  transition: all 0.3s ease-in-out;
+  transition-delay: 0.6s;
+  transform: rotate(45deg);
+}
+
+.hamburger-active .line:nth-child(2) {
+  width: 0px;
+}
+
+.hamburger-active .line:nth-child(1),
+.hamburger-active .line:nth-child(3) {
+  transition-delay: 0.3s;
+}
+
+.hamburger-active .line:nth-child(1) {
+  transform: translateY(12px);
+}
+
+.hamburger-active .line:nth-child(3) {
+  transform: translateY(-5px) rotate(90deg);
+}
+
+.menubar {
+  position: absolute;
+  top: 0;
+  left: -60%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 60%;
+  height: 100vh;
+  padding: 20% 0;
+  background: rgba(255, 255, 255);
+  transition: all 0.5s ease-in;
+  z-index: 2;
+}
+.active {
+  left: 0;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.menubar ul {
+  padding: 0;
+  list-style: none;
+}
+.menubar ul li {
+  margin-bottom: 32px;
+}
+
+.menubar ul li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 95%;
+  font-weight: 400;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.menubar ul li a:hover {
+  background-color: #f5f5f5;
+}
+@media screen and (max-width: 790px) {
+  .hamburger {
+    display: block;
+  }
+  nav ul {
+    display: none;
+  }
+}
+
+.containerUmroh {
+  width: 92%;
+  margin: auto;
+  height: auto; /* Change from fixed height to auto */
+  min-height: calc(100vh - 80px); /* Ensures content takes up at least the viewport height minus header and footer */
+  text-align: center;
+  padding-bottom: 100px; /* Add padding at the bottom */
+}
+
+.containerPaketUmroh {
+  width: 92%;
+  margin: auto;
+  height: 900px;
+  border: 6px solid rgb(14, 255, 74);
+  align-items: center;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.paketUmroh {
+  width: 450px;
+  height: 650px;
+  padding: 1em;
+  font-weight: 700;
+  color: black;
+  text-align: center;
+  border: 10px solid blueviolet;
+  border-radius: 10px;
+}
+
+.containerListUmrohGambar {
+  width: 150px;
+  margin: auto;
+  height: 150px;
+  border: 5px solid red;
+  align-items: center;
+  text-align: center;
+}
+
+.containerDeskripsi {
+  padding-top: 5%;
+  width: 92%;
+  margin: auto;
+  height: 400px;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.itenary {
+  width: 280px;
+  height: 100px;
+  border-radius: 48px 13px 70px 26px;
+  -webkit-border-radius: 48px 13px 70px 26px;
+  -moz-border-radius: 48px 13px 70px 26px;
+  padding-left: 20px;
+  background-color: #0e2f4f;
+  box-shadow: 7px 6px 42px 5px rgba(0, 0, 0, 0.68);
+  -webkit-box-shadow: 7px 6px 42px 5px rgba(0, 0, 0, 0.68);
+  -moz-box-shadow: 7px 6px 42px 5px rgba(0, 0, 0, 0.68);
+  text-align: left;
+  width: 80%;
+  height: 320px;
+  margin-right: 100px;
+  margin-left: 10%;
+}
+
+.itenary h1 {
+  font-size: 300%;
+  font-weight: 400;
+  color: rgb(255, 255, 255);
+}
+
+.deskripsi {
+  width: 110%;
+  letter-spacing: 1.5px;
+  height: 280px;
+  margin-left: 6.5%;
+  font-weight: 350;
+  color: black;
+  text-align: center;
+  font-size: 140%;
+  text-align: justify;
+}
+
+.list {
+  list-style: inside;
+  margin: 0;
+  padding: 0;
+  margin-top: 10px;
+}
+.list li {
+  font-family: "Montserrat", sans-serif;
+  padding: 10px 15px;
+  border-radius: 4px;
+  font-size: 130%;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  transition: all 0.3s ease;
+}
+.list li:hover {
+  background: #5c7fed;
+  color: #fff;
+}
+.list li:hover .circle {
+  color: #fff;
+}
+.list li .circle {
+  margin-right: 10px;
+  align-self: center;
+  color: #6ecc8b;
+}
+.list li .circle::before {
+  content: "\2022";
+  font-size: 23pt;
+  vertical-align: middle;
+}
+
+.namaPaket h1 {
+  font-size: 3rem;
+}
+
+.gambarPaket img {
+  width: 30%;
+  border-radius: 15px 50px 30px;
+  box-shadow: 7px 6px 42px 5px rgba(224, 182, 74, 1);
+  -webkit-box-shadow: 7px 6px 42px 5px rgba(224, 182, 74, 1);
+  -moz-box-shadow: 7px 6px 42px 5px rgba(224, 182, 74, 1);
+}
+
+/* Footer Styles */
+footer {
+  background-color: #0d3c63;
+  color: #fff;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.footer-section {
+  flex: 1;
+  margin: 20px;
+  min-width: 200px;
+}
+
+.footer-section h2 {
+  margin-bottom: 20px;
+  font-size: 1.5em;
+}
+
+.footer-section p,
+.footer-section a {
+  font-size: 1em;
+  line-height: 1.6;
+  color: #ddd;
+  text-decoration: none;
+}
+
+.footer-section a:hover {
+  text-decoration: underline;
+}
+
+.footer-section img {
+  width: 30px;
+  margin: 0 10px;
+}
+
+.footer-bottom {
+  margin-top: 20px;
+  border-top: 1px solid #444;
+  padding-top: 20px;
+}
+
+.footer-bottom p {
+  margin: 0;
+  font-size: 0.9em;
+}
