@@ -123,9 +123,6 @@ if (isset($_POST["submit"])) {
             </li>
           </ul> -->
           <?php include '../sidebarMenuGambar.php'; ?>
-s
-
-
         </div>
       </aside>
       <div class="main">
@@ -290,6 +287,6 @@ s
       </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="js/script.js"></script>
+    <script src="../../js/script.js"></script>
   </body>
 </html>

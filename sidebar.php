@@ -33,7 +33,7 @@
                   <a href="Admin/loginPage" class="sidebar-link">Login</a>
                 </li>
                 <li class="sidebar-item">
-                  <a href="#" class="sidebar-link">Register</a>
+                  <a href="Admin/registerPage/register.php" class="sidebar-link">Register</a>
                 </li>
                 <li class="sidebar-item">
                   <a href="#" class="sidebar-link">Forgot Password</a>
