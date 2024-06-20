@@ -18,73 +18,15 @@
           <div class="sidebar-logo">
             <a href="Main/Umroh.php">Amansa Travel</a>
           </div>
-          <!-- <ul class="sidebar-nav">
-            <li class="sidebar-header">Admin Elements</li>
-            <li class="sidebar-item">
-              <a href="index.php" class="sidebar-link">
-                <i class="fa-solid fa-list pe-2"></i>
-                Dashboard
-              </a>
-            </li>
-            <li class="sidebar-item">
-              <a href="#" class="sidebar-link collapsed" data-bs-target="#pages" data-bs-toggle="collapse" aria-expanded="false"
-                ><i class="fa-solid fa-file-lines pe-2"></i>
-                List Gambar
-              </a>
-              <ul id="pages" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
-                <li class="sidebar-item">
-                  <a href="#" class="sidebar-link">Home Page</a>
-                </li>
-                <li class="sidebar-item">
-                  <a href="Admin/menuGambar/paketUmroh/paketUmroh.php" class="sidebar-link">Paket Umroh</a>
-                </li>
-                <li class="sidebar-item">
-                  <a href="Admin/menuGambar/paketHaji/paketHaji.php" class="sidebar-link">Paket Haji</a>
-                </li>
-              </ul>
-            </li>
-            <li class="sidebar-item">
-              <a href="#" class="sidebar-link collapsed" data-bs-target="#auth" data-bs-toggle="collapse" aria-expanded="false"
-                ><i class="fa-regular fa-user pe-2"></i>
-                Auth
-              </a>
-              <ul id="auth" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
-                <li class="sidebar-item">
-                  <a href="Admin/loginPage" class="sidebar-link">Login</a>
-                </li>
-                <li class="sidebar-item">
-                  <a href="#" class="sidebar-link">Register</a>
-                </li>
-                <li class="sidebar-item">
-                  <a href="#" class="sidebar-link">Forgot Password</a>
-                </li>
-              </ul>
-            </li>
-          </ul> -->
+
+          <!-- include script buat sidebar -->
           <?php include 'sidebar.php'; ?>
 
         </div>
       </aside>
       <div class="main">
-        <nav class="navbar navbar-expand px-3 border-bottom">
-          <button class="btn" id="sidebar-toggle" type="button">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="navbar-collapse navbar">
-            <ul class="navbar-nav">
-              <li class="nav-item dropdown">
-                <a href="#" data-bs-toggle="dropdown" class="nav-icon pe-md-0">
-                  <img src="image/profile.jpg" class="avatar img-fluid rounded" alt="" />
-                </a>
-                <div class="dropdown-menu dropdown-menu-end">
-                  <a href="#" class="dropdown-item">Profile</a>
-                  <a href="#" class="dropdown-item">Setting</a>
-                  <a href="#" class="dropdown-item">Logout</a>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </nav>
+
+        <?php include 'sidebar_profile.php'; ?>
         <main class="content px-3 py-2">
           <div class="container-fluid">
             <div class="mb-3">
