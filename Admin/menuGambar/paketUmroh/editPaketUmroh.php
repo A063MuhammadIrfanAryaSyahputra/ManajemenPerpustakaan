@@ -35,7 +35,7 @@ if (isset($_GET['id'])) {
           <div class="sidebar-logo">
             <a href="../../../Main/homepage.php">Amansa Travel</a>
           </div>
-          <ul class="sidebar-nav">
+          <!-- <ul class="sidebar-nav">
             <li class="sidebar-header">Admin Elements</li>
             <li class="sidebar-item">
               <a href="index.html" class="sidebar-link">
@@ -77,7 +77,9 @@ if (isset($_GET['id'])) {
                 </li>
               </ul>
             </li>
-          </ul>
+          </ul> -->
+          <?php include '../sidebarMenuGambar.php'; ?>
+
         </div>
       </aside>
       <div class="main">
