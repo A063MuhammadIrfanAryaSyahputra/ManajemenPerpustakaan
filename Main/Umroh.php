@@ -68,7 +68,7 @@ require '../connection.php';
   <div>
     <div class="parallax-1">
       <div class="parallax-inner">
-        <h1>umroh Bersama Amansa</h1>
+        <h1>Umroh bersama Amansa</h1>
         <h2>Special Spiritual Moment to Baitullah</h2>
       </div>
     </div>
