@@ -79,10 +79,10 @@ if (isset($_POST["submit"])) {
           <div class="sidebar-logo">
             <a href="../../../Main/Umroh.php">Amansa Travel</a>
           </div>
-          <ul class="sidebar-nav">
+          <!-- <ul class="sidebar-nav">
             <li class="sidebar-header">Admin Elements</li>
             <li class="sidebar-item">
-              <a href="index.php" class="sidebar-link">
+              <a href="../../../index.php" class="sidebar-link">
                 <i class="fa-solid fa-list pe-2"></i>
                 Dashboard
               </a>
@@ -121,7 +121,11 @@ if (isset($_POST["submit"])) {
                 </li>
               </ul>
             </li>
-          </ul>
+          </ul> -->
+          <?php include '../sidebarMenuGambar.php'; ?>
+s
+
+
         </div>
       </aside>
       <div class="main">
