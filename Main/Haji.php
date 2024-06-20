@@ -27,7 +27,7 @@ require '../connection.php';
           <a href="Umroh.php">Umroh</a>
         </li>
         <li>
-          <a href="#">Haji</a>
+          <a href="Haji.php">Haji</a>
         </li>
         <li>
           <a href="#">Badal</a>
@@ -174,28 +174,10 @@ require '../connection.php';
       <br>
     </div>
   </div>
-  <footer>
-      <div class="footer-container">
-        <div class="footer-section">
-          <h2>Contact Us</h2>
-          <p>Email: info@example.com</p>
-          <p>Phone: +123 456 7890</p>
-        </div>
-        <div class="footer-section">
-          <h2>Follow Us</h2>
-          <a href="#"><img src="assets/facebook-icon.png" alt="Facebook"></a>
-          <a href="#"><img src="assets/twitter-icon.png" alt="Twitter"></a>
-          <a href="#"><img src="assets/instagram-icon.png" alt="Instagram"></a>
-        </div>
-        <div class="footer-section">
-          <h2>Address</h2>
-          <p>1234 Street Name, City, Country</p>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <p>&copy; 2024 Amansa Umroh. All rights reserved.</p>
-      </div>
-    </footer>
+
+
+    <?php include 'footerAmansa.php'; ?>
+
 
 
     <script src="js/script.js"></script>

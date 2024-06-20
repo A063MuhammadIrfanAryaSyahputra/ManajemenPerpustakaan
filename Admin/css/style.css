@@ -54,6 +54,7 @@ h4 {
     transition: all 0.35s ease-in-out;
     width: 100%;
     background: var(--bs-dark-bg-subtle);
+    
 }
 
 /* Sidebar Elements Style */

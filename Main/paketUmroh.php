@@ -109,7 +109,7 @@ if(isset($_GET['id'])) {
         </div>
         </div>
 
-        <footer>
+    <!-- <footer>
       <div class="footer-container">
         <div class="footer-section">
           <h2>Contact Us</h2>
@@ -130,7 +130,10 @@ if(isset($_GET['id'])) {
       <div class="footer-bottom">
         <p>&copy; 2024 Amansa Umroh. All rights reserved.</p>
       </div>
-    </footer>
+    </footer> -->
+
+    <?php include 'sidebar.php'; ?>
+
 
 
 

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" data-bs-theme="dark">
 
 <head>
     <title>User Login</title>
@@ -19,15 +19,16 @@
         <div class="form-reg">
             <form action="proses_login.php" method="post">
                 <div>
-                    <label for="username">Username:</label>
-                    <input type="text" id="username" name="username" required><br><br>
+                    <label for="username" style="color: grey;">Username:</label>
+                    <input type="text" id="username" name="username" required style="background-color: white; color: black;"><br><br>
 
-                    <label for="password">Password:</label>
-                    <input type="password" id="password" name="password" required><br><br>
+                    <label for="password" style="color: grey;">Password:</label>
+                    <input type="password" id="password" name="password" required style="background-color: white; color: black;"><br><br>
 
                     <input type="submit" value="Login" class="btn btn-primary">
                    
                     <!-- <button class="log-button btn btn-success" onclick="window.location.href='register.php'">Register</button> -->
+                </div>
                 </div>
             </form>
         </div>
