@@ -82,7 +82,7 @@ if (isset($_POST["submit"])) {
           <ul class="sidebar-nav">
             <li class="sidebar-header">Admin Elements</li>
             <li class="sidebar-item">
-              <a href="index.php" class="sidebar-link">
+              <a href="../../../index.php" class="sidebar-link">
                 <i class="fa-solid fa-list pe-2"></i>
                 Dashboard
               </a>
