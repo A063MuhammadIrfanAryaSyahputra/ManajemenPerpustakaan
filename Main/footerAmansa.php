@@ -14,9 +14,16 @@
             <a href="#"><img src="assets/instagram.svg" alt="Instagram" style="filter: invert(100%);"></a>
         </div>
         <div class="footer-section">
-            <h2>Alamat</h2>
-            <p>Jl. Kendeng 25A Sidanegara, Cilacap Regency</p>
-            <a href="../Admin/loginPage" class="sidebar-link"> > Login</a>
+            <h2 style="color: #E0B64A;text-align: left;margin-bottom: 0px;">PEMBAYARAN</h2>
+            <p style="color: #E0B64A;text-align: left;margin-bottom: 0px;">Bank Syariah Indonesia (BSI)</p>
+            <p style="color: #FFFFFF;text-align: left;margin-bottom: 0px; margin-left: 10px;">7207207335</p>
+            <p style="color: #FFFFFF;text-align: left;margin-bottom: 16px;margin-left: 10px;"> a/n. PT. Surya Amanah Bersama</p>
+            <!-- <a href="../Admin/loginPage" class="sidebar-link"> > Login</a> -->
+
+            <p style="color: #E0B64A;text-align: left;margin-bottom: 0px;">Bank Mandiri</p>
+            <p style="color: #FFFFFF;text-align: left;margin-bottom: 0px;margin-left: 10px;"> 180-00-1313974-8</p>
+            <p style="color: #FFFFFF;text-align: left;margin-bottom: 0px;margin-left: 10px;"> a/n. PT. Surya Amanah Bersama</p>
+        </div>
         </div>
     </div>
     <div class="footer-bottom">

@@ -57,6 +57,22 @@ require '../connection.php';
 
 
           </div>
+
+          <div class="">
+          <?php
+          $rows = mysqli_query($conn, "SELECT * FROM home WHERE id = 2");
+          foreach ($rows as $row) :
+          ?>
+            <div class="whyAmansaContent">
+
+              <div class="containerCoverDotIcon">
+
+
+              </div>
+            </div>
+          <?php endforeach; ?>
+        </div>
+
         </div>
         <div class="carousel-item c-item">
           <img src="../Admin/img/<?php echo $row['cover']; ?>" alt="Cover Image" class="d-block w-100 c-img" alt="Slide 2">
@@ -64,6 +80,22 @@ require '../connection.php';
 
 
           </div>
+
+          <div class="">
+          <?php
+          $rows = mysqli_query($conn, "SELECT * FROM home WHERE id = 3");
+          foreach ($rows as $row) :
+          ?>
+            <div class="whyAmansaContent">
+
+              <div class="containerCoverDotIcon">
+
+
+              </div>
+            </div>
+          <?php endforeach; ?>
+        </div>
+
         </div>
         <div class="carousel-item c-item">
           <img src="../Admin/img/<?php echo $row['cover']; ?>" alt="Cover Image" class="d-block w-100 c-img" alt="Slide 3">
