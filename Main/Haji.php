@@ -146,10 +146,12 @@ require '../connection.php';
       <br>
     </div>
   </div>
-  <?php include 'footerAmansa.php'; ?>
+
+  
 
 
   <script src="js/script.js"></script>
+  <?php include 'footerAmansa.php'; ?>
 </body>
 
 </html>
