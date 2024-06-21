@@ -21,6 +21,9 @@
                 <li class="sidebar-item">
                   <a href="../paketHaji/paketHaji.php" class="sidebar-link">Paket Haji</a>
                 </li>
+                <li class="sidebar-item">
+                  <a href="../Galeri/photoGaleri.php" class="sidebar-link">Galeri</a>
+                </li>
               </ul>
             </li>
             <li class="sidebar-item">

@@ -1,0 +1,20 @@
+.parallaxx-1 {
+  background-image: url("../assets/haji.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.parallaxx-1 h1 {
+  font-size: 30px;
+  text-align: center;
+}
+.parallaxx-1 h2 {
+  font-size: 20px;
+  text-align: center;
+}
+
+.parallaxx-inner {
+  padding: 10% 0;
+}

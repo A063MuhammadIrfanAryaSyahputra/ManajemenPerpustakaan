@@ -38,7 +38,7 @@ require '../connection.php';
         <a href="#">Kemitraan</a>
       </li>
       <li>
-        <a href="#">Galeri & Artikel</a>
+        <a href="galeri.php">Galeri & Artikel</a>
       </li>
     </ul>
     <div class="hamburger">

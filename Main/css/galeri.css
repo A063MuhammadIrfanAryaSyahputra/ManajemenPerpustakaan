@@ -1,0 +1,88 @@
+.gallery-title {
+  position: absolute;
+  top: 10px; /* Adjust as needed */
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: left;
+  font-size: 2em;
+  font-weight: bold;
+  color: #fff;
+  z-index: 3;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.slider {
+  height: 600px; /* Increased height */
+  margin: auto;
+  position: relative;
+  width: 90%;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+
+  /* Styling for white container with yellow drop shadow */
+  background-color: #fff; /* White background */
+  border-radius: 15px; /* Rounded corners */
+  box-shadow: 0 0 20px rgba(224, 182, 74, 1); /* Yellow drop shadow */
+  margin-bottom: 40px;
+}
+
+.slide-track {
+  display: flex;
+  width: calc(450px * 14); /* Adjusted width based on new image size */
+  animation: scroll 30s linear infinite; /* Adjust the speed as needed */
+}
+
+.slide-track:hover {
+  animation-play-state: paused;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-450px * 7)); /* Adjusted for new image size */
+  }
+}
+
+.slide {
+  height: 350px; /* Increased height */
+  width: 450px; /* Increased width */
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  perspective: 100px;
+}
+
+img {
+  width: 100%;
+  transition: transform 1s;
+}
+
+img:hover {
+  transform: translateZ(20px);
+}
+
+.slider::before,
+.slider::after {
+  background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+  content: "";
+  height: 100%;
+  position: absolute;
+  width: 15%;
+  z-index: 2;
+}
+
+.slider::before {
+  left: 0;
+  top: 0;
+}
+
+.slider::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
