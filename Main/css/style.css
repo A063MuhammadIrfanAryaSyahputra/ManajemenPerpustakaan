@@ -41,9 +41,15 @@ nav .logo h1 {
   -webkit-text-fill-color: transparent;
 }
 
+element.style {
+  margin-top: 16px;
+}
+
 nav ul {
+  margin-top: 16px;
   list-style: none;
   display: flex;
+  align-items: center;
 }
 nav ul li {
   margin-left: 1.5rem;
