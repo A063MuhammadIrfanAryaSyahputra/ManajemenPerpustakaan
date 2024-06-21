@@ -1,10 +1,11 @@
 <nav>
     <div class="logo">
-      <img src="assets/logoHorizon.png" alt="logo" />
+      <a href="index.php"><img src="assets/logoHorizon.png" alt="logo" /></a>
+    </div>
     </div>
     <ul>
       <li>
-        <a href="#">Beranda</a>
+        <a href="index.php">Beranda</a>
       </li>
       <li>
         <a href="#">Tentang Amansa</a>
