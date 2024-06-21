@@ -6,6 +6,7 @@ require '../connection.php'; // Adjust path to your database connection script
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -14,34 +15,10 @@ require '../connection.php'; // Adjust path to your database connection script
   <link rel="stylesheet" type="text/css" href="css/style.css" />
   <link rel="stylesheet" type="text/css" href="css/galeri.css" />
 </head>
+
 <body>
-  <nav>
-    <div class="logo">
-      <img src="assets/logoHorizon.png" alt="logo" />
-    </div>
-    <ul>
-      <li><a href="#">Beranda</a></li>
-      <li><a href="#">Tentang Amansa</a></li>
-      <li><a href="Umroh.php">Umroh</a></li>
-      <li><a href="#">Haji</a></li>
-      <li><a href="#">Badal</a></li>
-      <li><a href="#">Kemitraan</a></li>
-      <li><a href="galeri.php">Galeri & Artikel</a></li>
-    </ul>
-    <div class="hamburger">
-      <span class="line"></span>
-      <span class="line"></span>
-      <span class="line"></span>
-    </div>
-  </nav>
-  <div class="menubar">
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Services</a></li>
-      <li><a href="#">Blog</a></li>
-      <li><a href="#">Contact Us</a></li>
-    </ul>
-  </div>
+
+  <?php include 'navbarAmansa.php'; ?>
 
   <div>
     <div class="parallax-1">
@@ -91,4 +68,5 @@ require '../connection.php'; // Adjust path to your database connection script
 
   <script src="js/script.js"></script>
 </body>
+
 </html>
