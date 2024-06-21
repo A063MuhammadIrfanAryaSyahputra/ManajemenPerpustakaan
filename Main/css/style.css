@@ -156,6 +156,16 @@ nav ul li a:hover {
   -moz-box-shadow: 10px 10px 51px -7px rgba(0, 0, 0, 0.75);
 }
 
+.containerCoverDotIcon img {
+  width: 65%;
+  border-radius: 72px 13px 18px 10px;
+  /* -webkit-border-radius: 72px 13px 18px 10px; */
+  /* -moz-border-radius: 72px 13px 18px 10px; */
+  /* box-shadow: 10px 10px 51px -7px rgba(0, 0, 0, 0.75); */
+  /* -webkit-box-shadow: 10px 10px 51px -7px rgba(0, 0, 0, 0.75); */
+  /* -moz-box-shadow: 10px 10px 51px -7px rgba(0, 0, 0, 0.75); */
+}
+
 .parallax-1 {
   background-image: url("../assets/umrohh.jpg");
   background-repeat: no-repeat;
@@ -188,6 +198,19 @@ nav ul li a:hover {
 }
 
 .containerPaketUmroh {
+  width: 92%;
+  margin: auto;
+  height: 1550px;
+  /* border: 6px solid rgb(14, 255, 74); */
+  align-items: center;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.containerHomeDotIcon {
   width: 92%;
   margin: auto;
   height: 1550px;

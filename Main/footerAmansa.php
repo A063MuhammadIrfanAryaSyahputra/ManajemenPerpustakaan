@@ -16,7 +16,7 @@
         <div class="footer-section">
             <h2>Address</h2>
             <p>1234 Street Name, City, Country</p>
-            <a href="Admin/loginPage" class="sidebar-link"> > Login</a>
+            <a href="../Admin/loginPage" class="sidebar-link"> > Login</a>
         </div>
     </div>
     <div class="footer-bottom">
