@@ -90,7 +90,7 @@ if (isset($_POST["submit"])) {
         <!-- sideprofilef here -->
         <?php include '../../../sidebar_profile.php'; ?>
 
-        <main class="content px-3 py-2">
+        <!-- <main class="content px-3 py-2">
                 <div class="container-fluid">
                     <div class="mb-3">
                         <h4>Tambah Data</h4>
@@ -139,7 +139,7 @@ if (isset($_POST["submit"])) {
                         </div>
                     </div>
                 </div>
-            </main>
+            </main> -->
 
         <!--Start List Gambar-->
         <main class="content px-3 py-2">

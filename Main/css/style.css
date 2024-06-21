@@ -191,7 +191,16 @@ nav ul li a:hover {
 .containerUmroh {
   width: 92%;
   margin: auto;
-  height: 1650px;
+  height: auto;
+  /* border: 2px solid red; */
+  align-items: center;
+  text-align: center;
+}
+
+.containerHome {
+  width: 92%;
+  margin: auto;
+  height: auto;
   /* border: 2px solid red; */
   align-items: center;
   text-align: center;

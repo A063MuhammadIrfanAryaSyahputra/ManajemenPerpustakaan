@@ -20,113 +20,124 @@ require '../connection.php';
 <body>
 
 
+
+  <!-- navbar -->
   <?php include 'navbarAmansa.php'; ?>
 
 
 
   <div>
-    <div class="parallax-1">
-      <div class="parallax-inner">
-        <!-- Carousel goes here -->
-        <h1>Caarrousel</h1>
-        <!-- <h2>Special Spiritual Moment to Baitullah</h2> -->
+    <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
       </div>
-    </div>
-  </div>
+
+      <div class="carousel-inner">
+
+        <div class="">
+          <?php
+          $rows = mysqli_query($conn, "SELECT * FROM home WHERE id = 1");
+          foreach ($rows as $row) :
+          ?>
+            <div class="whyAmansaContent">
+
+              <div class="containerCoverDotIcon">
 
 
-  <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    </div>
-
-    <div class="carousel-inner">
-
-      <div class="">
-        <?php
-        $rows = mysqli_query($conn, "SELECT * FROM home WHERE id = 1");
-        foreach ($rows as $row) :
-        ?>
-          <div class="whyAmansaContent">
-            <h2><?php echo $row["nama"]; ?></h2>
-            <div class="containerCoverDotIcon">
-
-              <h2><?php echo $row["nama"]; ?></h2>
+              </div>
             </div>
+          <?php endforeach; ?>
+        </div>
+
+        <div class="carousel-item active c-item">
+          <img src="../Admin/img/<?php echo $row['cover']; ?>" alt="Cover Image" class="d-block w-100 c-img" alt="Slide 1">
+          <div class="carousel-caption top-0 mt-4">
+
+
           </div>
-        <?php endforeach; ?>
-      </div>
-
-      <div class="carousel-item active c-item">
-      <img src="../Admin/img/<?php echo $row['cover']; ?>" alt="Cover Image" class="d-block w-100 c-img" alt="Slide 1">
-        <div class="carousel-caption top-0 mt-4">
+        </div>
+        <div class="carousel-item c-item">
+          <img src="../Admin/img/<?php echo $row['cover']; ?>" alt="Cover Image" class="d-block w-100 c-img" alt="Slide 2">
+          <div class="carousel-caption top-0 mt-4">
 
 
+          </div>
+        </div>
+        <div class="carousel-item c-item">
+          <img src="../Admin/img/<?php echo $row['cover']; ?>" alt="Cover Image" class="d-block w-100 c-img" alt="Slide 3">
+          <div class="carousel-caption top-0 mt-4">
+
+          </div>
         </div>
       </div>
-      <div class="carousel-item c-item">
-        <img src="https://persadaindonesia.com/wp-content/uploads/2023/06/Frame-418-1536x539.webp" class="d-block w-100 c-img" alt="Slide 2">
-        <div class="carousel-caption top-0 mt-4">
-
-
-        </div>
-      </div>
-      <div class="carousel-item c-item">
-        <img src="https://persadaindonesia.com/wp-content/uploads/2023/06/Frame-418-1536x539.webp" class="d-block w-100 c-img" alt="Slide 3">
-        <div class="carousel-caption top-0 mt-4">
-
-        </div>
-      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#hero-carousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#hero-carousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#hero-carousel" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#hero-carousel" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
   </div>
 
-  <div class="containerUmroh">
-    <br>
+  <div class="containerHome">
+    <br><br><br>
+
     <h1>Why Amansa</h1>
+    <br><br><br>
 
     <div class="">
       <?php
-      $rows = mysqli_query($conn, "SELECT * FROM home WHERE id = 1");
+      $rows = mysqli_query($conn, "SELECT * FROM home WHERE id = 4");
       foreach ($rows as $row) :
       ?>
         <div class="whyAmansaContent">
-          <h2><?php echo $row["nama"]; ?></h2>
+
           <div class="containerCoverDotIcon">
             <img src="../Admin/img/<?php echo $row['cover']; ?>" alt="Cover Image">
-            <h2><?php echo $row["nama"]; ?></h2>
+
           </div>
         </div>
       <?php endforeach; ?>
     </div>
 
     <div class="">
+      
       <?php
-      $rows = mysqli_query($conn, "SELECT * FROM home WHERE id = 1");
+      $rows = mysqli_query($conn, "SELECT * FROM home WHERE id = 5");
       foreach ($rows as $row) :
       ?>
+
         <div class="whyAmansaContent">
-          <h2><?php echo $row["nama"]; ?></h2>
+
           <div class="containerCoverDotIcon">
             <img src="../Admin/img/<?php echo $row['cover']; ?>" alt="Cover Image">
-            <h2><?php echo $row["nama"]; ?></h2>
           </div>
         </div>
       <?php endforeach; ?>
-    </div>
 
-    <br>
+
+
+
+      <div class="whyAmansaContent">
+        <div class="containerCoverDotIcon">
+          
+          <iframe width="100%" height="540" src="https://www.youtube.com/embed/<?php echo $row['deskripsi']; ?>" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        
+          </div>
+        </div>
+      </div>
+
+    
+    </div>
+      
+
   </div>
 
+  <!-- footer -->
   <?php include 'footerAmansa.php'; ?>
 
   <script src="js/script.js"></script>

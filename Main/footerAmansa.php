@@ -1,21 +1,21 @@
 <footer>
     <div class="footer-container">
         <div class="footer-section">
-            <h2>Contact Us</h2>
-            <a href="mailto:info@example.com">Email Us</a>
-            <p>Phone: +123 456 7890</p>
+            <h2>Hubungi Kami</h2>
+            <a href="mailto:info@example.com">E-mail Us</a>
+            <p>Phone: 085112345912</p>
             <a href="questionForm.html">Kirim Pertanyaan</a>
             
         </div>
         <div class="footer-section">
             <h2>Follow Us</h2>
-            <a href="#"><img src="assets/facebook-icon.png" alt="Facebook"></a>
-            <a href="#"><img src="assets/twitter-icon.png" alt="Twitter"></a>
-            <a href="#"><img src="assets/instagram-icon.png" alt="Instagram"></a>
+            <a href="#"><img src="assets/facebook.svg" alt="Facebook" style="filter: invert(100%);"></a>
+            <a href="#"><img src="assets/twitter-x.svg" alt="Twitter" style="filter: invert(100%);"></a>
+            <a href="#"><img src="assets/instagram.svg" alt="Instagram" style="filter: invert(100%);"></a>
         </div>
         <div class="footer-section">
-            <h2>Address</h2>
-            <p>1234 Street Name, City, Country</p>
+            <h2>Alamat</h2>
+            <p>Jl. Kendeng 25A Sidanegara, Cilacap Regency</p>
             <a href="../Admin/loginPage" class="sidebar-link"> > Login</a>
         </div>
     </div>

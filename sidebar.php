@@ -13,7 +13,8 @@
               </a>
               <ul id="pages" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
                 <li class="sidebar-item">
-                  <a href="#" class="sidebar-link">Home Page</a>
+                <a href="Admin/menuGambar/homePage/homePage.php" class="sidebar-link">Home Page</a>
+
                 </li>
                 <li class="sidebar-item">
                   <a href="Admin/menuGambar/paketUmroh/paketUmroh.php" class="sidebar-link">Paket Umroh</a>
