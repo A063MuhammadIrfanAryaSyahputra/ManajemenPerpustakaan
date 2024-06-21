@@ -2,43 +2,43 @@
 require '../../../connection.php';
 
 if (isset($_POST["submit"])) {
-    $name = $_POST["name"];
-    $imageFiles = ['image1', 'image2', 'image3', 'image4', 'image5', 'image6', 'image7'];
-    $imageNames = [];
+  $name = $_POST["name"];
+  $imageFiles = ['image1', 'image2', 'image3', 'image4', 'image5', 'image6', 'image7'];
+  $imageNames = [];
 
-    foreach ($imageFiles as $imageFile) {
-        if ($_FILES[$imageFile]["error"] === 4) {
-            echo "<script>alert('One or more images do not exist');</script>";
-            exit;
-        } else {
-            $filename = $_FILES[$imageFile]["name"];
-            $filesize = $_FILES[$imageFile]["size"];
-            $tmpName = $_FILES[$imageFile]["tmp_name"];
+  foreach ($imageFiles as $imageFile) {
+    if ($_FILES[$imageFile]["error"] === 4) {
+      echo "<script>alert('One or more images do not exist');</script>";
+      exit;
+    } else {
+      $filename = $_FILES[$imageFile]["name"];
+      $filesize = $_FILES[$imageFile]["size"];
+      $tmpName = $_FILES[$imageFile]["tmp_name"];
 
-            $validImageExtension = ['jpg', 'jpeg', 'png'];
-            $imageExtension = explode('.', $filename);
-            $imageExtension = strtolower(end($imageExtension));
+      $validImageExtension = ['jpg', 'jpeg', 'png'];
+      $imageExtension = explode('.', $filename);
+      $imageExtension = strtolower(end($imageExtension));
 
-            if (!in_array($imageExtension, $validImageExtension)) {
-                echo "<script>alert('Invalid image extension for $imageFile');</script>";
-                exit;
-            } elseif ($filesize > 1000000) {
-                echo "<script>alert('Image size is too large for $imageFile');</script>";
-                exit;
-            } else {
-                $newImageName = uniqid() . '.' . $imageExtension;
-                move_uploaded_file($tmpName, '../../img/' . $newImageName);
-                $imageNames[] = $newImageName;
-            }
-        }
+      if (!in_array($imageExtension, $validImageExtension)) {
+        echo "<script>alert('Invalid image extension for $imageFile');</script>";
+        exit;
+      } elseif ($filesize > 1000000) {
+        echo "<script>alert('Image size is too large for $imageFile');</script>";
+        exit;
+      } else {
+        $newImageName = uniqid() . '.' . $imageExtension;
+        move_uploaded_file($tmpName, '../../img/' . $newImageName);
+        $imageNames[] = $newImageName;
+      }
     }
+  }
 
-    $query = "INSERT INTO galeri (name, image1, image2, image3, image4, image5, image6, image7) 
+  $query = "INSERT INTO galeri (name, image1, image2, image3, image4, image5, image6, image7) 
               VALUES ('$name', '$imageNames[0]', '$imageNames[1]', '$imageNames[2]', 
                       '$imageNames[3]', '$imageNames[4]', '$imageNames[5]', '$imageNames[6]')";
-    
-    mysqli_query($conn, $query);
-    echo "<script> 
+
+  mysqli_query($conn, $query);
+  echo "<script> 
             alert('Successfully added'); 
             document.location.href = 'photoGaleri.php';
           </script>";
@@ -47,6 +47,7 @@ if (isset($_POST["submit"])) {
 
 <!DOCTYPE html>
 <html lang="en" data-bs-theme="dark">
+
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -60,13 +61,17 @@ if (isset($_POST["submit"])) {
 <body>
   <div class="wrapper">
     <aside id="sidebar" class="js-sidebar">
+      <!-- Content For Sidebar -->
       <div class="h-100">
         <div class="sidebar-logo">
           <a href="../../../Main/Umroh.php">Amansa Travel</a>
         </div>
+        <!-- sidebar -->
         <?php include '../sidebarMenuGambar.php'; ?>
+
       </div>
     </aside>
+
     <div class="main">
       <?php include '../../../sidebar_profile.php'; ?>
 
@@ -175,4 +180,12 @@ if (isset($_POST["submit"])) {
       <a href="#" class="theme-toggle">
         <i class="fa-regular fa-moon"></i>
         <i class="fa-regular fa-sun"></i>
-      </a
+      </a>
+
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

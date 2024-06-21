@@ -79,54 +79,12 @@ if (isset($_POST["submit"])) {
           <div class="sidebar-logo">
             <a href="../../../Main/Umroh.php">Amansa Travel</a>
           </div>
-          <!-- <ul class="sidebar-nav">
-            <li class="sidebar-header">Admin Elements</li>
-            <li class="sidebar-item">
-              <a href="../../../index.php" class="sidebar-link">
-                <i class="fa-solid fa-list pe-2"></i>
-                Dashboard
-              </a>
-            </li>
-            <li class="sidebar-item">
-              <a href="#" class="sidebar-link collapsed" data-bs-target="#pages" data-bs-toggle="collapse" aria-expanded="false"
-                ><i class="fa-solid fa-file-lines pe-2"></i>
-                List Gambar
-              </a>
-              <ul id="pages" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
-                <li class="sidebar-item">
-                  <a href="#" class="sidebar-link">Home Page</a>
-                </li>
-                <li class="sidebar-item">
-                  <a href="../paketUmroh/paketUmroh.php" class="sidebar-link">Paket Umroh</a>
-                </li>
-                <li class="sidebar-item">
-                  <a href="paketHaji.php" class="sidebar-link">Paket Haji</a>
-                </li>
-              </ul>
-            </li>
-            <li class="sidebar-item">
-              <a href="#" class="sidebar-link collapsed" data-bs-target="#auth" data-bs-toggle="collapse" aria-expanded="false"
-                ><i class="fa-regular fa-user pe-2"></i>
-                Auth
-              </a>
-              <ul id="auth" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
-                <li class="sidebar-item">
-                  <a href="#" class="sidebar-link">Login</a>
-                </li>
-                <li class="sidebar-item">
-                  <a href="#" class="sidebar-link">Register</a>
-                </li>
-                <li class="sidebar-item">
-                  <a href="#" class="sidebar-link">Forgot Password</a>
-                </li>
-              </ul>
-            </li>
-          </ul> -->
-
+          <!-- sidebar -->
           <?php include '../sidebarMenuGambar.php'; ?>
 
         </div>
       </aside>
+      
       <div class="main">
         <!-- <nav class="navbar navbar-expand px-3 border-bottom">
           <button class="btn" id="sidebar-toggle" type="button">

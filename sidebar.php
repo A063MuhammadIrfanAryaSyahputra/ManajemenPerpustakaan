@@ -24,9 +24,7 @@
                 <li class="sidebar-item">
                   <a href="Admin/menuGambar/Galeri/photoGaleri.php" class="sidebar-link">Galeri</a>
                 </li>
-                <li class="sidebar-item">
-                  <a href="Admin/menuGambar/Galeri/home.php" class="sidebar-link">Galeri</a>
-                </li>
+
               </ul>
             </li>
             <li class="sidebar-item">

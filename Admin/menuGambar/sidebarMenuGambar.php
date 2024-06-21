@@ -13,7 +13,7 @@
               </a>
               <ul id="pages" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
                 <li class="sidebar-item">
-                  <a href="../../../index.php" class="sidebar-link">Home Page</a>
+                  <a href="../homePage/homePage.php" class="sidebar-link">Home Page</a>
                 </li>
                 <li class="sidebar-item">
                   <a href="../paketUmroh/paketUmroh.php" class="sidebar-link">Paket Umroh</a>
