@@ -76,9 +76,7 @@ if (isset($_POST["submit"])) {
       <aside id="sidebar" class="js-sidebar">
         <!-- Content For Sidebar -->
         <div class="h-100">
-          <div class="sidebar-logo">
-            <a href="../../../Main/Umroh.php">Amansa Travel</a>
-          </div>
+
           <!-- sidebar -->
           <?php include '../sidebarMenuGambar.php'; ?>
 

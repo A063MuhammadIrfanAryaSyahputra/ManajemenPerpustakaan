@@ -41,6 +41,9 @@
                   <a href="Admin/registerPage/register.php" class="sidebar-link">Register</a>
                 </li>
                 <li class="sidebar-item">
+                  <a href="Admin/loginPage/logout.php" class="sidebar-link">Logout</a>
+                </li>
+                <li class="sidebar-item">
                   <a href="#" class="sidebar-link">Forgot Password</a>
                 </li>
               </ul>

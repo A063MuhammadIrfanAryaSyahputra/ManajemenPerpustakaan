@@ -2,7 +2,7 @@
 // error_reporting(E_ALL);
 // ini_set('display_errors', 1);
 
-// session_start();
+session_start();
 
 include '../../connection.php';
 
@@ -24,6 +24,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             // simpan sesi
             $_SESSION['id_user'] = $row['id_user'];
             $_SESSION['username'] = $row['username'];
+            $_SESSION['loggedin'] = true;
             // redirect ke dashboard
             header("Location: ../../index.php");
             exit();
