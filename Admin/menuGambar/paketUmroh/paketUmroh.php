@@ -1,3 +1,5 @@
+<?php include '../session.php'; ?>
+
 <?php
 require '../../../connection.php';
 
@@ -72,6 +74,7 @@ if (isset($_POST["submit"])) {
   </head>
 
   <body>
+    
     <div class="wrapper">
       <aside id="sidebar" class="js-sidebar">
         <!-- Content For Sidebar -->

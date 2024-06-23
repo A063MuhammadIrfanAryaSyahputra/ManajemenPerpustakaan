@@ -12,17 +12,8 @@
 </head>
 
 <body>
-  <?php
-  session_start();
+<?php include 'session.php'; ?>
 
-  // Check if the user is logged in, if not redirect to login page
-  if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
-      header("Location: Admin/loginPage");
-      exit;
-  }
-
-  // Display secure content here
-  ?>
   <div class="wrapper">
     <aside id="sidebar" class="js-sidebar">
       <!-- Content For Sidebar -->
