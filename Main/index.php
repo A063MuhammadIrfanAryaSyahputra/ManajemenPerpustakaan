@@ -17,6 +17,40 @@ require '../connection.php';
 
 </head>
 
+<style>
+  /* warna warna bg section */
+  .section1 {
+    width: 100%;
+    margin: auto;
+    height: auto;
+    /* border: 2px solid red; */
+    align-items: center;
+    text-align: center;
+  }
+
+  .section2 {
+    width: 100%;
+    margin: auto;
+    height: auto;
+    /* border: 2px solid red; */
+    align-items: center;
+    text-align: center;
+    background-color: #EEBE48;
+  }
+
+
+  .section3 {
+    width: 100%;
+    margin: auto;
+    height: auto;
+    /* border: 2px solid red; */
+    align-items: center;
+    text-align: center;
+    background-color: #FFDF7B;
+
+  }
+</style>
+
 <body>
 
 
@@ -59,19 +93,19 @@ require '../connection.php';
           </div>
 
           <div class="">
-          <?php
-          $rows = mysqli_query($conn, "SELECT * FROM home WHERE id = 2");
-          foreach ($rows as $row) :
-          ?>
-            <div class="whyAmansaContent">
+            <?php
+            $rows = mysqli_query($conn, "SELECT * FROM home WHERE id = 2");
+            foreach ($rows as $row) :
+            ?>
+              <div class="whyAmansaContent">
 
-              <div class="containerCoverDotIcon">
+                <div class="containerCoverDotIcon">
 
 
+                </div>
               </div>
-            </div>
-          <?php endforeach; ?>
-        </div>
+            <?php endforeach; ?>
+          </div>
 
         </div>
         <div class="carousel-item c-item">
@@ -82,19 +116,19 @@ require '../connection.php';
           </div>
 
           <div class="">
-          <?php
-          $rows = mysqli_query($conn, "SELECT * FROM home WHERE id = 3");
-          foreach ($rows as $row) :
-          ?>
-            <div class="whyAmansaContent">
+            <?php
+            $rows = mysqli_query($conn, "SELECT * FROM home WHERE id = 3");
+            foreach ($rows as $row) :
+            ?>
+              <div class="whyAmansaContent">
 
-              <div class="containerCoverDotIcon">
+                <div class="containerCoverDotIcon">
 
 
+                </div>
               </div>
-            </div>
-          <?php endforeach; ?>
-        </div>
+            <?php endforeach; ?>
+          </div>
 
         </div>
         <div class="carousel-item c-item">
@@ -115,7 +149,7 @@ require '../connection.php';
     </div>
   </div>
 
-  <div class="containerHome">
+  <div class="containerHome section1">
     <br><br><br>
 
     <h1>Why Amansa</h1>
@@ -137,7 +171,7 @@ require '../connection.php';
     </div>
 
     <div class="">
-      
+
       <?php
       $rows = mysqli_query($conn, "SELECT * FROM home WHERE id = 5");
       foreach ($rows as $row) :
@@ -151,21 +185,54 @@ require '../connection.php';
         </div>
       <?php endforeach; ?>
 
-
-
-
-      <div class="whyAmansaContent">
-        <div class="containerCoverDotIcon">
-          
-          <iframe width="100%" height="540" src="https://www.youtube.com/embed/<?php echo $row['deskripsi']; ?>" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        
-          </div>
-        </div>
-      </div>
-
-    
     </div>
-      
+  </div>
+
+  <div class="containerHome ">
+
+
+
+
+    <div class="whyAmansaContent">
+      <div class="containerCoverDotIcon">
+
+        <iframe width="100%" height="540" src="https://www.youtube.com/embed/<?php echo $row['deskripsi']; ?>" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+
+  <div class="containerHome section3">
+  <br>
+
+
+  <div class="row justify-content-center">
+  <p style="font-family: 'Montserrat', sans-serif; font-weight: 600; font-size: 30px;">Kesan Bersama Amansa</p>
+
+  <div class="col-3" style="padding: 10px; margin: 10px; background: none; text-align: center; border: 1px solid black; border-radius: 8px;">
+    <img src="https://marketplace.canva.com/EAFvCLo1gPg/1/0/900w/canva-krem-%26-putih-minimalis-testimonial-cerita-instagram-sGI_LpwQ8-Y.jpg" style="max-width: 100%; height: auto; display: block; margin: 0 auto;" alt="Placeholder Image">
+  </div>
+
+  <div class="col-3" style="padding: 10px; margin: 10px; background: none; text-align: center; border: 1px solid black; border-radius: 8px;">
+    <img src="https://marketplace.canva.com/EAFvCLo1gPg/1/0/900w/canva-krem-%26-putih-minimalis-testimonial-cerita-instagram-sGI_LpwQ8-Y.jpg" style="max-width: 100%; height: auto; display: block; margin: 0 auto;" alt="Placeholder Image">
+  </div>
+
+  <div class="col-3" style="padding: 10px; margin: 10px; background: none; text-align: center; border: 1px solid black; border-radius: 8px;">
+    <img src="https://marketplace.canva.com/EAFvCLo1gPg/1/0/900w/canva-krem-%26-putih-minimalis-testimonial-cerita-instagram-sGI_LpwQ8-Y.jpg" style="max-width: 100%; height: auto; display: block; margin: 0 auto;" alt="Placeholder Image">
+  </div>
+</div>
+
+
+
+    <br><br>
+
+
+
+
+  </div>
+
 
   </div>
 
