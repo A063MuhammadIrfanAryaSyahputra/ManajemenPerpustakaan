@@ -16,11 +16,9 @@ require '../connection.php';
 
 </head>
 
-<body>
+<body >
 
   <?php include 'navbarAmansa.php'; ?>
-
-
 
   <div>
     <div class="parallax-1">

@@ -76,9 +76,9 @@ if (isset($_POST["submit"])) {
       <aside id="sidebar" class="js-sidebar">
         <!-- Content For Sidebar -->
         <div class="h-100">
-          <div class="sidebar-logo">
+          <!-- <div class="sidebar-logo">
             <a href="../../../Main/Umroh.php">Amansa Travel</a>
-          </div>
+          </div> -->
           <!-- sidebar -->
           <?php include '../sidebarMenuGambar.php'; ?>
 
@@ -162,10 +162,10 @@ if (isset($_POST["submit"])) {
         <td>Image</td>
         <td>Cover</td>
         <td>Deskripsi</td>
-        <td>Itenary 1</td>
+        <!-- <td>Itenary 1</td>
         <td>Itenary 2</td>
         <td>Itenary 3</td>
-        <td>Itenary 4</td>
+        <td>Itenary 4</td> -->
         <td>Action</td>
     </tr>
     <?php
@@ -178,10 +178,11 @@ if (isset($_POST["submit"])) {
             <td><img src="../../img/<?php echo $row['image']; ?>" width="200"  alt=""> </td>
             <td><img src="../../img/<?php echo $row['cover']; ?>" width="200"  alt=""> </td>
             <td><?php echo $row["deskripsi"]; ?></td>
-            <td><?php echo $row["itenary1"]; ?></td>
-            <td><?php echo $row["itenary2"]; ?></td>
-            <td><?php echo $row["itenary3"]; ?></td>
-            <td><?php echo $row["itenary4"]; ?></td>
+
+            <!-- <td><?php echo $row["itenary1"]; ?></td> -->
+            <!-- <td><?php echo $row["itenary2"]; ?></td> -->
+            <!-- <td><?php echo $row["itenary3"]; ?></td> -->
+            <!-- <td><?php echo $row["itenary4"]; ?></td> -->
             <?php
             echo
             "<td><a href='editHome.php?id=" . $row['id'] . "' class='btn btn-primary btn-sm mr-1'>Edit</a> </td>"?>

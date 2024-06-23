@@ -32,9 +32,9 @@ if (isset($_GET['id'])) {
       <aside id="sidebar" class="js-sidebar">
         <!-- Content For Sidebar -->
         <div class="h-100">
-          <div class="sidebar-logo">
+          <!-- <div class="sidebar-logo">
             <a href="../../../Main/homepage.php">Amansa Travel</a>
-          </div>
+          </div> -->
           
           <?php include '../sidebarMenuGambar.php'; ?>
 
