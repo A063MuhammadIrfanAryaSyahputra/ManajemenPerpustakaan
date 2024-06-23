@@ -1,4 +1,7 @@
 <ul class="sidebar-nav">
+<div class="sidebar-logo">
+            <a href="Main/">Amansa Travel</a>
+          </div>
             <li class="sidebar-header">Admin Elements</li>
             <li class="sidebar-item">
               <a href="index.php" class="sidebar-link">
