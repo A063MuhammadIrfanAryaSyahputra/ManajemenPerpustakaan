@@ -16,6 +16,34 @@ require '../connection.php';
 
 </head>
 
+<style>
+  .parallax-inner {
+    padding: 20% 0;
+  }
+
+
+  .h1,
+  h1 {
+    color: #0D3C63;
+  }
+
+  .button33{
+    border-color: aquamarine;
+  }
+
+
+
+  .parallax-1 {
+    background-image: url("assets/koutubial.jpg");
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin-bottom: 4%;
+  }
+</style>
+
 <body>
 
 
@@ -25,15 +53,15 @@ require '../connection.php';
   <div>
     <div class="parallax-1">
       <div class="parallax-inner">
-        <h1>Umroh bersama Amansa</h1>
-        <h2>Special Spiritual Moment to Baitullah</h2>
+        <!-- <h1>Umroh bersama Amansa</h1> -->
+        <!-- <h2>Special Spiritual Moment to Baitullah</h2> -->
       </div>
     </div>
   </div>
 
   <div class="containerUmroh">
     <h1>Layanan umroh Kami</h1>
-    <div class="containerPaketUmroh">
+    <div class="containerPaketUmroh row justify-content-center">
       <div class="paketUmroh">
         <?php
         $i = 1;
@@ -41,14 +69,14 @@ require '../connection.php';
         <?php foreach ($rows as $row) : ?>
           <tr>
             <td>
-              <h1><?php echo $row["nama"]; ?></h1>
+              <!-- <h1><?php echo $row["nama"]; ?></h1> -->
             </td>
             <div class="containerCoverUmroh">
               <td><img src="../Admin/img/<?php echo $row['cover']; ?>" alt=""></td>
             </div>
             <?php
             echo
-            "<br><td><a href='paketUmroh.php?id=" . $row['id'] . "' class='button33'>Lihat Selengkapnya</a> </td>" ?>
+            "<td><a href='paketUmroh.php?id=" . $row['id'] . "' class='button33'>Lihat Selengkapnya</a> </td>" ?>
           </tr>
         <?php endforeach; ?>
       </div>
@@ -59,14 +87,14 @@ require '../connection.php';
         <?php foreach ($rows as $row) : ?>
           <tr>
             <td>
-              <h1><?php echo $row["nama"]; ?></h1>
+              <!-- <h1><?php echo $row["nama"]; ?></h1> -->
             </td>
             <div class="containerCoverUmroh">
               <td><img src="../Admin/img/<?php echo $row['cover']; ?>" alt=""></td>
             </div>
             <?php
             echo
-            "<br><td><a href='paketUmroh.php?id=" . $row['id'] . "' class='button33'>Lihat Selengkapnya</a> </td>" ?>
+            "<td><a href='paketUmroh.php?id=" . $row['id'] . "' class='button33'>Lihat Selengkapnya</a> </td>" ?>
           </tr>
         <?php endforeach; ?>
       </div>
@@ -77,14 +105,14 @@ require '../connection.php';
         <?php foreach ($rows as $row) : ?>
           <tr>
             <td>
-              <h1><?php echo $row["nama"]; ?></h1>
+              <!-- <h1><?php echo $row["nama"]; ?></h1> -->
             </td>
             <div class="containerCoverUmroh">
               <td><img src="../Admin/img/<?php echo $row['cover']; ?>" alt=""></td>
             </div>
             <?php
             echo
-            "<br><td><a href='paketUmroh.php?id=" . $row['id'] . "' class='button33'>Lihat Selengkapnya</a> </td>" ?>
+            "<td><a href='paketUmroh.php?id=" . $row['id'] . "' class='button33'>Lihat Selengkapnya</a> </td>" ?>
           </tr>
         <?php endforeach; ?>
       </div>
@@ -95,14 +123,14 @@ require '../connection.php';
         <?php foreach ($rows as $row) : ?>
           <tr>
             <td>
-              <h1><?php echo $row["nama"]; ?></h1>
+              <!-- <h1><?php echo $row["nama"]; ?></h1> -->
             </td>
             <div class="containerCoverUmroh">
               <td><img src="../Admin/img/<?php echo $row['cover']; ?>" alt=""></td>
             </div>
             <?php
             echo
-            "<br><td><a href='paketUmroh.php?id=" . $row['id'] . "' class='button33'>Lihat Selengkapnya</a> </td>" ?>
+            "<td><a href='paketUmroh.php?id=" . $row['id'] . "' class='button33'>Lihat Selengkapnya</a> </td>" ?>
           </tr>
         <?php endforeach; ?>
       </div>
@@ -113,14 +141,14 @@ require '../connection.php';
         <?php foreach ($rows as $row) : ?>
           <tr>
             <td>
-              <h1><?php echo $row["nama"]; ?></h1>
+              <!-- <h1><?php echo $row["nama"]; ?></h1> -->
             </td>
             <div class="containerCoverUmroh">
               <td><img src="../Admin/img/<?php echo $row['cover']; ?>" alt=""></td>
             </div>
             <?php
             echo
-            "<br><td><a href='paketUmroh.php?id=" . $row['id'] . "' class='button33'>Lihat Selengkapnya</a> </td>" ?>
+            "<td><a href='paketUmroh.php?id=" . $row['id'] . "' class='button33'>Lihat Selengkapnya</a> </td>" ?>
           </tr>
         <?php endforeach; ?>
       </div>
@@ -131,14 +159,14 @@ require '../connection.php';
         <?php foreach ($rows as $row) : ?>
           <tr>
             <td>
-              <h1><?php echo $row["nama"]; ?></h1>
+              <!-- <h1><?php echo $row["nama"]; ?></h1> -->
             </td>
             <div class="containerCoverUmroh">
               <td><img src="../Admin/img/<?php echo $row['cover']; ?>" alt=""></td>
             </div>
             <?php
             echo
-            "<br><td><a href='paketUmroh.php?id=" . $row['id'] . "' class='button33'>Lihat Selengkapnya</a> </td>" ?>
+            "<td><a href='paketUmroh.php?id=" . $row['id'] . "' class='button33'>Lihat Selengkapnya</a> </td>" ?>
           </tr>
         <?php endforeach; ?>
 

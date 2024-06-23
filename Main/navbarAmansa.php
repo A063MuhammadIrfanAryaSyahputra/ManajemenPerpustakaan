@@ -79,7 +79,7 @@
       <ul class="dropdown-menu kiri kiri-hover" aria-labelledby="dropdownMenuButton1" style="border: 1px; background-color: #0D3C63;">
         <li class="kiri"><a class="dropdown-item teksputih underline" href="Umroh.php">Paket Umroh</a></li>
         <li class="kiri"><a class="dropdown-item teksputih underline" href="#">Tabungan Umroh</a></li>
-        <li class="kiri"><a class="dropdown-item teksputih underline" href="#">Badal Umroh</a></li>
+        <li class="kiri"><a class="dropdown-item teksputih " href="#">Badal Umroh</a></li>
       </ul>
     </li>
 

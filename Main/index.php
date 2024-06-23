@@ -205,24 +205,24 @@ require '../connection.php';
   <br>
 
   <div class="containerHome section3">
-  <br>
+    <br>
 
 
-  <div class="row justify-content-center">
-  <p style="font-family: 'Montserrat', sans-serif; font-weight: 600; font-size: 30px;">Kesan Bersama Amansa</p>
+    <div class="row justify-content-center">
+      <p style="font-family: 'Montserrat', sans-serif; font-weight: 600; font-size: 30px;">Kesan Bersama Amansa</p>
 
-  <div class="col-3" style="padding: 10px; margin: 10px; background: none; text-align: center; border: 1px solid black; border-radius: 8px;">
-    <img src="https://marketplace.canva.com/EAFvCLo1gPg/1/0/900w/canva-krem-%26-putih-minimalis-testimonial-cerita-instagram-sGI_LpwQ8-Y.jpg" style="max-width: 100%; height: auto; display: block; margin: 0 auto;" alt="Placeholder Image">
-  </div>
+      <div class="col-3" style="padding: 10px; margin: 10px; background: none; text-align: center; border: 1px solid black; border-radius: 8px;">
+        <img src="https://marketplace.canva.com/EAFvCLo1gPg/1/0/900w/canva-krem-%26-putih-minimalis-testimonial-cerita-instagram-sGI_LpwQ8-Y.jpg" style="max-width: 100%; height: auto; display: block; margin: 0 auto;" alt="Placeholder Image">
+      </div>
 
-  <div class="col-3" style="padding: 10px; margin: 10px; background: none; text-align: center; border: 1px solid black; border-radius: 8px;">
-    <img src="https://marketplace.canva.com/EAFvCLo1gPg/1/0/900w/canva-krem-%26-putih-minimalis-testimonial-cerita-instagram-sGI_LpwQ8-Y.jpg" style="max-width: 100%; height: auto; display: block; margin: 0 auto;" alt="Placeholder Image">
-  </div>
+      <div class="col-3" style="padding: 10px; margin: 10px; background: none; text-align: center; border: 1px solid black; border-radius: 8px;">
+        <img src="https://marketplace.canva.com/EAFvCLo1gPg/1/0/900w/canva-krem-%26-putih-minimalis-testimonial-cerita-instagram-sGI_LpwQ8-Y.jpg" style="max-width: 100%; height: auto; display: block; margin: 0 auto;" alt="Placeholder Image">
+      </div>
 
-  <div class="col-3" style="padding: 10px; margin: 10px; background: none; text-align: center; border: 1px solid black; border-radius: 8px;">
-    <img src="https://marketplace.canva.com/EAFvCLo1gPg/1/0/900w/canva-krem-%26-putih-minimalis-testimonial-cerita-instagram-sGI_LpwQ8-Y.jpg" style="max-width: 100%; height: auto; display: block; margin: 0 auto;" alt="Placeholder Image">
-  </div>
-</div>
+      <div class="col-3" style="padding: 10px; margin: 10px; background: none; text-align: center; border: 1px solid black; border-radius: 8px;">
+        <img src="https://marketplace.canva.com/EAFvCLo1gPg/1/0/900w/canva-krem-%26-putih-minimalis-testimonial-cerita-instagram-sGI_LpwQ8-Y.jpg" style="max-width: 100%; height: auto; display: block; margin: 0 auto;" alt="Placeholder Image">
+      </div>
+    </div>
 
 
 

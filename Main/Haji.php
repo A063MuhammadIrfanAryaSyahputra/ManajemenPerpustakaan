@@ -9,29 +9,57 @@ require '../connection.php';
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>Responsive Navbar</title>  
+  <title>Responsive Navbar</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   <link rel="stylesheet" type="text/css" href="css/style.css" />
 
 </head>
 
-<body >
+<style>
+  .parallax-inner {
+    padding: 20% 0;
+  }
+
+
+  .h1,
+  h1 {
+    color: #EEBE48;
+  }
+
+  .button33{
+    border-color: aquamarine;
+  }
+
+
+
+  .parallax-1 {
+    background-image: url("assets/koutubial.jpg");
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin-bottom: 4%;
+  }
+</style>
+
+<body>
 
   <?php include 'navbarAmansa.php'; ?>
 
   <div>
     <div class="parallax-1">
       <div class="parallax-inner">
-        <h1>Haji Bersama Amansa</h1>
-        <h2>Special Spiritual Moment to Baitullah</h2>
+        <!-- <h1>Haji Bersama Amansa</h1> -->
+        <!-- <h2>Special Spiritual Moment to Baitullah</h2> -->
       </div>
     </div>
   </div>
 
-  <div class="containerUmroh">
-    <h1>Layanan Haji Kami</h1>
-    <div class="containerPaketUmroh">
+  <div class="containerUmroh " >
+    <!-- <h1>Layanan Haji Kami</h1> -->
+    <div class="containerPaketUmroh row justify-content-center">
       <div class="paketUmroh">
         <?php
         $i = 1;
@@ -39,17 +67,20 @@ require '../connection.php';
         <?php foreach ($rows as $row) : ?>
           <tr>
             <td>
-              <h1><?php echo $row["nama"]; ?></h1>
+              <!-- <h1><?php echo $row["nama"]; ?></h1> -->
             </td>
             <div class="containerCoverUmroh">
               <td><img src="../Admin/img/<?php echo $row['cover']; ?>" alt=""></td>
+
             </div>
             <?php
             echo
-            "<br><td><a href='paketHaji.php?id=" . $row['id'] . "' class='button33'>Lihat Selengkapnya</a> </td>" ?>
+            "<td><a href='paketHaji.php?id=" . $row['id'] . "' class='button33'>Selengkapnya</a> </td>" ?>
           </tr>
         <?php endforeach; ?>
       </div>
+
+
 
       <div class="paketUmroh">
         <?php
@@ -58,14 +89,14 @@ require '../connection.php';
         <?php foreach ($rows as $row) : ?>
           <tr>
             <td>
-              <h1><?php echo $row["nama"]; ?></h1>
+              <!-- <h1><?php echo $row["nama"]; ?></h1> -->
             </td>
             <div class="containerCoverUmroh">
               <td><img src="../Admin/img/<?php echo $row['cover']; ?>" alt=""></td>
             </div>
             <?php
             echo
-            "<br><td><a href='paketHaji.php?id=" . $row['id'] . "' class='button33'>Lihat Selengkapnya</a> </td>" ?>
+            "<td><a href='paketHaji.php?id=" . $row['id'] . "' class='button33'>Selengkapnya</a> </td>" ?>
           </tr>
         <?php endforeach; ?>
       </div>
@@ -76,14 +107,14 @@ require '../connection.php';
         <?php foreach ($rows as $row) : ?>
           <tr>
             <td>
-              <h1><?php echo $row["nama"]; ?></h1>
+              <!-- <h1><?php echo $row["nama"]; ?></h1> -->
             </td>
             <div class="containerCoverUmroh">
               <td><img src="../Admin/img/<?php echo $row['cover']; ?>" alt=""></td>
             </div>
             <?php
             echo
-            "<br><td><a href='paketHaji.php?id=" . $row['id'] . "' class='button33'>Lihat Selengkapnya</a> </td>" ?>
+            "<td><a href='paketHaji.php?id=" . $row['id'] . "' class='button33'>Selengkapnya</a> </td>" ?>
           </tr>
         <?php endforeach; ?>
       </div>
@@ -94,14 +125,14 @@ require '../connection.php';
         <?php foreach ($rows as $row) : ?>
           <tr>
             <td>
-              <h1><?php echo $row["nama"]; ?></h1>
+              <!-- <h1><?php echo $row["nama"]; ?></h1> -->
             </td>
             <div class="containerCoverUmroh">
               <td><img src="../Admin/img/<?php echo $row['cover']; ?>" alt=""></td>
             </div>
             <?php
             echo
-            "<br><td><a href='paketHaji.php?id=" . $row['id'] . "' class='button33'>Lihat Selengkapnya</a> </td>" ?>
+            "<td><a href='paketHaji.php?id=" . $row['id'] . "' class='button33'>Selengkapnya</a> </td>" ?>
           </tr>
         <?php endforeach; ?>
       </div>
@@ -112,17 +143,18 @@ require '../connection.php';
         <?php foreach ($rows as $row) : ?>
           <tr>
             <td>
-              <h1><?php echo $row["nama"]; ?></h1>
+              <!-- <h1><?php echo $row["nama"]; ?></h1> -->
             </td>
             <div class="containerCoverUmroh">
               <td><img src="../Admin/img/<?php echo $row['cover']; ?>" alt=""></td>
             </div>
             <?php
             echo
-            "<br><td><a href='paketHaji.php?id=" . $row['id'] . "' class='button33'>Lihat Selengkapnya</a> </td>" ?>
+            "<td><a href='paketHaji.php?id=" . $row['id'] . "' class='button33'>Selengkapnya</a> </td>" ?>
           </tr>
         <?php endforeach; ?>
       </div>
+      
       <div class="paketUmroh">
         <?php
         $i = 1;
@@ -130,14 +162,14 @@ require '../connection.php';
         <?php foreach ($rows as $row) : ?>
           <tr>
             <td>
-              <h1><?php echo $row["nama"]; ?></h1>
+              <!-- <h1><?php echo $row["nama"]; ?></h1> -->
             </td>
             <div class="containerCoverUmroh">
               <td><img src="../Admin/img/<?php echo $row['cover']; ?>" alt=""></td>
             </div>
             <?php
             echo
-            "<br><td><a href='paketHaji.php?id=" . $row['id'] . "' class='button33'>Lihat Selengkapnya</a> </td>" ?>
+            "<td><a href='paketHaji.php?id=" . $row['id'] . "' class='button33'>Selengkapnya</a> </td>" ?>
           </tr>
         <?php endforeach; ?>
       </div>
@@ -145,7 +177,7 @@ require '../connection.php';
     </div>
   </div>
 
-  
+
 
 
   <script src="js/script.js"></script>
