@@ -188,7 +188,7 @@ require '../connection.php';
     </div>
   </div>
 
-  <div class="containerHome ">
+  <div class="containerHome " >
 
 
 
@@ -204,11 +204,11 @@ require '../connection.php';
   <br>
   <br>
 
-  <div class="containerHome section3">
+  <div class="containerHome section3" >
     <br>
 
 
-    <div class="row justify-content-center">
+    <div class="row justify-content-center"style="margin-right: 0px;margin-left: 0px;">
       <p style="font-family: 'Montserrat', sans-serif; font-weight: 600; font-size: 30px;">Kesan Bersama Amansa</p>
 
       <div class="col-3" style="padding: 10px; margin: 10px; background: none; text-align: center; border: 1px solid black; border-radius: 8px;">
