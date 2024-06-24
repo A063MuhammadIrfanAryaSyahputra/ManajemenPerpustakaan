@@ -20,25 +20,31 @@
       <li class="sidebar-item">
         <a href="../paketUmroh/paketUmroh.php" class="sidebar-link">Paket Umroh</a>
       </li>
-      <li>
-        <a href="#" class="sidebar-link collapsed" data-bs-target="#subListGambar" data-bs-toggle="collapse" aria-expanded="false"><i class="fa-solid fa-file-lines pe-2"></i>
-          List Gambar
-        </a>
-        <ul id="subListGambar" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#subListGambar">
-          <li class="sidebar-item">
-            <a href="../subPage1/subPage1.php" class="sidebar-link">Sub Page 1</a>
-          </li>
-        </ul>
 
-
-      </li>
       <li class="sidebar-item">
         <a href="../paketHaji/paketHaji.php" class="sidebar-link">Paket Haji</a>
       </li>
       <li class="sidebar-item">
         <a href="../Galeri/photoGaleri.php" class="sidebar-link">Galeri</a>
       </li>
+
+      <li>
+        <a href="#" class="sidebar-link collapsed" data-bs-target="#subListGambar" data-bs-toggle="collapse" aria-expanded="false"><i class=""></i>
+          Badal
+        </a>
+        <ul id="subListGambar" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#subListGambar">
+          <li class="sidebar-item">
+            <a href="../badal/badalHaji.php" class="sidebar-link">Badal Haji</a>
+          </li>
+
+          <li class="sidebar-item">
+            <a href="../badal/badalUmrah.php" class="sidebar-link">Badal Umrah</a>
+          </li>
+        </ul>
+      </li>
     </ul>
+
+    
   </li>
   <li class="sidebar-item">
     <a href="#" class="sidebar-link collapsed" data-bs-target="#auth" data-bs-toggle="collapse" aria-expanded="false"><i class="fa-regular fa-user pe-2"></i>
