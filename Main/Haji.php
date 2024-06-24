@@ -27,7 +27,7 @@ require '../connection.php';
     color: #EEBE48;
   }
 
-  .button33{
+  .button33 {
     border-color: aquamarine;
   }
 
@@ -41,6 +41,19 @@ require '../connection.php';
     background-position: center;
     background-attachment: fixed;
     margin-bottom: 4%;
+  }
+
+  .paketUmroh {
+    height: 550px;
+    /* background-color: rgb(255, 20, 12); */
+    padding: 1em;
+    font-weight: 700;
+    color: black;
+    text-align: center;
+    /* border: 10px solid rgb(24, 24, 24); */
+    border-radius: 10px;
+    width: 350px;
+
   }
 </style>
 
@@ -57,7 +70,7 @@ require '../connection.php';
     </div>
   </div>
 
-  <div class="containerUmroh " >
+  <div class="containerUmroh ">
     <!-- <h1>Layanan Haji Kami</h1> -->
     <div class="containerPaketUmroh row justify-content-center">
       <div class="paketUmroh">
@@ -154,7 +167,7 @@ require '../connection.php';
           </tr>
         <?php endforeach; ?>
       </div>
-      
+
       <div class="paketUmroh">
         <?php
         $i = 1;

@@ -250,6 +250,7 @@ nav ul li a:hover {
   text-align: center;
   /* border: 10px solid rgb(24, 24, 24); */
   border-radius: 10px;
+  width: 250px;
 }
 
 .containerListUmrohGambar {
