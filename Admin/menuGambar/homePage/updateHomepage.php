@@ -2,6 +2,9 @@
 require '../../../connection.php';
 include '../session.php';
 
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $id = $_POST['id'];
@@ -12,9 +15,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $itenary3 = $_POST['itenary3'];
     $itenary4 = $_POST['itenary4'];
 
-    $sql = "UPDATE home SET nama = '$name', deskripsi = '$deskripsi', itenary1 = '$itenary1', itenary2 = '$itenary2', itenary3 = '$itenary3', itenary4 = '$itenary4' WHERE id = $id";
+    // Prepare the SQL statement with placeholders
+    $sql = "UPDATE home SET nama = ?, deskripsi = ?, itenary1 = ?, itenary2 = ?, itenary3 = ?, itenary4 = ? WHERE id = ?";
+    $stmt = $conn->prepare($sql);
+    $stmt->bind_param("ssssssi", $name, $deskripsi, $itenary1, $itenary2, $itenary3, $itenary4, $id);
 
-    if ($conn->query($sql) === TRUE) {
+    if ($stmt->execute() === TRUE) {
         // Handle first image upload
         if (isset($_FILES['new_image']) && $_FILES['new_image']['error'] === UPLOAD_ERR_OK) {
             $imageTmpPath = $_FILES['new_image']['tmp_name'];
@@ -22,9 +28,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             $uploadFileDir = '../../img/';
             $dest_path = $uploadFileDir . $imageName;
 
-            if(move_uploaded_file($imageTmpPath, $dest_path)) {
-                $sql = "UPDATE home SET image = '$imageName' WHERE id = $id";
-                $conn->query($sql);
+            if (move_uploaded_file($imageTmpPath, $dest_path)) {
+                $sql = "UPDATE home SET image = ? WHERE id = ?";
+                $stmt = $conn->prepare($sql);
+                $stmt->bind_param("si", $imageName, $id);
+                $stmt->execute();
             }
         }
 
@@ -36,15 +44,19 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             $secondDestPath = $uploadFileDir . $secondImageName;
 
             if (move_uploaded_file($secondImageTmpPath, $secondDestPath)) {
-                $sql = "UPDATE home SET cover = '$secondImageName' WHERE id = $id";
-                $conn->query($sql);
+                $sql = "UPDATE home SET cover = ? WHERE id = ?";
+                $stmt = $conn->prepare($sql);
+                $stmt->bind_param("si", $secondImageName, $id);
+                $stmt->execute();
             }
         }
 
         header("Location: homePage.php");
     } else {
-        echo "Error: " . $sql . "<br>" . $conn->error;
+        echo "Error: " . $stmt->error;
     }
+
+    $stmt->close();
 }
 $conn->close();
 ?>

@@ -49,18 +49,65 @@ require '../connection.php';
     background-color: #FFDF7B;
 
   }
+
+  .parallax-1 {
+    background-image: url("assets/blur.png");
+    /* style="background-image: url('assets/koutubial.jpg');" */
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin-bottom: 0%;
+    padding: 10%;
+    /* filter: blur(5px); */
+
+
+
+
+
+
+  }
 </style>
 
 <body>
 
-
-
-  <!-- navbar -->
   <?php include 'navbarAmansa.php'; ?>
 
 
 
-  <div>
+  <!-- <div> -->
+  <div class="parallax-1">
+    <div class="parallax-inner">
+      <div class="container">
+        <div class="row" style="align-items: center !important;">
+
+          <div class="col-md-4 " style="">
+            <?php
+            $rows = mysqli_query($conn, "SELECT * FROM home WHERE id = 1");
+            foreach ($rows as $row) :
+            ?>
+
+            <?php endforeach; ?>
+
+            <!-- <img src="../Admin/img/<?php echo $row['cover']; ?>" alt="Cover Image" class="d-block w-100 c-img" alt="Slide 1" style="max-width: 80%; height: auto;"> -->
+            <img src="../Admin/img/<?php echo $row['cover']; ?>" alt="Cover Image" class="d-block w-100 c-img" style="max-width: 60%; height: auto; margin: 0 auto;">
+
+            <!-- <img src="path/to/image.jpg" alt="Image" class="img-fluid"> -->
+          </div>
+          <div class="col-md-8" style="text-align:justify">
+            <!-- <h2>Description</h2> -->
+            <a style="font-family: 'Montserrat', sans-serif; font-size: 25px; text-align: justify; color: white;  line-height: 0;"><?php echo $row["deskripsi"]; ?></a><br><br>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!-- </div> -->
+
+
+  <!-- <div>
     <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -147,12 +194,12 @@ require '../connection.php';
         <span class="visually-hidden">Next</span>
       </button>
     </div>
-  </div>
+  </div> -->
 
   <div class="containerHome section1">
     <br><br><br>
 
-    <h1>Why Amansa</h1>
+    <h1>Mengapa Amansa</h1>
     <br><br><br>
 
     <div class="">
@@ -168,7 +215,7 @@ require '../connection.php';
           </div>
         </div>
       <?php endforeach; ?>
-    </div>
+    </div><br><br>
 
     <div class="">
 
@@ -180,7 +227,7 @@ require '../connection.php';
         <div class="whyAmansaContent">
 
           <div class="containerCoverDotIcon">
-            <img src="../Admin/img/<?php echo $row['cover']; ?>" alt="Cover Image">
+            <!-- <img src="../Admin/img/<?php echo $row['cover']; ?>" alt="Cover Image"> -->
           </div>
         </div>
       <?php endforeach; ?>
@@ -188,7 +235,7 @@ require '../connection.php';
     </div>
   </div>
 
-  <div class="containerHome " >
+  <!-- <div class="containerHome ">
 
 
 
@@ -200,15 +247,15 @@ require '../connection.php';
 
       </div>
     </div>
-  </div>
+  </div> -->
   <br>
   <br>
 
-  <div class="containerHome section3" >
+  <div class="containerHome section3">
     <br>
 
 
-    <div class="row justify-content-center"style="margin-right: 0px;margin-left: 0px;">
+    <div class="row justify-content-center" style="margin-right: 0px;margin-left: 0px;">
       <p style="font-family: 'Montserrat', sans-serif; font-weight: 600; font-size: 30px;">Kesan Bersama Amansa</p>
 
       <div class="col-3" style="padding: 10px; margin: 10px; background: none; text-align: center; border: 1px solid black; border-radius: 8px;">
