@@ -28,7 +28,11 @@
         <a href="../Galeri/photoGaleri.php" class="sidebar-link">Galeri</a>
       </li>
 
-      <li>
+      <li class="sidebar-item">
+        <a href="../badal/badalHaji.php" class="sidebar-link">Badal</a>
+      </li>
+
+      <!-- <li>
         <a href="#" class="sidebar-link collapsed" data-bs-target="#subListGambar" data-bs-toggle="collapse" aria-expanded="false"><i class=""></i>
           Badal
         </a>
@@ -41,7 +45,7 @@
             <a href="../badal/badalUmrah.php" class="sidebar-link">Badal Umrah</a>
           </li>
         </ul>
-      </li>
+      </li> -->
     </ul>
 
     

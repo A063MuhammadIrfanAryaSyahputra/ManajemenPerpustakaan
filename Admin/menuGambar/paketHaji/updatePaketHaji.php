@@ -23,7 +23,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             $dest_path = $uploadFileDir . $imageName;
 
             if(move_uploaded_file($imageTmpPath, $dest_path)) {
-                $sql = "UPDATE umroh SET image = '$imageName' WHERE id = $id";
+                $sql = "UPDATE haji SET image = '$imageName' WHERE id = $id";
                 $conn->query($sql);
             }
         }

@@ -70,7 +70,7 @@ require '../connection.php';
             <div class="col-3" style="padding: 10px; margin: 10px; background: none; text-align: center; border: 0px solid black; border-radius: 8px; background-color: #FFDF7B;">
                 <?php
                 $i = 1;
-                $rows = mysqli_query($conn, "SELECT * FROM badal WHERE id = 2"); ?>
+                $rows = mysqli_query($conn, "SELECT * FROM badal WHERE id = 1"); ?>
                 <?php foreach ($rows as $row) : ?>
                     <tr>
                         <td>
@@ -95,7 +95,7 @@ require '../connection.php';
             <div class="col-3" style="text-align: left; color: white;width:75%; padding: 10px; margin: 10px; background: none; text-align: left; border: 0px solid black; border-radius: 8px; background-color: #0D3C63;font-weight: bold;">
                 <?php
                 $i = 1;
-                $rows = mysqli_query($conn, "SELECT * FROM badal WHERE id = 2"); ?>
+                $rows = mysqli_query($conn, "SELECT * FROM badal WHERE id = 1"); ?>
                 <?php foreach ($rows as $row) : ?>
                     <tr>
                         <td></td>

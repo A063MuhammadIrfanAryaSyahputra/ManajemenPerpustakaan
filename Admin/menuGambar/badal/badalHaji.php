@@ -135,7 +135,7 @@ if (isset($_POST["submit"])) {
             <!-- <td><?php echo $row["itenary4"]; ?></td> -->
             <?php
             echo
-            "<td><a href='editHome.php?id=" . $row['id'] . "' class='btn btn-primary btn-sm mr-1'>Edit</a> </td>"?>
+            "<td><a href='editBadal.php?id=" . $row['id'] . "' class='btn btn-primary btn-sm mr-1'>Edit</a> </td>"?>
         </tr>
     <?php endforeach; ?> <!-- Closing the foreach loop -->
 </table>
