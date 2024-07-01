@@ -106,7 +106,6 @@ if (isset($_GET['id'])) {
         </nav> -->
 
         <!-- Content For Main -->
-        <?php include '../../../sidebar_profile.php'; ?>
 
         <main class="content px-3 py-2">
           <div class="container-fluid">

@@ -150,7 +150,6 @@ if (isset($_POST["submit"])) {
         </nav> -->
         
         <!-- Content For profile -->
-        <?php include '../../../sidebar_profile.php'; ?>
 
         <!-- <main class="content px-3 py-2">
                 <div class="container-fluid">

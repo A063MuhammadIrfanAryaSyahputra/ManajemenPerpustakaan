@@ -24,7 +24,6 @@ require '../connection.php';
     padding: 20% 0;
   }
 
-
   .h1,
   h1 {
     color: #0D3C63;
@@ -32,6 +31,16 @@ require '../connection.php';
 
   .button33 {
     border-color: aquamarine;
+  }
+
+  .parallax-1 {
+    background-image: url("assets/tentang.png");
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin-bottom: 4%;
   }
 
 
@@ -54,15 +63,13 @@ require '../connection.php';
 
   <?php include 'navbarAmansa.php'; ?>
 
+  <div class="parallax-1">
+        <div class="parallax-inner">
 
-  <div>
-    <div class="parallax-1">
-      <div class="parallax-inner">
-        <h1>Umroh bersama Amansa</h1>
-        <h2>Special Spiritual Moment to Baitullah</h2>
+          <h1 style="font-family: trocchi; font-size: 35px;">Umrah bersama Amansa</h1>
+          <h2 style="font-family: trocchi; font-size: 35px;"><em>Special Spiritual Moment to Baitullah</em></h2>
+        </div>
       </div>
-    </div>
-  </div>
 
   <section class="achievements">
     <h2>Our Achievements</h2>

@@ -47,7 +47,6 @@ if (isset($_GET['id'])) {
 
         
         <!-- content here -->
-        <?php include '../../../sidebar_profile.php'; ?>
 
 
         <main class="content px-3 py-2">

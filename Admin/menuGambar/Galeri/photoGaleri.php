@@ -1,6 +1,6 @@
 <?php
-// require '../../../connection.php';
-// include '../../session.php';
+require '../../../connection.php';
+include '../../session.php';
 
 
 if (isset($_POST["submit"])) {
@@ -74,7 +74,7 @@ if (isset($_POST["submit"])) {
     </aside>
 
     <div class="main">
-      <?php include '../../../sidebar_profile.php'; ?>
+
 
       <!-- <main class="content px-3 py-2">
         <div class="container-fluid">

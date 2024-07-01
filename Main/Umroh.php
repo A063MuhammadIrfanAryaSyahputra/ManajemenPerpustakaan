@@ -63,14 +63,13 @@ require '../connection.php';
 
 
 
-  <div>
-    <div class="parallax-1">
-      <div class="parallax-inner">
-        <h1>Umroh bersama Amansa</h1>
-        <h2>Special Spiritual Moment to Baitullah</h2>
+  <div class="parallax-1">
+        <div class="parallax-inner">
+
+          <h1 style="font-family: trocchi; font-size: 35px;">Umrah bersama Amansa</h1>
+          <h2 style="font-family: trocchi; font-size: 35px;"><em>Special Spiritual Moment to Baitullah</em></h2>
+        </div>
       </div>
-    </div>
-  </div>
 
   <div class="containerUmroh">
     <h1>Layanan umroh Kami</h1>
