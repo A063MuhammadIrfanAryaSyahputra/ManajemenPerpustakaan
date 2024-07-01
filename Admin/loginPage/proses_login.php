@@ -26,7 +26,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $_SESSION['username'] = $row['username'];
             $_SESSION['loggedin'] = true;
             // redirect ke dashboard
-            header("Location: ../../index.php");
+            header("Location: ../menuGambar/homePage/homePage.php");
             exit();
         } else {
             // pass salah
