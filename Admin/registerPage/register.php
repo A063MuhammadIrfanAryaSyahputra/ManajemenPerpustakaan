@@ -1,4 +1,7 @@
-<?php include '../session.php'; ?>
+<?php 
+require '../../connection.php';
+include '../../session.php';
+?>
 
 <!DOCTYPE html>
 <html>

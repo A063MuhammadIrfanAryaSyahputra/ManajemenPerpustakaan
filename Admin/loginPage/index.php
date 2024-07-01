@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en" data-bs-theme="dark">
 
@@ -11,8 +12,6 @@
 </head>
 
 <body>
-      <?php include 'navbarAmansa.php'; ?>
-
     <div class="container">
         <div class="title-reg">
             <h2>FORM LOGIN</h2>

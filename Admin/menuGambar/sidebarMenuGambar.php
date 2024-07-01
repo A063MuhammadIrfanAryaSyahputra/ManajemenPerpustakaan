@@ -1,3 +1,8 @@
+<?php
+require '../../../connection.php';
+include '../../session.php';
+?>
+
 <div class="sidebar-logo">
   <a href="../../../Main/">Amansa Travel</a>
 </div>
@@ -65,9 +70,9 @@
         <a href="../../Admin/loginPage/logout.php" class="sidebar-link">Log Out</a>
       </li>
 
-      <li class="sidebar-item">
+      <!-- <li class="sidebar-item">
         <a href="#" class="sidebar-link">Forgot Password</a>
-      </li>
+      </li> -->
     </ul>
   </li>
 </ul>

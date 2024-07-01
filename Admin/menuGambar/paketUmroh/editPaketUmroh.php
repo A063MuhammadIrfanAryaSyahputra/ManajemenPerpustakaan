@@ -1,6 +1,6 @@
 <?php
 require '../../../connection.php';
-include '../session.php';
+include '../../session.php';
 
 
 // Check if image ID is provided in URL parameter

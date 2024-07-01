@@ -98,7 +98,7 @@ require '../connection.php';
   
 
 
-  <?php include 'footerAmansa.php'; ?>
+  <?php include 'footerTentang.php'; ?>
 
   <script src="js/script.js"></script>
 </body>

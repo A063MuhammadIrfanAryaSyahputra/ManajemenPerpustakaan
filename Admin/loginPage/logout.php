@@ -1,5 +1,8 @@
+
+
 <?php
 session_start();
+include '../session.php';
 
 // Unset all of the session variables
 $_SESSION = array();
