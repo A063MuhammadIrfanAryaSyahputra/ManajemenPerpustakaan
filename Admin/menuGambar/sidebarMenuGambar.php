@@ -67,7 +67,7 @@ include '../../session.php';
         <a href="../../registerPage/register.php" class="sidebar-link">Register</a>
       </li>
       <li class="sidebar-item">
-        <a href="../../Admin/loginPage/logout.php" class="sidebar-link">Log Out</a>
+        <a href="../../loginPage/logout.php" class="sidebar-link">Log Out</a>
       </li>
 
       <!-- <li class="sidebar-item">

@@ -1,6 +1,6 @@
 <?php
-require '../../../connection.php';
-include '../../session.php';
+// require '../../../connection.php';
+// include '../../session.php';
 
 
 if (isset($_POST["submit"])) {
