@@ -6,7 +6,7 @@
                     <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6" />
                 </svg>
                 <div class="logo-description" style="margin-left: 10px;">
-                    <p style="margin-bottom: 10px; font-style: italic; font-size: 16px; color: #E0B64A;width: 400px;">Jl. Kendeng No.25A, Rawapasung, Sidanegara, Kec. Cilacap, Kabupaten Cilacap, Jawa Tengah</p>
+                    <p style="margin-bottom: 10px; font-style: italic; font-size: 16px; color: #E0B64A;width: 300px;">Jl. Kendeng No.25A, Rawapasung, Sidanegara, Kec. Cilacap, Kabupaten Cilacap, Jawa Tengah</p>
                 </div>
             </div>
 

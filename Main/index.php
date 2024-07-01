@@ -64,6 +64,16 @@ require '../connection.php';
   margin: 0 auto;
   border: 1px solid black;
   border-radius: 8px;
+
+  @media (max-width: 768px) {
+    .parallax-1 {
+      background-attachment: scroll;
+    }
+
+    .testimonial-content img {
+      max-width: 150px;
+    }
+  }
 }
 </style>
 
