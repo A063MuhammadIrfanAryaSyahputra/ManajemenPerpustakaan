@@ -1,13 +1,13 @@
 <style>
-
   nav ul li a:hover {
     background-color: #2573b3;
-    
+
   }
 
-  .dropdown-menu{
+  .dropdown-menu {
     --bs-dropdown-link-active-bg: #0D3C63;
   }
+
   .bgdrop {
     background-color: red;
   }
@@ -50,6 +50,34 @@
   ul {
     padding-left: 2rem;
   }
+
+  @media (max-width: 768px) {
+    nav ul {
+      flex-direction: column;
+      display: none;
+    }
+
+    nav ul li {
+      margin-left: 0;
+    }
+
+    nav .menu-toggle {
+      display: block;
+      cursor: pointer;
+      color: #E0B64A;
+      font-size: 24px;
+    }
+
+    nav.active ul {
+      display: flex;
+    }
+
+    .bgdrop:hover .dropdown-menu {
+      position: static;
+    }
+
+
+  }
 </style>
 <nav>
   <div class="logo">
@@ -86,7 +114,7 @@
     <li>
       <div class="dropdown"></div>
       <button class="btn btn-secondary bgdrop" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" style="border: none; color: #E0B64A; background: none; ">
-       <a>Haji</a>
+        <a>Haji</a>
       </button>
 
       <ul class="dropdown-menu kiri kiri-hover" aria-labelledby="dropdownMenuButton1" style="border: 1px; background-color: #0D3C63;">

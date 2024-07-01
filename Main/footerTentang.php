@@ -1,3 +1,30 @@
+<style>
+    .alamat-footer
+    {
+        width:400px;
+
+    }
+
+    @media (max-width: 768px) {
+    nav ul {
+
+    }
+
+
+
+
+    .alamat-footer
+    {
+        width:auto;
+
+    }
+  }
+  
+
+
+</style>
+
+
 <footer>
     <div class="footer-container">
         <div class="footer-section" style="text-align: left;">
@@ -5,8 +32,8 @@
                 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#E0B64A" class="bi bi-geo-alt-fill" viewBox="0 0 20 20" style="flex-shrink: 0;">
                     <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6" />
                 </svg>
-                <div class="logo-description" style="margin-left: 10px;">
-                    <p style="margin-bottom: 10px; font-style: italic; font-size: 16px; color: #E0B64A;width: 400px;">Jl. Kendeng No.25A, Rawapasung, Sidanegara, Kec. Cilacap, Kabupaten Cilacap, Jawa Tengah</p>
+                <div class="logo-description address" style="margin-left: 10px;">
+                    <p class="alamat-footer" style="margin-bottom: 10px; font-style: italic; font-size: 16px; color: #E0B64A;">Jl. Kendeng No.25A, Rawapasung, Sidanegara, Kec. Cilacap, Kabupaten Cilacap, Jawa Tengah</p>
                 </div>
             </div>
 

@@ -30,23 +30,23 @@ require '../connection.php';
     color: #0D3C63;
   }
 
-  .button33{
+  .button33 {
     border-color: aquamarine;
   }
 
 
   .paketUmroh {
-  height: 550px;
-  /* background-color: rgb(255, 20, 12); */
-  padding: 1em;
-  font-weight: 700;
-  color: black;
-  text-align: center;
-  /* border: 10px solid rgb(24, 24, 24); */
-  border-radius: 10px;
-  width: 350px;
-  
-}
+    height: 550px;
+    /* background-color: rgb(255, 20, 12); */
+    padding: 1em;
+    font-weight: 700;
+    color: black;
+    text-align: center;
+    /* border: 10px solid rgb(24, 24, 24); */
+    border-radius: 10px;
+    width: 350px;
+
+  }
 </style>
 
 <body>
@@ -65,40 +65,65 @@ require '../connection.php';
   </div>
 
   <section class="achievements">
-            <h2>Our Achievements</h2>
-            <div class="achievement-stats">
+    <h2>Our Achievements</h2>
+    <div class="achievement-stats">
 
-            </div>
-            <div class="achievement-list">
-                <div class="achievement-item">
-                    <img src="assets/tentang1.png" alt="Icon">
-                    <p>Bimbingan Sesuai Sunnah</p>
-                </div>
-                <div class="achievement-item">
-                    <img src="assets/tentang2.png" alt="Icon">
-                    <p>Terdaftar Siskopatuh</p>
-                </div>
-                <br>
-                <div class="achievement-item">
-                    <img src="assets/tentang3.png" alt="Icon">
-                    <p>Ijin Umroh Resmi</p>
-                </div>
-                <div class="achievement-item">
-                    <img src="assets/tentang4.png" alt="Icon">
-                    <p>Terbaik dalam layanan</p>
-                </div>
-            </div>
-        </section>
-        <section class="support">
-            <h2>Support By</h2>
-            <div class="support-logos">
-                <img src="assets/BankSyariah.png" alt="Suriyah Logo">
-                <img src="assets/bankMuammalat.png" alt="Muamalat Logo">
-                <img src="assets/bankJateng.png" alt="Jateng Logo">
-            </div>
-        </section>
+    </div>
+    <div class="achievement-list">
+      <div class="achievement-item">
+        <img src="assets/tentang1.png" alt="Icon">
+        <p>Bimbingan Sesuai Sunnah</p>
+      </div>
+      <div class="achievement-item">
+        <img src="assets/tentang2.png" alt="Icon">
+        <p>Terdaftar Siskopatuh</p>
+      </div>
+      <br>
+      <div class="achievement-item">
+        <img src="assets/tentang3.png" alt="Icon">
+        <p>Ijin Umroh Resmi</p>
+      </div>
+      <div class="achievement-item">
+        <img src="assets/tentang4.png" alt="Icon">
+        <p>Terbaik dalam layanan</p>
+      </div>
+    </div>
+  </section>
 
-  
+  <section class="achievements">
+    <h2>Our Achievements</h2>
+    <div class="achievement-stats">
+
+    </div>
+    <div class="achievement-list">
+      <div class="achievement-item">
+      <img src="assets/BankSyariah.png" alt="Suriyah Logo">
+        <p>Bimbingan Sesuai Sunnah</p>
+      </div>
+      <div class="achievement-item">
+      <img src="assets/bankMuammalat.png" alt="Muamalat Logo">
+        <p>Terdaftar Siskopatuh</p>
+      </div>
+      <br>
+      <div class="achievement-item">
+      <img src="assets/bankJateng.png" alt="Jateng Logo">
+        <p>Ijin Umroh Resmi</p>
+      </div>
+
+    </div>
+  </section>
+
+<!-- 
+  <section class="support">
+    <h2>Support By</h2>
+    <div class="support-logos">
+      <img src="assets/BankSyariah.png" alt="Suriyah Logo">
+      <img src="assets/bankMuammalat.png" alt="Muamalat Logo">
+      <img src="assets/bankJateng.png" alt="Jateng Logo">
+    </div>
+  </section> -->
+
+
 
 
   <?php include 'footerTentang.php'; ?>

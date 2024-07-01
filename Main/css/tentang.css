@@ -431,6 +431,43 @@ body {
     margin: 0;
     font-size: 0.9em;
   }
-  
+
+
+
+  @media (max-width: 768px) {
+    nav ul {
+      flex-direction: column;
+      display: none;
+    }
+
+    nav ul li {
+      margin-left: 0;
+    }
+
+    nav .menu-toggle {
+      display: block;
+      cursor: pointer;
+      color: #E0B64A;
+      font-size: 24px;
+    }
+
+    nav.active ul {
+      display: flex;
+    }
+
+    .bgdrop:hover .dropdown-menu {
+      position: static;
+    }
+
+    .achievement-list {
+      display: block;
+      justify-content: center;
+      gap: 40px;
+    }
+  }
   
 
+  
+
+
+  
