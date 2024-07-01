@@ -34,7 +34,7 @@ require '../connection.php';
 
 
   .parallax-1 {
-    background-image: url("assets/koutubial.jpg");
+    background-image: url("assets/haji.png");
 
     background-repeat: no-repeat;
     background-size: cover;
@@ -64,8 +64,8 @@ require '../connection.php';
   <div>
     <div class="parallax-1">
       <div class="parallax-inner">
-        <!-- <h1>Haji Bersama Amansa</h1> -->
-        <!-- <h2>Special Spiritual Moment to Baitullah</h2> -->
+        <h1>Haji Bersama Amansa</h1>
+        <h2>Special Spiritual Moment to Baitullah</h2>
       </div>
     </div>
   </div>

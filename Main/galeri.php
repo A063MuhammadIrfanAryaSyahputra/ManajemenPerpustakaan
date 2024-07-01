@@ -14,7 +14,7 @@ require '../connection.php'; // Adjust path to your database connection script
   <title>Responsive Navbar</title>
   <link rel="stylesheet" type="text/css" href="css/galeri.css" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   <link rel="stylesheet" type="text/css" href="css/style.css" />
 
 </head>
@@ -36,6 +36,15 @@ require '../connection.php'; // Adjust path to your database connection script
     width: 100%;
     color: #0D3C63;
     /* text-align: center; */
+  }
+
+  .parallax-1 {
+    background-image: url("assets/galeri.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin-bottom: 4%;
   }
 </style>
 
@@ -87,6 +96,8 @@ require '../connection.php'; // Adjust path to your database connection script
     ?>
 
 
+
+  
     <?php include 'footerAmansa.php'; ?>
 
     <script src="js/script.js"></script>

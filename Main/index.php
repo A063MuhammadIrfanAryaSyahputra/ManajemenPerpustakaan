@@ -20,54 +20,51 @@ require '../connection.php';
 <style>
   /* warna warna bg section */
   .section1 {
-    width: 100%;
-    margin: auto;
-    height: auto;
-    /* border: 2px solid red; */
-    align-items: center;
-    text-align: center;
-  }
+  width: 100%;
+  margin: auto;
+  height: auto;
+  align-items: center;
+  text-align: center;
+}
 
-  .section2 {
-    width: 100%;
-    margin: auto;
-    height: auto;
-    /* border: 2px solid red; */
-    align-items: center;
-    text-align: center;
-    background-color: #EEBE48;
-  }
+.section2 {
+  width: 100%;
+  margin: auto;
+  height: auto;
+  align-items: center;
+  text-align: center;
+  background-color: #EEBE48;
+}
 
 
-  .section3 {
-    width: 100%;
-    margin: auto;
-    height: auto;
-    /* border: 2px solid red; */
-    align-items: center;
-    text-align: center;
-    background-color: #FFDF7B;
+.section3 {
+  width: 100%;
+  margin: auto;
+  height: auto;
+  align-items: center;
+  text-align: center;
+  background-color: #FFDF7B;
+}
 
-  }
+.parallax-1 {
+  background-image: url("assets/blur.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  margin-bottom: 0%;
+  padding: 10%;
+}
 
-  .parallax-1 {
-    background-image: url("assets/blur.png");
-    /* style="background-image: url('assets/koutubial.jpg');" */
-
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    margin-bottom: 0%;
-    padding: 10%;
-    /* filter: blur(5px); */
-
-
-
-
-
-
-  }
+.testimonial-content img {
+  width: 100%;
+  max-width: 200px; /* Adjust this value to make the images smaller */
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border: 1px solid black;
+  border-radius: 8px;
+}
 </style>
 
 <body>
@@ -82,7 +79,7 @@ require '../connection.php';
       <div class="container">
         <div class="row" style="align-items: center !important;">
 
-          <div class="col-md-4 " style="">
+          <div class="col-md-4 " >
             <?php
             $rows = mysqli_query($conn, "SELECT * FROM home WHERE id = 1");
             foreach ($rows as $row) :
@@ -253,23 +250,62 @@ require '../connection.php';
 
   <div class="containerHome section3">
     <br>
-
-
-    <div class="row justify-content-center" style="margin-right: 0px;margin-left: 0px;">
+    <div class="row justify-content-center" style="margin-right: 0px; margin-left: 0px;">
       <p style="font-family: 'Montserrat', sans-serif; font-weight: 600; font-size: 30px;">Kesan Bersama Amansa</p>
-
-      <div class="col-3" style="padding: 10px; margin: 10px; background: none; text-align: center; border: 1px solid black; border-radius: 8px;">
-        <img src="https://marketplace.canva.com/EAFvCLo1gPg/1/0/900w/canva-krem-%26-putih-minimalis-testimonial-cerita-instagram-sGI_LpwQ8-Y.jpg" style="max-width: 100%; height: auto; display: block; margin: 0 auto;" alt="Placeholder Image">
-      </div>
-
-      <div class="col-3" style="padding: 10px; margin: 10px; background: none; text-align: center; border: 1px solid black; border-radius: 8px;">
-        <img src="https://marketplace.canva.com/EAFvCLo1gPg/1/0/900w/canva-krem-%26-putih-minimalis-testimonial-cerita-instagram-sGI_LpwQ8-Y.jpg" style="max-width: 100%; height: auto; display: block; margin: 0 auto;" alt="Placeholder Image">
-      </div>
-
-      <div class="col-3" style="padding: 10px; margin: 10px; background: none; text-align: center; border: 1px solid black; border-radius: 8px;">
-        <img src="https://marketplace.canva.com/EAFvCLo1gPg/1/0/900w/canva-krem-%26-putih-minimalis-testimonial-cerita-instagram-sGI_LpwQ8-Y.jpg" style="max-width: 100%; height: auto; display: block; margin: 0 auto;" alt="Placeholder Image">
+      <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row">
+              <div class="col-12 col-md-4">
+                <div class="testimonial-content">
+                  <img src="https://marketplace.canva.com/EAFvCLo1gPg/1/0/900w/canva-krem-%26-putih-minimalis-testimonial-cerita-instagram-sGI_LpwQ8-Y.jpg" alt="Placeholder Image">
+                </div>
+              </div>
+              <div class="col-12 col-md-4">
+                <div class="testimonial-content">
+                  <img src="https://marketplace.canva.com/EAFvCLo1gPg/1/0/900w/canva-krem-%26-putih-minimalis-testimonial-cerita-instagram-sGI_LpwQ8-Y.jpg" alt="Placeholder Image">
+                </div>
+              </div>
+              <div class="col-12 col-md-4">
+                <div class="testimonial-content">
+                  <img src="https://marketplace.canva.com/EAFvCLo1gPg/1/0/900w/canva-krem-%26-putih-minimalis-testimonial-cerita-instagram-sGI_LpwQ8-Y.jpg" alt="Placeholder Image">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-12 col-md-4">
+                <div class="testimonial-content">
+                  <img src="https://marketplace.canva.com/EAFvCLo1gPg/1/0/900w/canva-krem-%26-putih-minimalis-testimonial-cerita-instagram-sGI_LpwQ8-Y.jpg" alt="Placeholder Image">
+                </div>
+              </div>
+              <div class="col-12 col-md-4">
+                <div class="testimonial-content">
+                  <img src="https://marketplace.canva.com/EAFvCLo1gPg/1/0/900w/canva-krem-%26-putih-minimalis-testimonial-cerita-instagram-sGI_LpwQ8-Y.jpg" alt="Placeholder Image">
+                </div>
+              </div>
+              <div class="col-12 col-md-4">
+                <div class="testimonial-content">
+                  <img src="https://marketplace.canva.com/EAFvCLo1gPg/1/0/900w/canva-krem-%26-putih-minimalis-testimonial-cerita-instagram-sGI_LpwQ8-Y.jpg" alt="Placeholder Image">
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Add more carousel-item divs here if you have more testimonials -->
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
     </div>
+    <br><br>
+  </div>
 
 
 

@@ -25,7 +25,7 @@
   /* Styling for white container with yellow drop shadow */
   background-color: #fff; /* White background */
   border-radius: 15px; /* Rounded corners */
-  box-shadow: 0 0 20px rgba(224, 182, 74, 1); /* Yellow drop shadow */
+  box-shadow: 0 0 40px rgba(224, 182, 74, 1); /* Yellow drop shadow */
   margin-bottom: 40px;
 }
 
@@ -86,3 +86,9 @@ img:hover {
   top: 0;
   transform: rotateZ(180deg);
 }
+
+.carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      background-color: black;
+      background-size: 100%, 100%;
+    }

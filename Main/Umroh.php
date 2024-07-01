@@ -34,8 +34,7 @@ require '../connection.php';
 
 
   .parallax-1 {
-    background-image: url("assets/koutubial.jpg");
-
+    background-image: url("assets/umrooh.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -63,11 +62,12 @@ require '../connection.php';
   <?php include 'navbarAmansa.php'; ?>
 
 
+
   <div>
     <div class="parallax-1">
       <div class="parallax-inner">
-        <!-- <h1>Umroh bersama Amansa</h1> -->
-        <!-- <h2>Special Spiritual Moment to Baitullah</h2> -->
+        <h1>Umroh bersama Amansa</h1>
+        <h2>Special Spiritual Moment to Baitullah</h2>
       </div>
     </div>
   </div>

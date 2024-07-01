@@ -158,7 +158,7 @@ nav ul li a:hover {
   width: 92%;
   margin: auto;
   height: 900px;
-  border: 6px solid rgb(14, 255, 74);
+  /* border: 6px solid rgb(14, 255, 74); */
   align-items: center;
   text-align: center;
   display: flex;

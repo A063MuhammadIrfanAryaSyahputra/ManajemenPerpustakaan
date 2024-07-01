@@ -61,7 +61,7 @@
       <a href="index.php">Beranda</a>
     </li>
     <li>
-      <a href="#">Tentang Amansa</a>
+      <a href="tentang.php">Tentang Amansa</a>
     </li>
     <!-- <li>
       <a href="Umroh.php">Umroh</a>
@@ -78,7 +78,7 @@
 
       <ul class="dropdown-menu kiri kiri-hover" aria-labelledby="dropdownMenuButton1" style="border: 1px; background-color: #0D3C63;">
         <li class="kiri"><a class="dropdown-item teksputih underline" href="Umroh.php">Paket Umroh</a></li>
-        <li class="kiri"><a class="dropdown-item teksputih underline" href="#">Tabungan Umroh</a></li>
+        <li class="kiri"><a class="dropdown-item teksputih underline" href="tabura.php">Tabungan Umroh</a></li>
         <li class="kiri"><a class="dropdown-item teksputih " href="badalUmroh.php">Badal Umroh</a></li>
       </ul>
     </li>
@@ -101,7 +101,7 @@
   <a href="#">Badal</a>
 </li> -->
     <li>
-      <a href="#">Kemitraan</a>
+      <a href="kemitraan.php">Kemitraan</a>
     </li>
     <li>
       <a href="galeri.php">Galeri & Artikel</a>
