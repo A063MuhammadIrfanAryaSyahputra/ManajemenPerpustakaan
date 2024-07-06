@@ -4,7 +4,7 @@ include '../../session.php';
 ?>
 
 <div class="sidebar-logo">
-  <a href="../../../Main/">Amansa Travel</a>
+  <a href="../../../">Amansa Travel</a>
 </div>
 <ul class="sidebar-nav">
   <li class="sidebar-header">Admin Elements</li>
