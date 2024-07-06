@@ -321,42 +321,43 @@ require '../connection.php';
   <div class="containerInstagram section4">
   <br>
   <div class="row justify-content-center" style="margin-right: 0px; margin-left: 0px;">
-    <p style="font-family: 'Montserrat', sans-serif; font-weight: 600; font-size: 30px;">Instagram Feed</p>
+    <p style="font-family: 'Montserrat', sans-serif; font-weight: 600; font-size: 30px;">amansaumroh</p>
     <div class="instagram-grid">
       <div class="instagram-item">
         <a href="https://www.instagram.com/your_profile" target="_blank">
-          <img src="path_to_your_image1" alt="Instagram Image 1">
+          <img src="assets/ig1.jpg" alt="Instagram Image 1">
         </a>
       </div>
       <div class="instagram-item">
         <a href="https://www.instagram.com/your_profile" target="_blank">
-          <img src="path_to_your_image2" alt="Instagram Image 2">
+          <img src="assets/ig2.jpg" alt="Instagram Image 2">
         </a>
       </div>
       <div class="instagram-item">
         <a href="https://www.instagram.com/your_profile" target="_blank">
-          <img src="path_to_your_image3" alt="Instagram Image 3">
+          <img src="assets/ig3.jpg" alt="Instagram Image 3">
         </a>
       </div>
       <div class="instagram-item">
         <a href="https://www.instagram.com/your_profile" target="_blank">
-          <img src="path_to_your_image4" alt="Instagram Image 4">
+          <img src="assets/ig4.jpg" alt="Instagram Image 4">
         </a>
       </div>
       <div class="instagram-item">
         <a href="https://www.instagram.com/your_profile" target="_blank">
-          <img src="path_to_your_image5" alt="Instagram Image 5">
+          <img src="assets/ig5.jpg" alt="Instagram Image 5">
         </a>
       </div>
       <div class="instagram-item">
         <a href="https://www.instagram.com/your_profile" target="_blank">
-          <img src="path_to_your_image6" alt="Instagram Image 6">
+          <img src="assets/ig6.jpg" alt="Instagram Image 6">
         </a>
       </div>
     </div>
   </div>
   <br><br>
 </div>
+
 
 
 
