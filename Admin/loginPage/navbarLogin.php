@@ -81,7 +81,7 @@
 </style>
 <nav>
   <div class="logo">
-    <a href="../index.php"><img src="assets/logoHorizon.png" alt="logo" /></a>
+    <a href="../../index.php"><img src="../../Main/assets/logoHorizon.png" alt="logo" /></a>
   </div>
   </div>
   <ul>
@@ -91,13 +91,6 @@
     <li>
       <a href="tentang.php">Tentang Amansa</a>
     </li>
-    <!-- <li>
-      <a href="Umroh.php">Umroh</a>
-    </li> -->
-    <!-- <li>
-      <a href="Haji.php">Haji</a>
-    </li> -->
-
     <li>
       <div class="dropdown"></div>
       <button class="btn btn-secondary bgdrop" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" style="border: none; color: #E0B64A; background: none; ">
@@ -119,7 +112,7 @@
 
       <ul class="dropdown-menu kiri kiri-hover" aria-labelledby="dropdownMenuButton1" style="border: 1px; background-color: #0D3C63;">
         <li class="kiri"><a class="dropdown-item teksputih underline" href="Haji.php">Haji Furoda</a></li>
-        <li class="kiri"><a class="dropdown-item teksputih underline" href="#">Haji Khusus</a></li>
+        <!-- <li class="kiri"><a class="dropdown-item teksputih underline" href="#">Haji Khusus</a></li> -->
         <li class="kiri"><a class="dropdown-item teksputih underline" href="tabungan.php">Tabungan Haji</a></li>
         <li class="kiri"><a class="dropdown-item teksputih" href="badalHaji.php">Badal Haji</a></li>
       </ul>
