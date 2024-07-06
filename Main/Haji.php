@@ -24,7 +24,7 @@ require '../connection.php';
 
   .h1,
   h1 {
-    color: #EEBE48;
+    color: #0D3C63;
   }
 
   .button33 {
@@ -35,8 +35,10 @@ require '../connection.php';
 
   .parallax-1 {
     background-image: url("assets/haji.png");
-
     background-repeat: no-repeat;
+    font-family: "Spinnaker", sans-serif;
+    font-weight: 400;
+   font-style: normal;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -64,13 +66,14 @@ require '../connection.php';
   <div class="parallax-1">
         <div class="parallax-inner">
 
-          <h1 style="font-family: trocchi; font-size: 35px;">Umrah bersama Amansa</h1>
-          <h2 style="font-family: trocchi; font-size: 35px;"><em>Special Spiritual Moment to Baitullah</em></h2>
+          <h1 style="font-family: Spinnaker; font-size: 35px; font-weight: bolder;">Umrah bersama Amansa</h1>
+          <h2 style="font-family: Spinnaker; font-size: 35px; font-weight: bolder;"><em>Special Spiritual Moment to Baitullah</em></h2>
         </div>
       </div>
 
   <div class="containerUmroh ">
-    <!-- <h1>Layanan Haji Kami</h1> -->
+  <h1>Layanan Haji Kami</h1>
+  <br><br>
     <div class="containerPaketUmroh row justify-content-center">
       <div class="paketUmroh">
         <?php

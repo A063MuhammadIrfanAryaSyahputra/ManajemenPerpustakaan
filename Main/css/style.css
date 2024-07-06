@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Spinnaker&display=swap');
 
 * {
   box-sizing: border-box;
@@ -10,7 +11,9 @@
 body {
   padding: 0;
   margin: 0;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Spinnaker", sans-serif;
+  font-weight: 400;
+  font-style: normal;
   background-color: white;
 }
 
@@ -164,7 +167,7 @@ nav ul li a:hover {
 }
 
 .containerCoverDotIcon img {
-  width: 65%;
+  width:45%;
   border-radius: 72px 13px 18px 10px;
   /* -webkit-border-radius: 72px 13px 18px 10px; */
   /* -moz-border-radius: 72px 13px 18px 10px; */
@@ -198,12 +201,16 @@ nav ul li a:hover {
 }
 
 .containerUmroh {
-  width: 92%;
+  width: 80%;
   margin: auto;
   height: auto;
   /* border: 2px solid red; */
   align-items: center;
   text-align: center;
+}
+
+.containerUmroh h1{
+  font-weight: bolder;
 }
 
 .containerHome {
@@ -213,6 +220,10 @@ nav ul li a:hover {
   /* border: 2px solid red; */
   align-items: center;
   text-align: center;
+}
+
+.containerHome h1{
+  font-weight: bold;
 }
 
 .containerPaketUmroh {
@@ -226,6 +237,7 @@ nav ul li a:hover {
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-around;
+  gap: 20px;
 }
 
 .containerHomeDotIcon {
@@ -284,7 +296,7 @@ nav ul li a:hover {
   cursor: pointer;
   display: inline-block;
   width: 100%;
-  font-family: CerebriSans-Regular, -apple-system, system-ui, Roboto, sans-serif;
+  font-family: "Spinnaker", sans-serif;
   padding: 20px 20px;
   text-align: center;
   text-decoration: none;
@@ -414,7 +426,12 @@ footer {
 
 .testimonial-content img {
   width: 100%;
-  border-radius: 5px;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.testimonial-content:hover {
+  transform: scale(1.05);
 }
 .carousel-item.active,
 .carousel-item-next,
@@ -423,9 +440,10 @@ footer {
 }
 .carousel-item {
   display: none;
+    padding: 10px;
 }
 .testimonial-title {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Spinnaker", sans-serif;
   font-weight: 600;
   font-size: 30px;
   text-align: center;
@@ -436,17 +454,14 @@ footer {
   margin: 0 auto;
 }
 .testimonial-content {
-  padding: 0; /* No padding */
-  margin: 0; /* No margin */
+  transition: transform 0.3s ease-in-out;
 }
-.row.no-gutters {
-  margin-right: 0;
-  margin-left: 0;
-}
-.row.no-gutters > [class*='col-'] {
-  padding-right: 5px; /* Small padding for gap */
-  padding-left: 5px; /* Small padding for gap */
-}
+
+.carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            background-color: black;
+        }
+
 
 
 
