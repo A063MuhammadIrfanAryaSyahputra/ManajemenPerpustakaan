@@ -89,59 +89,7 @@ if (isset($_POST["submit"])) {
       
       <div class="main">
 
-        <!-- sideprofilef here -->
-
-
-        <!-- <main class="content px-3 py-2">
-                <div class="container-fluid">
-                    <div class="mb-3">
-                        <h4>Tambah Data</h4>
-                    </div>
-                    <div class="card border-0">
-                        <div class="card-header">
-                            <h5 class="card-title">Tambah Data</h5>
-                            <h6 class="card-subtitle text-muted">Tambah Data Gambar Homepage</h6>
-                        </div>
-                        <div class="card-body">
-                            <form action="" method="post" autocomplete="off" enctype="multipart/form-data">
-                                <div class="mb-3">
-                                    <label for="name" class="form-label">Name</label>
-                                    <input type="text" name="name" id="name" class="form-control" required>
-                                </div>
-                                <div class="mb-3">
-                                    <label for="image" class="form-label">Image</label>
-                                    <input type="file" name="image" id="image" class="form-control" accept=".jpg, .jpeg, .png" required>
-                                </div>
-                                <div class="mb-3">
-                                    <label for="cover" class="form-label">Second Image</label>
-                                    <input type="file" name="cover" id="cover" class="form-control" accept=".jpg, .jpeg, .png" required>
-                                </div>
-                                <div class="mb-3">
-                                    <label for="deskripsi" class="form-label">Deskripsi</label>
-                                    <input type="text" name="deskripsi" id="deskripsi" class="form-control" required>
-                                </div>
-                                <div class="mb-3">
-                                    <label for="itenary1" class="form-label">Itenary 1</label>
-                                    <input type="text" name="itenary1" id="itenary1" class="form-control" required>
-                                </div>
-                                <div class="mb-3">
-                                    <label for="itenary2" class="form-label">Itenary 2</label>
-                                    <input type="text" name="itenary2" id="itenary2" class="form-control" required>
-                                </div>
-                                <div class="mb-3">
-                                    <label for="itenary3" class="form-label">Itenary 3</label>
-                                    <input type="text" name="itenary3" id="itenary3" class="form-control" required>
-                                </div>
-                                <div class="mb-3">
-                                    <label for="itenary4" class="form-label">Itenary 4</label>
-                                    <input type="text" name="itenary4" id="itenary4" class="form-control" required>
-                                </div>
-                                <button type="submit" name="submit" class="btn btn-primary">Submit</button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </main> -->
+       
 
         <!--Start List Gambar-->
         <main class="content px-3 py-2">
