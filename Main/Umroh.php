@@ -66,13 +66,14 @@ require '../connection.php';
   <div class="parallax-1">
         <div class="parallax-inner">
 
-          <h1 style="font-family: trocchi; font-size: 35px;">Umrah bersama Amansa</h1>
-          <h2 style="font-family: trocchi; font-size: 35px;"><em>Special Spiritual Moment to Baitullah</em></h2>
+          <h1 style="font-family: Spinnaker; font-size: 35px; font-weight: bold;;">Umrah bersama Amansa</h1>
+          <h2 style="font-family: Spinnaker; font-size: 35px; font-weight: bold;"><em>Special Spiritual Moment to Baitullah</em></h2>
         </div>
       </div>
 
   <div class="containerUmroh">
-    <h1>Layanan umroh Kami</h1>
+    <h1>Layanan Umroh Kami</h1>
+    <br><br>
     <div class="containerPaketUmroh row justify-content-center">
       <div class="paketUmroh">
         <?php

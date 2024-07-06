@@ -14,6 +14,7 @@ require 'connection.php';
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
   <link rel="stylesheet" type="text/css" href="Main/css/style.css" />
+  <script src="https://kit.fontawesome.com/b137604a47.js" crossorigin="anonymous"></script>
 
 </head>
 
@@ -77,10 +78,8 @@ require 'connection.php';
 
             <?php endforeach; ?>
 
-            <!-- <img src="../Admin/img/<?php echo $row['cover']; ?>" alt="Cover Image" class="d-block w-100 c-img" alt="Slide 1" style="max-width: 80%; height: auto;"> -->
             <img src="Admin/img/<?php echo $row['cover']; ?>" alt="Cover Image" class="d-block w-100 c-img" style="max-width: 60%; height: auto; margin: 0 auto;">
 
-            <!-- <img src="path/to/image.jpg" alt="Image" class="img-fluid"> -->
           </div>
           <div class="col-md-8" style="text-align:justify">
             <!-- <h2>Description</h2> -->
@@ -91,97 +90,7 @@ require 'connection.php';
 
     </div>
   </div>
-  <!-- </div> -->
-
-
-  <!-- <div>
-    <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-      </div>
-
-      <div class="carousel-inner">
-
-        <div class="">
-          <?php
-          $rows = mysqli_query($conn, "SELECT * FROM home WHERE id = 1");
-          foreach ($rows as $row) :
-          ?>
-            <div class="whyAmansaContent">
-
-              <div class="containerCoverDotIcon">
-
-
-              </div>
-            </div>
-          <?php endforeach; ?>
-        </div>
-
-        <div class="carousel-item active c-item">
-          <img src="../Admin/img/<?php echo $row['cover']; ?>" alt="Cover Image" class="d-block w-100 c-img" alt="Slide 1">
-          <div class="carousel-caption top-0 mt-4">
-
-
-          </div>
-
-          <div class="">
-            <?php
-            $rows = mysqli_query($conn, "SELECT * FROM home WHERE id = 2");
-            foreach ($rows as $row) :
-            ?>
-              <div class="whyAmansaContent">
-
-                <div class="containerCoverDotIcon">
-
-
-                </div>
-              </div>
-            <?php endforeach; ?>
-          </div>
-
-        </div>
-        <div class="carousel-item c-item">
-          <img src="../Admin/img/<?php echo $row['cover']; ?>" alt="Cover Image" class="d-block w-100 c-img" alt="Slide 2">
-          <div class="carousel-caption top-0 mt-4">
-
-
-          </div>
-
-          <div class="">
-            <?php
-            $rows = mysqli_query($conn, "SELECT * FROM home WHERE id = 3");
-            foreach ($rows as $row) :
-            ?>
-              <div class="whyAmansaContent">
-
-                <div class="containerCoverDotIcon">
-
-
-                </div>
-              </div>
-            <?php endforeach; ?>
-          </div>
-
-        </div>
-        <div class="carousel-item c-item">
-          <img src="../Admin/img/<?php echo $row['cover']; ?>" alt="Cover Image" class="d-block w-100 c-img" alt="Slide 3">
-          <div class="carousel-caption top-0 mt-4">
-
-          </div>
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#hero-carousel" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#hero-carousel" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
-  </div> -->
+=b
 
   <div class="containerHome section1">
     <br><br><br>
@@ -214,7 +123,6 @@ require 'connection.php';
         <div class="whyAmansaContent">
 
           <div class="containerCoverDotIcon">
-            <!-- <img src="../Admin/img/<?php echo $row['cover']; ?>" alt="Cover Image"> -->
           </div>
         </div>
       <?php endforeach; ?>
@@ -222,19 +130,6 @@ require 'connection.php';
     </div>
   </div>
 
-  <!-- <div class="containerHome ">
-
-
-
-
-    <div class="whyAmansaContent">
-      <div class="containerCoverDotIcon">
-
-        <iframe width="100%" height="540" src="https://www.youtube.com/embed/<?php echo $row['deskripsi']; ?>" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-      </div>
-    </div>
-  </div> -->
   <br>
   <br>
 
@@ -296,11 +191,11 @@ require 'connection.php';
                     </div>
                     <!-- Add more carousel-item divs here if you have more testimonials -->
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                 </button>
@@ -317,7 +212,8 @@ require 'connection.php';
   <div class="containerInstagram section4">
   <br>
   <div class="row justify-content-center" style="margin-right: 0px; margin-left: 0px;">
-    <p style="font-family: 'Montserrat', sans-serif; font-weight: 600; font-size: 30px;">amansaumroh</p>
+    <p style="font-family: 'Montserrat', sans-serif; font-weight: 600; font-size: 30px;
+    "><i class="fa-brands fa-instagram"></i> amansaumroh</p>
     <div class="instagram-grid">
       <div class="instagram-item">
         <a href="https://www.instagram.com/your_profile" target="_blank">

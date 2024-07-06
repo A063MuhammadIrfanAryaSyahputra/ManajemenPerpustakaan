@@ -35,7 +35,6 @@ require '../connection.php';
 
   .parallax-1 {
     background-image: url("assets/tentang.png");
-
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -66,15 +65,15 @@ require '../connection.php';
   <div class="parallax-1">
         <div class="parallax-inner">
 
-          <h1 style="font-family: trocchi; font-size: 35px;">Umrah bersama Amansa</h1>
-          <h2 style="font-family: trocchi; font-size: 35px;"><em>Special Spiritual Moment to Baitullah</em></h2>
+          <h1 style="font-family: Spinnaker; font-size: 35px; font-weight: bolder;">Umrah bersama Amansa</h1>
+          <h2 style="font-family: Spinnaker; font-size: 35px; font-weight: light;"><em>Special Spiritual Moment to Baitullah</em></h2>
         </div>
       </div>
 
   <section class="achievements">
-    <h2>Our Achievements</h2>
+    <h2>Pencapaian Kami</h2>
     <div class="achievement-stats">
-
+    <br><br>
     </div>
     <div class="achievement-list">
       <div class="achievement-item">
@@ -96,9 +95,9 @@ require '../connection.php';
       </div>
     </div>
   </section>
-
   <section class="achievements">
-    <h2>Our Achievements</h2>
+    <h2>Bekerjasama Dengan</h2>
+    <br><br>
     <div class="achievement-stats">
 
     </div>

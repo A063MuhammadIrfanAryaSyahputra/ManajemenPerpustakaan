@@ -102,9 +102,6 @@ require '../connection.php';
                             <a style=""><?php echo $row["deskripsi"]; ?></a><br><br>
                         </td>
                         <div class="">
-                            <!-- <td><img src="../Admin/img/<?php echo $row['cover']; ?>" alt=""></td> -->
-                            <!-- <img src="https://marketplace.canva.com/EAFvCLo1gPg/1/0/900w/canva-krem-%26-putih-minimalis-testimonial-cerita-instagram-sGI_LpwQ8-Y.jpg" style="max-width: 100%; height: auto; display: block; margin: 0 auto;" alt="Placeholder Image"> -->
-                            <!-- <td><a><?php echo $row["nama"]; ?></a></td> -->
                         </div>
                     </tr>
                     
