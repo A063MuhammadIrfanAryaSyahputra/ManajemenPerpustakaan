@@ -46,7 +46,6 @@ require 'connection.php';
   text-align: center;
   background-color: #FFDF7B;
 }
-
 .parallax-1 {
   background-image: url("Main/assets/blur.png");
   background-repeat: no-repeat;
@@ -90,12 +89,11 @@ require 'connection.php';
 
     </div>
   </div>
-=b
 
   <div class="containerHome section1">
     <br><br><br>
 
-    <h1>Mengapa Amansa</h1>
+    <h1 style="color: #0D3C63;">Mengapa Amansa</h1>
     <br><br><br>
 
     <div class="">
@@ -138,7 +136,7 @@ require 'connection.php';
 <div class="containerHome section3">
         <br>
         <div class="row justify-content-center testimonial-container">
-            <p class="testimonial-title">Kesan Bersama Amansa</p>
+            <p class="testimonial-title" style="color: #0D3C63; font-weight: bolder;">Kesan Bersama Amansa</p>
             <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
@@ -212,7 +210,7 @@ require 'connection.php';
   <div class="containerInstagram section4">
   <br>
   <div class="row justify-content-center" style="margin-right: 0px; margin-left: 0px;">
-    <p style="font-family: 'Montserrat', sans-serif; font-weight: 600; font-size: 30px;
+    <p style="font-family: 'Montserrat', sans-serif; font-weight: 600; font-size: 30px;color: #0D3C63;
     "><i class="fa-brands fa-instagram"></i> amansaumroh</p>
     <div class="instagram-grid">
       <div class="instagram-item">

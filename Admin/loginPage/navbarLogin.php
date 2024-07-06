@@ -91,13 +91,6 @@
     <li>
       <a href="tentang.php">Tentang Amansa</a>
     </li>
-    <!-- <li>
-      <a href="Umroh.php">Umroh</a>
-    </li> -->
-    <!-- <li>
-      <a href="Haji.php">Haji</a>
-    </li> -->
-
     <li>
       <div class="dropdown"></div>
       <button class="btn btn-secondary bgdrop" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" style="border: none; color: #E0B64A; background: none; ">
