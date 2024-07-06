@@ -104,17 +104,19 @@ require '../connection.php';
     <div class="achievement-list">
       <div class="achievement-item">
       <img src="assets/BankSyariah.png" alt="Suriyah Logo">
-        <p>Bimbingan Sesuai Sunnah</p>
       </div>
       <div class="achievement-item">
       <img src="assets/bankMuammalat.png" alt="Muamalat Logo">
-        <p>Terdaftar Siskopatuh</p>
       </div>
       <br>
       <div class="achievement-item">
       <img src="assets/bankJateng.png" alt="Jateng Logo">
-        <p>Ijin Umroh Resmi</p>
       </div>
+      <div class="achievement-item">
+      <img src="assets/BSI.png" alt="BSI Logo">
+      <br><br><br>
+      </div>
+
 
     </div>
   </section>
