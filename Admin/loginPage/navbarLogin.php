@@ -86,7 +86,7 @@
   </div>
   <ul>
     <li>
-      <a href="../index.php">Beranda</a>
+      <a href="../../index.php">Beranda</a>
     </li>
     <li>
       <a href="tentang.php">Tentang Amansa</a>
@@ -106,9 +106,9 @@
 
     <li>
       <div class="dropdown"></div>
-      <button class="btn btn-secondary bgdrop" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" style="border: none; color: #E0B64A; background: none; ">
+      <!-- <button class="btn btn-secondary bgdrop" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" style="border: none; color: #E0B64A; background: none; ">
         <a>Haji</a>
-      </button>
+      </button> -->
 
       <ul class="dropdown-menu kiri kiri-hover" aria-labelledby="dropdownMenuButton1" style="border: 1px; background-color: #0D3C63;">
         <li class="kiri"><a class="dropdown-item teksputih underline" href="Haji.php">Haji Furoda</a></li>
