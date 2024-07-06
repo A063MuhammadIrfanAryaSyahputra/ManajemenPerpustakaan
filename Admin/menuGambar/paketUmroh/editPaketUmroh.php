@@ -100,19 +100,19 @@ if (isset($_GET['id'])) {
                 <input type="text" class="form-control" id="deskripsi" name="deskripsi" value="<?php echo $row['deskripsi']; ?>">
               </div>
               <div class="form-group">
-                <label for="name">Itenary 1:</label>
+                <label for="name">Detail 1:</label>
                 <input type="text" class="form-control" id="itenary1" name="itenary1" value="<?php echo $row['itenary1']; ?>">
               </div>
               <div class="form-group">
-                <label for="name">Itenary 2:</label>
+                <label for="name">Detail 2:</label>
                 <input type="text" class="form-control" id="itenary2" name="itenary2" value="<?php echo $row['itenary2']; ?>">
               </div>
               <div class="form-group">
-                <label for="name">Itenary 3:</label>
+                <label for="name">Detail 3:</label>
                 <input type="text" class="form-control" id="itenary3" name="itenary3" value="<?php echo $row['itenary3']; ?>">
               </div>
               <div class="form-group">
-                <label for="name">Itenary 4:</label>
+                <label for="name">Detail 4:</label>
                 <input type="text" class="form-control" id="itenary4" name="itenary4" value="<?php echo $row['itenary4']; ?>">
               </div>
               <div class="form-group">
@@ -134,35 +134,8 @@ if (isset($_GET['id'])) {
       <i class="fa-regular fa-moon"></i>
       <i class="fa-regular fa-sun"></i>
     </a>
-    <footer class="footer">
-      <div class="container-fluid">
-        <div class="row text-muted">
-          <div class="col-6 text-start">
-            <p class="mb-0">
-              <a href="#" class="text-muted">
-                <strong>Umenk</strong>
-              </a>
-            </p>
-          </div>
-          <div class="col-6 text-end">
-            <ul class="list-inline">
-              <li class="list-inline-item">
-                <a href="#" class="text-muted">Contact</a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#" class="text-muted">About Us</a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#" class="text-muted">Terms</a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#" class="text-muted">Booking</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </footer>
+    <?php include '../footerAdmin.php'; ?>
+
   </div>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"></script>

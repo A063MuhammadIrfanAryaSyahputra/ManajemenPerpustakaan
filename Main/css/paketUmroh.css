@@ -200,9 +200,9 @@ nav ul li a:hover {
 .itenary {
   width: 280px;
   height: 100px;
-  border-radius: 48px 13px 70px 26px;
-  -webkit-border-radius: 48px 13px 70px 26px;
-  -moz-border-radius: 48px 13px 70px 26px;
+  border-radius: 10px 10px 10px 10px;
+  /* -webkit-border-radius: 48px 13px 70px 26px; */
+  /* -moz-border-radius: 48px 13px 70px 26px; */
   padding-left: 20px;
   background-color: #0e2f4f;
   box-shadow: 7px 6px 42px 5px rgba(0, 0, 0, 0.68);
@@ -275,10 +275,10 @@ nav ul li a:hover {
 
 .gambarPaket img {
   width: 30%;
-  border-radius: 15px 50px 30px;
+  /* border-radius: 15px 50px 30px; */
   box-shadow: 7px 6px 42px 5px rgba(224, 182, 74, 1);
-  -webkit-box-shadow: 7px 6px 42px 5px rgba(224, 182, 74, 1);
-  -moz-box-shadow: 7px 6px 42px 5px rgba(224, 182, 74, 1);
+  /* -webkit-box-shadow: 7px 6px 42px 5px rgba(224, 182, 74, 1); */
+  /* -moz-box-shadow: 7px 6px 42px 5px rgba(224, 182, 74, 1); */
 }
 
 /* Footer Styles */

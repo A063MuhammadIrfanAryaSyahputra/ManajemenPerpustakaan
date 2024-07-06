@@ -76,56 +76,8 @@ if (isset($_POST["submit"])) {
     <div class="main">
 
 
-      <!-- <main class="content px-3 py-2">
-        <div class="container-fluid">
-          <div class="mb-3">
-            <h4>Tambah Data</h4>
-          </div>
-          <div class="card border-0">
-            <div class="card-header">
-              <h5 class="card-title">Tambah Data</h5>
-              <h6 class="card-subtitle text-muted">Tambah Data Paket Haji Dibawah ini</h6>
-            </div>
-            <div class="card-body">
-              <form action="" method="post" autocomplete="off" enctype="multipart/form-data">
-                <div class="mb-3">
-                  <label for="name" class="form-label">Name</label>
-                  <input type="text" name="name" id="name" class="form-control" required>
-                </div>
-                <div class="mb-3">
-                  <label for="image1" class="form-label">Image 1</label>
-                  <input type="file" name="image1" id="image1" class="form-control" accept=".jpg, .jpeg, .png" required>
-                </div>
-                <div class="mb-3">
-                  <label for="image2" class="form-label">Image 2</label>
-                  <input type="file" name="image2" id="image2" class="form-control" accept=".jpg, .jpeg, .png" required>
-                </div>
-                <div class="mb-3">
-                  <label for="image3" class="form-label">Image 3</label>
-                  <input type="file" name="image3" id="image3" class="form-control" accept=".jpg, .jpeg, .png" required>
-                </div>
-                <div class="mb-3">
-                  <label for="image4" class="form-label">Image 4</label>
-                  <input type="file" name="image4" id="image4" class="form-control" accept=".jpg, .jpeg, .png" required>
-                </div>
-                <div class="mb-3">
-                  <label for="image5" class="form-label">Image 5</label>
-                  <input type="file" name="image5" id="image5" class="form-control" accept=".jpg, .jpeg, .png" required>
-                </div>
-                <div class="mb-3">
-                  <label for="image6" class="form-label">Image 6</label>
-                  <input type="file" name="image6" id="image6" class="form-control" accept=".jpg, .jpeg, .png" required>
-                </div>
-                <div class="mb-3">
-                  <label for="image7" class="form-label">Image 7</label>
-                  <input type="file" name="image7" id="image7" class="form-control" accept=".jpg, .jpeg, .png" required>
-                </div>
-                <button type="submit" name="submit" class="btn btn-primary">Submit</button>
-              </form>
-            </div>
-          </div>
-        </div>
-      </main> -->
+      
+      </main> 
 
       <!--Start List Gambar-->
       <main class="content px-3 py-2">
