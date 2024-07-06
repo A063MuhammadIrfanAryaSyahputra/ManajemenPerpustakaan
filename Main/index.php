@@ -258,6 +258,8 @@ require '../connection.php';
   <br>
   <br>
 
+
+<!-- Carousel Testimoni -->
   <div class="containerHome section3">
     <br>
     <div class="row justify-content-center" style="margin-right: 0px; margin-left: 0px;">
@@ -316,8 +318,11 @@ require '../connection.php';
     </div>
     <br><br>
   </div>
+  <!-- End Carousel Testimoni -->
 
-  
+
+
+  <!-- Instagram Feed -->
   <div class="containerInstagram section4">
   <br>
   <div class="row justify-content-center" style="margin-right: 0px; margin-left: 0px;">
@@ -357,6 +362,7 @@ require '../connection.php';
   </div>
   <br><br>
 </div>
+<!-- End Instagram Feed -->
 
 
 
