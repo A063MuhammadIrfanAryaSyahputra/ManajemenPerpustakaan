@@ -81,7 +81,7 @@
 </style>
 <nav>
   <div class="logo">
-    <a href="../index.php"><img src="assets/logoHorizon.png" alt="logo" /></a>
+    <a href="../../index.php"><img src="../../Main/assets/logoHorizon.png" alt="logo" /></a>
   </div>
   </div>
   <ul>

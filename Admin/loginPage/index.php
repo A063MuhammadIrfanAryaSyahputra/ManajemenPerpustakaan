@@ -1,41 +1,118 @@
-
 <!DOCTYPE html>
-<html lang="en" data-bs-theme="dark">
+<html lang="en">
 
 <head>
-    <title>User Login</title>
-    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="login.css">
-    <link rel="stylesheet" type="text/css" href="../global.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Login</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="../../Main/css/style.css" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
 
+
+        .containerHome {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-grow: 1;
+        }
+
+        .form-reg {
+            background: white;
+            border: 1px solid #dee2e6;
+            border-radius: 5px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .title-reg img {
+            max-width: 200px;
+            margin-bottom: 20px;
+        }
+
+        .form-reg label {
+            color: #d4af37;
+            display: block;
+            margin-bottom: 5px;
+            text-align: left;
+        }
+
+        .form-reg input[type="text"],
+        .form-reg input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #dee2e6;
+            border-radius: 5px;
+            box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-reg input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #0d6efd;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .form-reg input[type="submit"]:hover {
+            background-color: #0b5ed7;
+        }
+
+        .footer {
+            background-color: #1b2940;
+            color: #d4af37;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
 </head>
 
 <body>
-    <div class="container">
-        <div class="title-reg">
-            <h2>FORM LOGIN</h2>
-        </div>
+    <!-- navbar -->
+        <?php include 'navbarLogin.php'; ?>
 
+
+    <div class="containerHome section3">
         <div class="form-reg">
+            <div class="title-reg">
+                <img src="../../Main/assets/logoHorizon.png" alt="Amansa Tours & Travel">
+            </div>
             <form action="proses_login.php" method="post">
                 <div>
-                    <label for="username" style="color: grey;">Username:</label>
-                    <input type="text" id="username" name="username" required style="background-color: white; color: black;"><br><br>
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required><br><br>
 
-                    <label for="password" style="color: grey;">Password:</label>
-                    <input type="password" id="password" name="password" required style="background-color: white; color: black;"><br><br>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required><br><br>
 
-                    <input type="submit" value="Login" class="btn btn-primary">
-                   
-                    <!-- <button class="log-button btn btn-success" onclick="window.location.href='register.php'">Register</button> -->
-                </div>
+                    <input type="submit" value="Login">
                 </div>
             </form>
         </div>
     </div>
-    <!-- <?php include '../footer.php'; ?> -->
 
+    <!-- footer -->
+    <?php include 'footerLogin.php'; ?>
+
+    <script src="js/script.js"></script>
 </body>
 
 </html>
