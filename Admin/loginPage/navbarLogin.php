@@ -86,7 +86,7 @@
   </div>
   <ul>
     <li>
-      <a href="../index.php">Beranda</a>
+      <a href="../../index.php">Beranda</a>
     </li>
     <li>
       <a href="tentang.php">Tentang Amansa</a>
@@ -98,9 +98,9 @@
       </button>
 
       <ul class="dropdown-menu kiri kiri-hover" aria-labelledby="dropdownMenuButton1" style="border: 1px; background-color: #0D3C63;">
-        <li class="kiri"><a class="dropdown-item teksputih underline" href="Umroh.php">Paket Umroh</a></li>
-        <li class="kiri"><a class="dropdown-item teksputih underline" href="tabura.php">Tabungan Umroh</a></li>
-        <li class="kiri"><a class="dropdown-item teksputih " href="badalUmroh.php">Badal Umroh</a></li>
+        <li class="kiri"><a class="dropdown-item teksputih underline" href="../../Main/Umroh.php">Paket Umroh</a></li>
+        <li class="kiri"><a class="dropdown-item teksputih underline" href="../../Main/tabura.php">Tabungan Umroh</a></li>
+        <li class="kiri"><a class="dropdown-item teksputih " href="../../Main/badalUmroh.php">Badal Umroh</a></li>
       </ul>
     </li>
 
@@ -111,10 +111,10 @@
       </button>
 
       <ul class="dropdown-menu kiri kiri-hover" aria-labelledby="dropdownMenuButton1" style="border: 1px; background-color: #0D3C63;">
-        <li class="kiri"><a class="dropdown-item teksputih underline" href="Haji.php">Haji Furoda</a></li>
+        <li class="kiri"><a class="dropdown-item teksputih underline" href="../../Main/Haji.php">Haji Furoda</a></li>
         <!-- <li class="kiri"><a class="dropdown-item teksputih underline" href="#">Haji Khusus</a></li> -->
-        <li class="kiri"><a class="dropdown-item teksputih underline" href="tabungan.php">Tabungan Haji</a></li>
-        <li class="kiri"><a class="dropdown-item teksputih" href="badalHaji.php">Badal Haji</a></li>
+        <li class="kiri"><a class="dropdown-item teksputih underline" href="../../Main/tabungan.php">Tabungan Haji</a></li>
+        <li class="kiri"><a class="dropdown-item teksputih" href="../../Main/badalHaji.php">Badal Haji</a></li>
       </ul>
     </li>
 
@@ -122,10 +122,10 @@
   <a href="#">Badal</a>
 </li> -->
     <li>
-      <a href="kemitraan.php">Kemitraan</a>
+      <a href="../../Main/kemitraan.php">Kemitraan</a>
     </li>
     <li>
-      <a href="galeri.php">Galeri & Artikel</a>
+      <a href="../../Main/galeri.php">Galeri & Artikel</a>
     </li>
 </nav>
 <div class="menubar">
