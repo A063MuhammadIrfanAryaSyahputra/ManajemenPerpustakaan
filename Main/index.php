@@ -55,26 +55,6 @@ require '../connection.php';
   margin-bottom: 0%;
   padding: 10%;
 }
-
-.testimonial-content img {
-  width: 100%;
-  max-width: 200px; /* Adjust this value to make the images smaller */
-  height: auto;
-  display: block;
-  margin: 0 auto;
-  border: 1px solid black;
-  border-radius: 8px;
-
-  @media (max-width: 768px) {
-    .parallax-1 {
-      background-attachment: scroll;
-    }
-
-    .testimonial-content img {
-      max-width: 150px;
-    }
-  }
-}
 </style>
 
 <body>
@@ -260,64 +240,75 @@ require '../connection.php';
 
 
 <!-- Carousel Testimoni -->
-  <div class="containerHome section3">
-    <br>
-    <div class="row justify-content-center" style="margin-right: 0px; margin-left: 0px;">
-      <p style="font-family: 'Montserrat', sans-serif; font-weight: 600; font-size: 30px;">Kesan Bersama Amansa</p>
-      <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="row">
-              <div class="col-12 col-md-4">
-                <div class="testimonial-content">
-                  <img src="https://marketplace.canva.com/EAFvCLo1gPg/1/0/900w/canva-krem-%26-putih-minimalis-testimonial-cerita-instagram-sGI_LpwQ8-Y.jpg" alt="Placeholder Image">
+<div class="containerHome section3">
+        <br>
+        <div class="row justify-content-center testimonial-container">
+            <p class="testimonial-title">Kesan Bersama Amansa</p>
+            <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-12 col-md-3">
+                                <div class="testimonial-content">
+                                    <img src="assets/testi1.png" alt="Testimonial 1">
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-3">
+                                <div class="testimonial-content">
+                                    <img src="assets/testi1.png" alt="Testimonial 2">
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-3">
+                                <div class="testimonial-content">
+                                    <img src="assets/testi1.png" alt="Testimonial 3">
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-3">
+                                <div class="testimonial-content">
+                                    <img src="assets/testi1.png" alt="Testimonial 4">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-12 col-md-3">
+                                <div class="testimonial-content">
+                                    <img src="assets/testi1.png" alt="Testimonial 5">
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-3">
+                                <div class="testimonial-content">
+                                    <img src="assets/testi1.png" alt="Testimonial 6">
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-3">
+                                <div class="testimonial-content">
+                                    <img src="assets/testi1.png" alt="Testimonial 7">
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-3">
+                                <div class="testimonial-content">
+                                    <img src="assets/testi1.png" alt="Testimonial 8">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add more carousel-item divs here if you have more testimonials -->
                 </div>
-              </div>
-              <div class="col-12 col-md-4">
-                <div class="testimonial-content">
-                  <img src="https://marketplace.canva.com/EAFvCLo1gPg/1/0/900w/canva-krem-%26-putih-minimalis-testimonial-cerita-instagram-sGI_LpwQ8-Y.jpg" alt="Placeholder Image">
-                </div>
-              </div>
-              <div class="col-12 col-md-4">
-                <div class="testimonial-content">
-                  <img src="https://marketplace.canva.com/EAFvCLo1gPg/1/0/900w/canva-krem-%26-putih-minimalis-testimonial-cerita-instagram-sGI_LpwQ8-Y.jpg" alt="Placeholder Image">
-                </div>
-              </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
-          </div>
-          <div class="carousel-item">
-            <div class="row">
-              <div class="col-12 col-md-4">
-                <div class="testimonial-content">
-                  <img src="https://marketplace.canva.com/EAFvCLo1gPg/1/0/900w/canva-krem-%26-putih-minimalis-testimonial-cerita-instagram-sGI_LpwQ8-Y.jpg" alt="Placeholder Image">
-                </div>
-              </div>
-              <div class="col-12 col-md-4">
-                <div class="testimonial-content">
-                  <img src="https://marketplace.canva.com/EAFvCLo1gPg/1/0/900w/canva-krem-%26-putih-minimalis-testimonial-cerita-instagram-sGI_LpwQ8-Y.jpg" alt="Placeholder Image">
-                </div>
-              </div>
-              <div class="col-12 col-md-4">
-                <div class="testimonial-content">
-                  <img src="https://marketplace.canva.com/EAFvCLo1gPg/1/0/900w/canva-krem-%26-putih-minimalis-testimonial-cerita-instagram-sGI_LpwQ8-Y.jpg" alt="Placeholder Image">
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Add more carousel-item divs here if you have more testimonials -->
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
+        <br><br>
     </div>
-    <br><br>
-  </div>
+
   <!-- End Carousel Testimoni -->
 
 
