@@ -86,7 +86,7 @@
   </div>
   <ul>
     <li>
-      <a href="index.php">Beranda</a>
+      <a href="../index.php">Beranda</a>
     </li>
     <li>
       <a href="tentang.php">Tentang Amansa</a>
