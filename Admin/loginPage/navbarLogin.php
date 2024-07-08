@@ -88,45 +88,7 @@
     <li>
       <a href="../../index.php">Beranda</a>
     </li>
-    <li>
-      <a href="tentang.php">Tentang Amansa</a>
-    </li>
-    <li>
-      <div class="dropdown"></div>
-      <button class="btn btn-secondary bgdrop" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" style="border: none; color: #E0B64A; background: none; ">
-        <a>Umroh</a>
-      </button>
 
-      <ul class="dropdown-menu kiri kiri-hover" aria-labelledby="dropdownMenuButton1" style="border: 1px; background-color: #0D3C63;">
-        <li class="kiri"><a class="dropdown-item teksputih underline" href="Umroh.php">Paket Umroh</a></li>
-        <li class="kiri"><a class="dropdown-item teksputih underline" href="tabura.php">Tabungan Umroh</a></li>
-        <li class="kiri"><a class="dropdown-item teksputih " href="badalUmroh.php">Badal Umroh</a></li>
-      </ul>
-    </li>
-
-    <li>
-      <div class="dropdown"></div>
-      <!-- <button class="btn btn-secondary bgdrop" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" style="border: none; color: #E0B64A; background: none; ">
-        <a>Haji</a>
-      </button> -->
-
-      <ul class="dropdown-menu kiri kiri-hover" aria-labelledby="dropdownMenuButton1" style="border: 1px; background-color: #0D3C63;">
-        <li class="kiri"><a class="dropdown-item teksputih underline" href="Haji.php">Haji Furoda</a></li>
-        <!-- <li class="kiri"><a class="dropdown-item teksputih underline" href="#">Haji Khusus</a></li> -->
-        <li class="kiri"><a class="dropdown-item teksputih underline" href="tabungan.php">Tabungan Haji</a></li>
-        <li class="kiri"><a class="dropdown-item teksputih" href="badalHaji.php">Badal Haji</a></li>
-      </ul>
-    </li>
-
-    <!-- <li>
-  <a href="#">Badal</a>
-</li> -->
-    <li>
-      <a href="kemitraan.php">Kemitraan</a>
-    </li>
-    <li>
-      <a href="galeri.php">Galeri & Artikel</a>
-    </li>
 </nav>
 <div class="menubar">
   <ul>

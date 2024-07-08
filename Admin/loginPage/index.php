@@ -9,15 +9,16 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="../../Main/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+
+
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f8f9fa;
-            margin: 0;
             padding: 0;
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
+            margin: 0;
+            font-family: "Spinnaker", sans-serif;
+            font-weight: 400;
+            font-style: normal;
         }
 
 
@@ -26,6 +27,10 @@
             justify-content: center;
             align-items: center;
             flex-grow: 1;
+            padding-bottom: 50px;
+            padding-top: 50px;
+
+
         }
 
         .form-reg {
@@ -87,7 +92,7 @@
 
 <body>
     <!-- navbar -->
-        <?php include 'navbarLogin.php'; ?>
+    <?php include 'navbarLogin.php'; ?>
 
 
     <div class="containerHome section3">
