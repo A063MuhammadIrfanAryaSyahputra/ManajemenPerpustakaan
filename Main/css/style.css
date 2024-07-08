@@ -66,6 +66,7 @@ nav ul li a {
   border-radius: 5px;
   color: #e0b64a;
   font-family: "Spinnaker", sans-serif;
+  font-size: 16px;
 }
 
 nav ul li a:hover {
