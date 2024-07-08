@@ -1,3 +1,23 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "Spinnaker", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.containerHome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    padding-bottom: 50px;
+    padding-top: 50px;
+
+
+}
+
 .form-reg {
     background: white;
     border: 1px solid #dee2e6;
@@ -6,15 +26,19 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     max-width: 400px;
     width: 100%;
+    text-align: center;
 }
 
-.title-reg {
-    text-align: center;
+.title-reg img {
+    max-width: 200px;
     margin-bottom: 20px;
 }
 
 .form-reg label {
     color: #d4af37;
+    display: block;
+    margin-bottom: 5px;
+    text-align: left;
 }
 
 .form-reg input[type="text"],
@@ -40,4 +64,11 @@
 
 .form-reg input[type="submit"]:hover {
     background-color: #0b5ed7;
+}
+
+.footer {
+    background-color: #1b2940;
+    color: #d4af37;
+    text-align: center;
+    padding: 10px;
 }

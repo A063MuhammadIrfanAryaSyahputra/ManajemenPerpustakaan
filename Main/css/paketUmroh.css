@@ -26,11 +26,11 @@ nav .logo {
   display: flex;
   align-items: center;
 }
-nav .logo img {
+/* nav .logo img {
   height: 59px;
   width: 230px;
   margin-right: 10px;
-}
+} */
 nav .logo h1 {
   font-size: 1.1rem;
   color: #e0b64a;

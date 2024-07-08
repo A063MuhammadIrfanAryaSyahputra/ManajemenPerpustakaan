@@ -1,10 +1,10 @@
 <nav>
   <div class="logo">
-    <a href="index.php"><img src="../../Main/assets/logoHorizon.png" alt="logo" /></a>
+    <a href="index.php"><img src="Main/assets/logoHorizon.png" alt="logo" /></a>
   </div>
   <ul>
     <li>
-      <a href="index.php">Beranda</a>
+      <a href="../../index.php">Beranda</a>
     </li>
     <li>
       <a href="main/tentang.php">Tentang Amansa</a>
