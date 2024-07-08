@@ -87,13 +87,14 @@
             text-align: center;
             padding: 10px;
         }
-
     </style>
 </head>
 
 <body>
     <!-- navbar -->
-    <?php include 'navbarLogin.php'; ?>
+    <!-- <?php include 'navbarLogin.php'; ?> -->
+    <?php include dirname(__DIR__) . '/../navbarAmansa.php';?>
+
 
 
     <div class="containerHome section3">
