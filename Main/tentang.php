@@ -71,48 +71,59 @@ require '../connection.php';
       </div>
 
       <section class="achievements">
-    <h2>Pencapaian Kami</h2>
+    <h2 style="color: #0D3C63; font-weight: bold;">Our Achievements</h2>
     <div class="achievement-stats">
       <br><br>
     </div>
     <div class="achievement-list">
       <div class="achievement-item">
-        <img src="assets/tentang1.png" alt="Icon">
-        <p>Bimbingan Sesuai Sunnah</p>
+        <img src="assets/Bimbingan sunnag.png" alt="Icon">
+        <p>Bimbingan <br> Sesuai Sunnah</p>
       </div>
       <div class="achievement-item">
-        <img src="assets/tentang2.png" alt="Icon">
+        <img src="assets/Terdaftar sisko.png" alt="Icon">
         <p>Terdaftar Siskopatuh</p>
       </div>
       <div class="achievement-item">
-        <img src="assets/tentang3.png" alt="Icon">
-        <p>Ijin Umroh Resmi</p>
+        <img src="assets/ijin resmi.png" alt="Icon">
+        <p>Ijin <br> Umroh Resmi</p>
       </div>
       <div class="achievement-item">
-        <img src="assets/tentang4.png" alt="Icon">
+        <img src="assets/terbaik layanan.png" alt="Icon">
         <p>Terbaik dalam layanan</p>
       </div>
     </div>
   </section>
 
+  <section class="achievementss">
+    <h2>Bekerjasama Dengan</h2>
+    <br><br>
+    <div class="achievement-statss">
+
+    </div>
+    <div class="achievement-listt">
+      <div class="achievement-itemm">
+      <img src="assets/BankSyariah.png" alt="Suriyah Logo">
+      </div>
+      <div class="achievement-itemm">
+      <img src="assets/bankMuammalat.png" alt="Muamalat Logo">
+      </div>
+      <br>
+      <div class="achievement-itemm">
+      <img src="assets/bankJateng.png" alt="Jateng Logo">
+      </div>
+      <div class="achievement-itemm">
+      <img src="assets/BSI.png" alt="BSI Logo">
+      </div>
 
 
     </div>
   </section>
 
-<!-- 
-  <section class="support">
-    <h2>Support By</h2>
-    <div class="support-logos">
-      <img src="assets/BankSyariah.png" alt="Suriyah Logo">
-      <img src="assets/bankMuammalat.png" alt="Muamalat Logo">
-      <img src="assets/bankJateng.png" alt="Jateng Logo">
+
+
     </div>
-  </section> -->
-
-
-
-
+  </section>
   <?php include 'footerTentang.php'; ?>
 
   <script src="js/script.js"></script>

@@ -28,7 +28,8 @@
         </button>
         <ul class="dropdown-menu kiri kiri-hover" aria-labelledby="dropdownMenuButton2" style="border: 1px; background-color: #0D3C63;">
           <li class="kiri"><a class="dropdown-item teksputih underline" href="main/Haji.php">Haji Furoda</a></li>
-          <li class="kiri"><a class="dropdown-item teksputih underline" href="#">Haji Khusus</a></li>
+          <li class="kiri"><a class="dropdown-item teksputih underline" href="main/HajiKhusus.php
+          ">Haji Khusus</a></li>
           <li class="kiri"><a class="dropdown-item teksputih underline" href="main/tabungan.php">Tabungan Haji</a></li>
           <li class="kiri"><a class="dropdown-item teksputih" href="main/badalHaji.php">Badal Haji</a></li>
         </ul>

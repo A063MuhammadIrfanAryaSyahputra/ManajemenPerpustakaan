@@ -47,7 +47,7 @@ if (isset($_POST["submit"])) {
       move_uploaded_file($tmpName, '../../img/' . $newImageName);
       move_uploaded_file($second_tmpName, '../../img/' . $newSecondImageName);
 
-      $query = "INSERT INTO haji VALUES ('', '$name', '$newImageName', '$newSecondImageName', '$deskripsi', '$itenary1', '$itenary2', '$itenary3', '$itenary4')";
+      $query = "INSERT INTO hajiKhusus VALUES ('', '$name', '$newImageName', '$newSecondImageName', '$deskripsi', '$itenary1', '$itenary2', '$itenary3', '$itenary4')";
       mysqli_query($conn, $query);
       echo
       "<script> 
@@ -119,7 +119,7 @@ if (isset($_POST["submit"])) {
                 </tr>
                 <?php
                 $i = 1;
-                $rows = mysqli_query($conn, "SELECT * FROM haji ORDER BY id ASC"); ?>
+                $rows = mysqli_query($conn, "SELECT * FROM hajiKhusus ORDER BY id ASC"); ?>
                 <?php foreach ($rows as $row) : ?>
                   <tr>
                     <td><?php echo $i++; ?></td>
@@ -133,7 +133,7 @@ if (isset($_POST["submit"])) {
                     <td><?php echo $row["itenary4"]; ?></td>
                     <?php
                     echo
-                    "<td><a href='editPaketHaji.php?id=" . $row['id'] . "' class='btn btn-primary btn-sm mr-1'>Edit</a> </td>" ?>
+                    "<td><a href='editPaketHajiKhusus.php?id=" . $row['id'] . "' class='btn btn-primary btn-sm mr-1'>Edit</a> </td>" ?>
                   </tr>
                 <?php endforeach; ?> <!-- Closing the foreach loop -->
               </table>

@@ -9,16 +9,57 @@ body {
     background-color: rgb(255, 255, 255);
 }
 
-.achievement-list {
-  width: 70%;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 40px;
-  justify-items: center;
-  align-items: center;
-  border: 6px solid rgb(14, 255, 74);
+.parallax-1 {
+    background-image: linear-gradient(to bottom, rgba(13, 60, 99, 0.9), rgba(238, 190, 72, 0.9)), url("assets/tentang.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin-bottom: 4%;
 }
 
+.parallax-inner {
+    padding: 20% 0;
+}
+
+.h1, h1 {
+    color: #0D3C63;
+}
+
+.button33 {
+    border-color: aquamarine;
+}
+
+.achievement-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 80px;
+  justify-items: center;
+  align-items: center;
+}
+
+.achievement-item {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  gap: 20px;
+  color: #EEBE48; 
+  font-weight: bold;
+}
+
+.achievement-item img {
+  height: 100px;
+}
+
+@media (max-width: 768px) {
+  .achievement-list {
+    grid-template-columns: 1fr;
+  }
+  .achievement-item {
+    flex-direction: column;
+    text-align: center;
+  }
+}
 
 .hero {
     position: relative;
@@ -50,8 +91,6 @@ body {
 .achievements {
     text-align: center;
     padding: 50px 20px;
-    align-items: center;
-    border: 6px solid rgb(14, 255, 74);
 }
 
 .achievements h2 {
@@ -65,9 +104,7 @@ body {
 }
 
 .achievement-stats {
-  align-items: center;
-  text-align: center;
-  margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 .stat {
@@ -75,24 +112,10 @@ body {
     color: #e94e1b;
 }
 
-.achievement-list {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-}
-
-.achievement-item {
-    text-align: center;
-}
-
-.achievement-item img {
-    height: 100px;
-    margin-bottom: 10px;
-}
-
 .support {
     text-align: center;
     padding: 50px 20px;
+    background: linear-gradient(to bottom, #ffecd2, #fcb69f); /* Example gradient */
 }
 
 .support-logos {
@@ -109,9 +132,9 @@ body {
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-  }
+}
 
-  nav {
+nav {
     padding: 20px 5%;
     display: flex;
     justify-content: space-between;
@@ -119,39 +142,43 @@ body {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
     z-index: 1;
     background-color: #0d3c63;
-  }
-  nav .logo {
+}
+
+nav .logo {
     display: flex;
     align-items: center;
-  }
-  nav .logo img {
+}
+
+nav .logo img {
     height: 59px;
-    /* width: 230px; */
     margin-right: 10px;
-  }
-  nav .logo h1 {
+}
+
+nav .logo h1 {
     font-size: 1.1rem;
     color: #e0b64a;
     background: linear-gradient(to right, #b927fc 0%, #2c64fc 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-  }
-  
-  element.style {
+}
+
+element.style {
     margin-top: 16px;
-  }
-  
-  nav ul {
+}
+
+nav ul {
     margin-top: 16px;
     list-style: none;
     display: flex;
     align-items: center;
-  }
-  nav ul li {
+}
+
+nav ul li {
     margin-left: 1.5rem;
-  }
-  nav ul li a {
+}
+
+nav ul li a {
     text-decoration: none;
     color: #000;
     font-size: 100%;
@@ -159,50 +186,50 @@ body {
     padding: 4px 8px;
     border-radius: 5px;
     color: #e0b64a;
-  }
-  
-  nav ul li a:hover {
+}
+
+nav ul li a:hover {
     background-color: #2573b3;
-    
-  }
-  
-  .hamburger {
+}
+
+.hamburger {
     display: none;
     cursor: pointer;
-  }
-  
-  .hamburger .line {
+}
+
+.hamburger .line {
     width: 25px;
     height: 1px;
     background-color: #1f1f1f;
     display: block;
     margin: 7px auto;
     transition: all 0.3s ease-in-out;
-  }
-  .hamburger-active {
+}
+
+.hamburger-active {
     transition: all 0.3s ease-in-out;
     transition-delay: 0.6s;
     transform: rotate(45deg);
-  }
-  
-  .hamburger-active .line:nth-child(2) {
+}
+
+.hamburger-active .line:nth-child(2) {
     width: 0px;
-  }
-  
-  .hamburger-active .line:nth-child(1),
-  .hamburger-active .line:nth-child(3) {
+}
+
+.hamburger-active .line:nth-child(1),
+.hamburger-active .line:nth-child(3) {
     transition-delay: 0.3s;
-  }
-  
-  .hamburger-active .line:nth-child(1) {
+}
+
+.hamburger-active .line:nth-child(1) {
     transform: translateY(12px);
-  }
-  
-  .hamburger-active .line:nth-child(3) {
+}
+
+.hamburger-active .line:nth-child(3) {
     transform: translateY(-5px) rotate(90deg);
-  }
-  
-  .menubar {
+}
+
+.menubar {
     position: absolute;
     top: 0;
     left: -60%;
@@ -215,42 +242,46 @@ body {
     background: rgba(255, 255, 255);
     transition: all 0.5s ease-in;
     z-index: 2;
-  }
-  .active {
+}
+
+.active {
     left: 0;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  }
-  
-  .menubar ul {
+}
+
+.menubar ul {
     padding: 0;
     list-style: none;
-  }
-  .menubar ul li {
+}
+
+.menubar ul li {
     margin-bottom: 32px;
-  }
-  
-  .menubar ul li a {
+}
+
+.menubar ul li a {
     text-decoration: none;
     color: #000;
     font-size: 95%;
     font-weight: 400;
     padding: 5px 10px;
     border-radius: 5px;
-  }
-  
-  .menubar ul li a:hover {
+}
+
+.menubar ul li a:hover {
     background-color: #f5f5f5;
-  }
-  @media screen and (max-width: 790px) {
+}
+
+@media screen and (max-width: 790px) {
     .hamburger {
-      display: block;
+        display: block;
     }
+
     nav ul {
-      display: none;
+        display: none;
     }
-  }
-  
-  .containerCoverUmroh img {
+}
+
+.containerCoverUmroh img {
     width: 100%;
     border-radius: 0px 0px 0px 0px;
     -webkit-border-radius: 0px 0px 0px 0px;
@@ -258,125 +289,101 @@ body {
     box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 0.75);
     -webkit-box-shadow: 10px 10px 51px -7px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 10px 10px 51px -7px rgba(0, 0, 0, 0.75);
-  }
-  
-  .containerCoverDotIcon img {
+}
+
+.containerCoverDotIcon img {
     width: 65%;
     border-radius: 72px 13px 18px 10px;
-    /* -webkit-border-radius: 72px 13px 18px 10px; */
-    /* -moz-border-radius: 72px 13px 18px 10px; */
-    /* box-shadow: 10px 10px 51px -7px rgba(0, 0, 0, 0.75); */
-    /* -webkit-box-shadow: 10px 10px 51px -7px rgba(0, 0, 0, 0.75); */
-    /* -moz-box-shadow: 10px 10px 51px -7px rgba(0, 0, 0, 0.75); */
-  }
-  
-  .parallax-1 {
-    background-image: url("../assets/tentang.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    margin-bottom: 4%;
-  }
-  
-  
-  /* <img src="https://live.staticflickr.com/5582/14498364048_6a4c09f18c_h.jpg"> */
-  .parallax-1 h1 {
+}
+
+.parallax-1 h1 {
     font-size: 30px;
     text-align: center;
-  }
-  .parallax-1 h2 {
+}
+
+.parallax-1 h2 {
     font-size: 20px;
     text-align: center;
-  }
-  
-  .parallax-inner {
+}
+
+.parallax-inner {
     padding: 10% 0;
-  }
-  
-  .containerUmroh {
+}
+
+.containerUmroh {
     width: 92%;
     margin: auto;
     height: auto;
-    /* border: 2px solid red; */
     align-items: center;
     text-align: center;
-  }
-  
-  .containerHome {
+}
+
+.containerHome {
     width: 92%;
     margin: auto;
     height: auto;
-    /* border: 2px solid red; */
     align-items: center;
     text-align: center;
-  }
-  
-  .containerPaketUmroh {
+}
+
+.containerPaketUmroh {
     width: 92%;
     margin: auto;
     height: auto;
-    /* border: 6px solid rgb(14, 255, 74); */
     align-items: center;
     text-align: center;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
-  }
-  
-  .containerHomeDotIcon {
+}
+
+.containerHomeDotIcon {
     width: 92%;
     margin: auto;
     height: 1550px;
-    /* border: 6px solid rgb(14, 255, 74); */
     align-items: center;
     text-align: center;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
-  }
-  
-  .paketUmroh {
+}
+
+.paketUmroh {
     width: 450px;
     height: 800px;
-    /* background-color: rgb(255, 20, 12); */
     padding: 1em;
     font-weight: 700;
     color: black;
     text-align: center;
-    /* border: 10px solid rgb(24, 24, 24); */
     border-radius: 10px;
     width: 250px;
-  }
-  
-  .containerListUmrohGambar {
+}
+
+.containerListUmrohGambar {
     width: 150px;
     margin: auto;
     height: 150px;
-    /* border: 5px solid red; */
     align-items: center;
     text-align: center;
-  }
-  
-  .containerDeskripsi {
+}
+
+.containerDeskripsi {
     width: 92%;
     margin: auto;
     height: 600px;
-    /* border: 6px solid rgb(14, 255, 74); */
     align-items: center;
     text-align: center;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-  }
-  
-  .button33 {
+}
+
+.button33 {
     background-color: #0d3c63;
     border-radius: 0px;
     border-radius: 0px 0px 13px 13px;
-    /* box-shadow: rgba(13, 60, 99, 0.75) 0 -25px 18px -14px inset, rgba(13, 60, 99, 0.75) 0 1px 2px, rgba(13, 60, 99, 0.75) 0 2px 4px, rgba(13, 60, 99, 0.75) 0 4px 8px, rgba(13, 60, 99, 0.75) 0 8px 16px, rgba(13, 60, 99, 0.75) 0 16px 32px; */
     color: #EEBE48;
     cursor: pointer;
     display: inline-block;
@@ -391,102 +398,132 @@ body {
     user-select: none;
     -webkit-user-select: none;
     touch-action: manipulation;
-  }
-  
-  .button33:hover {
+}
+
+.button33:hover {
     box-shadow: rgba(13, 60, 99, 0.75) 0 -25px 18px -14px inset, rgba(13, 60, 99, 0.75) 0 1px 2px, rgba(13, 60, 99, 0.75) 0 2px 4px, rgba(13, 60, 99, 0.75) 0 4px 8px, rgba(13, 60, 99, 0.75) 0 8px 16px, rgba(13, 60, 99, 0.75) 0 16px 32px;
-    /* transform: scale(1.05) rotate(-1deg); */
-  }
-  
-  footer {
+}
+
+footer {
     background-color: #0d3c63;
     color: #fff;
     padding: 40px 0;
     text-align: center;
-  }
-  
-  .footer-container {
+}
+
+.footer-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: flex-start;
-  }
-  
-  .footer-section {
+}
+
+.footer-section {
     flex: 1;
     margin: 20px;
     min-width: 200px;
-  }
-  
-  .footer-section h2 {
+}
+
+.footer-section h2 {
     margin-bottom: 20px;
     font-size: 1.5em;
-  }
-  
-  .footer-section p,
-  .footer-section a {
+}
+
+.footer-section p,
+.footer-section a {
     font-size: 1em;
     line-height: 1.6;
     color: #ddd;
     text-decoration: none;
-  }
-  
-  .footer-section a:hover {
+}
+
+.footer-section a:hover {
     text-decoration: underline;
-  }
-  
-  .footer-section img {
+}
+
+.footer-section img {
     width: 30px;
     margin: 0 10px;
-  }
-  
-  .footer-bottom {
+}
+
+.footer-bottom {
     margin-top: 20px;
     border-top: 1px solid #444;
     padding-top: 20px;
-  }
-  
-  .footer-bottom p {
+}
+
+.footer-bottom p {
     margin: 0;
     font-size: 0.9em;
-  }
+}
 
-
-
-  @media (max-width: 768px) {
+@media (max-width: 768px) {
     nav ul {
-      flex-direction: column;
-      display: none;
+        flex-direction: column;
+        display: none;
     }
 
     nav ul li {
-      margin-left: 0;
+        margin-left: 0;
     }
 
     nav .menu-toggle {
-      display: block;
-      cursor: pointer;
-      color: #E0B64A;
-      font-size: 24px;
+        display: block;
+        cursor: pointer;
+        color: #E0B64A;
+        font-size: 24px;
     }
 
     nav.active ul {
-      display: flex;
+        display: flex;
     }
 
     .bgdrop:hover .dropdown-menu {
-      position: static;
+        position: static;
     }
 
     .achievement-list {
-      display: block;
-      justify-content: center;
-      gap: 200px;
+        grid-template-columns: 1fr;
     }
-  }
-  
+}
 
-  
+.achievementss {
+  text-align: center;
+  padding: 50px 20px;
+  background: rgb(255,255,255);
+background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 6%, rgba(238,190,72,1) 78%);
+}
 
+.achievementss h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
 
-  
+.achievementss p {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.achievement-statss {
+  margin-bottom: 20px;
+}
+
+.stat {
+  font-size: 48px;
+  color: #e94e1b;
+}
+
+.achievement-listt {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.achievement-itemm {
+  text-align: center;
+}
+
+.achievement-itemm img {
+  height: 100px;
+  margin-bottom: 10px;
+}
