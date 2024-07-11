@@ -70,10 +70,10 @@ require '../connection.php';
         </div>
       </div>
 
-  <section class="achievements">
+      <section class="achievements">
     <h2>Pencapaian Kami</h2>
     <div class="achievement-stats">
-    <br><br>
+      <br><br>
     </div>
     <div class="achievement-list">
       <div class="achievement-item">
@@ -84,7 +84,6 @@ require '../connection.php';
         <img src="assets/tentang2.png" alt="Icon">
         <p>Terdaftar Siskopatuh</p>
       </div>
-      <br>
       <div class="achievement-item">
         <img src="assets/tentang3.png" alt="Icon">
         <p>Ijin Umroh Resmi</p>
@@ -95,27 +94,7 @@ require '../connection.php';
       </div>
     </div>
   </section>
-  <section class="achievements">
-    <h2>Bekerjasama Dengan</h2>
-    <br><br>
-    <div class="achievement-stats">
 
-    </div>
-    <div class="achievement-list">
-      <div class="achievement-item">
-      <img src="assets/BankSyariah.png" alt="Suriyah Logo">
-      </div>
-      <div class="achievement-item">
-      <img src="assets/bankMuammalat.png" alt="Muamalat Logo">
-      </div>
-      <br>
-      <div class="achievement-item">
-      <img src="assets/bankJateng.png" alt="Jateng Logo">
-      </div>
-      <div class="achievement-item">
-      <img src="assets/BSI.png" alt="BSI Logo">
-      <br><br><br>
-      </div>
 
 
     </div>
