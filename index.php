@@ -216,32 +216,32 @@ require 'connection.php';
     "><i class="fa-brands fa-instagram"></i> amansaumroh</p>
     <div class="instagram-grid">
       <div class="instagram-item">
-        <a href="https://www.instagram.com/your_profile" target="_blank">
+        <a href="https://www.instagram.com/p/C2Ow77Cp0Mr/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank">
           <img src="Main/assets/ig1.jpg" alt="Instagram Image 1">
         </a>
       </div>
       <div class="instagram-item">
-        <a href="https://www.instagram.com/your_profile" target="_blank">
+        <a href="https://www.instagram.com/p/C6IOUe7ppYs/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank">
           <img src="Main/assets/ig2.jpg" alt="Instagram Image 2">
         </a>
       </div>
       <div class="instagram-item">
-        <a href="https://www.instagram.com/your_profile" target="_blank">
+        <a href="https://www.instagram.com/p/C71bo7bJZFd/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank">
           <img src="Main/assets/ig3.jpg" alt="Instagram Image 3">
         </a>
       </div>
       <div class="instagram-item">
-        <a href="https://www.instagram.com/your_profile" target="_blank">
+        <a href="https://www.instagram.com/p/C8tmwGCJk1z/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank">
           <img src="Main/assets/ig4.jpg" alt="Instagram Image 4">
         </a>
       </div>
       <div class="instagram-item">
-        <a href="https://www.instagram.com/your_profile" target="_blank">
+        <a href="https://www.instagram.com/p/C89G-FoJNON/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank">
           <img src="Main/assets/ig5.jpg" alt="Instagram Image 5">
         </a>
       </div>
       <div class="instagram-item">
-        <a href="https://www.instagram.com/your_profile" target="_blank">
+        <a href="https://www.instagram.com/p/C9EOujVpWwR/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank">
           <img src="Main/assets/ig6.jpg" alt="Instagram Image 6">
         </a>
       </div>
