@@ -258,7 +258,6 @@ require 'connection.php';
 
   <!-- footer -->
   <?php include 'Main/footerAmansa.php'; ?>
-
   <script src="Main/js/script.js"></script>
 </body>
 

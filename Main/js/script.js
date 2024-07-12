@@ -1,8 +1,6 @@
-const mobileNav = document.querySelector(".hamburger");
-const navbar = document.querySelector(".menubar");
+const menuIcon = document.getElementById("menu-icon");
+const menuList = document.getElementById("menu-list");
 
-const toggleNav = () => {
-  navbar.classList.toggle("active");
-  mobileNav.classList.toggle("hamburger-active");
-};
-mobileNav.addEventListener("click", () => toggleNav());
+menuIcon.addEventListener("click", () => {
+  menuList.classList.toggle("hidden");
+});

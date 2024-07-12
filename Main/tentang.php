@@ -96,7 +96,7 @@ require '../connection.php';
   </section>
 
   <section class="achievementss">
-    <h2>Bekerjasama Dengan</h2>
+    <h2 style="color: #0D3C63; font-weight: bold;">Bekerjasama Dengan</h2>
     <br><br>
     <div class="achievement-statss">
 

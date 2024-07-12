@@ -1,3 +1,9 @@
+<?php
+session_start();
+$error_message = isset($_SESSION['error_message']) ? $_SESSION['error_message'] : '';
+unset($_SESSION['error_message']);
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,24 +17,22 @@
     <link rel="stylesheet" type="text/css" href="../../Main/css/style.css" />
     <link rel="stylesheet" type="text/css" href="../css/style.css" />
     <link rel="stylesheet" type="text/css" href="../../Main/css/login.css" />
-
-
-
-
 </head>
 
 <body>
     <!-- navbar -->
     <?php include 'navbarLogin.php'; ?>
-    <!-- <?php include dirname(__DIR__) . '/../navbarAmansa.php'; ?> -->
-
-
 
     <div class="containerHome section3">
         <div class="form-reg">
             <div class="title-reg">
                 <img src="../../Main/assets/logoHorizon.png" alt="Amansa Tours & Travel">
             </div>
+            <?php if (!empty($error_message)) : ?>
+                <div class="alert alert-danger" role="alert">
+                    <?php echo $error_message; ?>
+                </div>
+            <?php endif; ?>
             <form action="proses_login.php" method="post">
                 <div>
                     <label for="username">Username:</label>

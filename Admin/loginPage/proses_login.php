@@ -1,7 +1,4 @@
 <?php
-// error_reporting(E_ALL);
-// ini_set('display_errors', 1);
-
 session_start();
 
 include '../../connection.php';
@@ -10,7 +7,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $username = $_POST['username'];
     $password = $_POST['password'];
 
-    // var buat ga kena sql injection
+    // Prepare statement to prevent SQL injection
     $stmt = $conn->prepare("SELECT id_user, username, password FROM user WHERE username=?");
     $stmt->bind_param("s", $username);
     $stmt->execute();
@@ -19,27 +16,29 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if ($result->num_rows == 1) {
         $row = $result->fetch_assoc();
 
-        // verifikasi hash password
+        // Verify password
         if (password_verify($password, $row['password'])) {
-            // simpan sesi
+            // Save session
             $_SESSION['id_user'] = $row['id_user'];
             $_SESSION['username'] = $row['username'];
             $_SESSION['loggedin'] = true;
-            // redirect ke dashboard
+            // Redirect to dashboard
             header("Location: ../menuGambar/homePage/homePage.php");
             exit();
         } else {
-            // pass salah
-            $error_message = "Password Salah";
+            // Incorrect password
+            $_SESSION['error_message'] = "Password Salah";
+            header("Location: index.php");
+            exit();
         }
     } else {
-        // kalo not found
-        $error_message = "User tidak ditemukan";
+        // User not found
+        $_SESSION['error_message'] = "User Tidak Ditemukan";
+        header("Location: index.php");
+        exit();
     }
 
-    // Menampilkan pesan kesalahan
-    echo "<div style='position: absolute; top: 48%; left: 50%; transform: translate(-50%, -50%); text-align: center;'>$error_message</div>";
+    $stmt->close();
+    $conn->close();
 }
-
-$stmt->close();
-$conn->close();
+?>

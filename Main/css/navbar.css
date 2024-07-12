@@ -1,70 +1,193 @@
-nav ul li a:hover {
-    background-color: #2573b3;
-  }
+/* Reset default margin and padding */
 
-  .dropdown-menu {
-    --bs-dropdown-link-active-bg: #0D3C63;
+nav {
+  background-color: #0d3c63;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+/* Logo styling */
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  height: 50px;
+}
+
+/* Navbar items */
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+nav li {
+  height: 100%;
+  position: relative;
+  margin: 0;
+  padding: 0 10px;
+}
+
+nav ul a {
+  height: 100%;
+  padding: 0 15px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: white;
+  position: relative;
+}
+
+nav ul a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #E0B64A;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+nav ul a:hover::after, nav ul a.active::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+nav ul a:hover, nav ul a.active {
+  background-color: #062c4a;
+  color: #d3c630;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #0d3c63;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  margin: 0;
+  padding: 0;
+}
+
+.dropdown-content li {
+  width: 100%;
+  background-color: #0d3c63;
+}
+
+.dropdown-content a {
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  color: white;
+  position: relative;
+  background-color: #0d3c63;
+}
+
+.dropdown-content a:hover {
+  background-color: #062c4a;
+  color: #d3c630;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.menu-button {
+  display: none;
+  color: white;
+  cursor: pointer;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  background-color: #0c3a5d;
+  list-style: none;
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar li {
+  width: 100%;
+}
+
+.sidebar a {
+  width: 100%;
+  color: #d3c630;
+  padding: 15px;
+}
+
+.sidebar a.active {
+  background-color: #062c4a;
+  color: #d3c630;
+}
+
+.sidebar svg {
+  margin: 15px;
+}
+
+@media(max-width: 800px) {
+  .hideOnMobile {
     display: none;
-    opacity: 0;
-    transform: translateY(-10px);
-    transition: opacity 0.3s ease, transform 0.3s ease;
-    position: absolute;
-    z-index: 1000; /* memastikan dropdown berada di atas elemen lainnya */
   }
-
-  .dropdown:hover .dropdown-menu {
+  .menu-button {
     display: block;
-    opacity: 1;
-    transform: translateY(0);
+    margin-left: auto;
   }
-
-  .bgdrop {
-    background-color: red;
+  .main-nav {
+    display: none;
   }
-
-  .kiri {
-    margin-left: 0;
-    padding-bottom: 0px;
+  .sidebar {
+    display: none;
   }
-
-  .teksputih {
-    color: #E0B64A;
-    font-weight: 600;
-  }
-
-  .topline {
-    border-top: 1px solid #E0B64A;
-  }
-
-  .underline {
-    border-bottom: 1px solid #E0B64A;
-  }
-
-  nav {
-    padding: 10px 5%;
+  .sidebar.active {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-    z-index: 1;
-    background-color: #0d3c63;
   }
-
-  ol,
-  ul {
-    padding-left: 2rem;
+  .sidebar .dropdown-content {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #0d5590;
+    position: relative; /* Ensure dropdowns don't overflow the sidebar */
   }
-
-  .btn {
-    color: #E0B64A;
-    background: none;
-    border: none;
+  .sidebar .dropdown:hover .dropdown-content {
+    display: flex;
   }
-  
-  .dropdown {
-    position: relative;
+  .sidebar .dropdown-content a {
+    width: 100%;
+    padding: 15px;
   }
-
-  .dropdown-item {
-    color: #E0B64A;
+  .sidebar .dropdown-content {
+    padding-left: 15px; /* Indent dropdown items for better readability */
+  }
+  .sidebar .dropdown {
+    width: 100%;
+  }
+  .sidebar a.active {
+    background-color: #062c4a;
+    color: #d3c630;
+  }
 }
