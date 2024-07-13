@@ -68,7 +68,7 @@ require '../connection.php';
   <main>
         <section class="mitra-banner">
             <div class="mitra-card">
-                <img src="assets/kemitraan1.png"" alt="Mitra Image 1">
+                <img src="assets/kemitraan1.png" alt="Mitra Image 1">
             </div>
         </section>
         <section class="mitra-info">
