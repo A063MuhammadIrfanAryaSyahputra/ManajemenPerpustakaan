@@ -101,7 +101,7 @@ if (isset($_POST["submit"])) {
             <!-- Table Element -->
             <div class="card border-0">
               <div class="card-header">
-                <h5 class="card-title">Paket Haji</h5>
+                <h5 class="card-title">Homepage</h5>
                 <h6 class="card-subtitle text-muted">Dibawah ini adalah list gambar yang ada pada menu paket home</h6>
               </div>
               <div class="card-body">
