@@ -28,7 +28,7 @@
                 </svg>
                 <div class="logo-description" style="margin-left: 10px;">
                     <!-- <a href="mailto:amansatourstravel@gmail.com" style="margin-bottom: 10px; font-style: italic; font-size: 16px; color: #E0B64A;">amansatourstravel@gmail.com</a> -->
-                    <a href="questionForm.php" style="margin-bottom: 10px; font-style: italic; font-size: 16px; color: #E0B64A;">amansatourstravel@gmail.com</a>
+                    <a href="main/questionForm.php" style="margin-bottom: 10px; font-style: italic; font-size: 16px; color: #E0B64A;">amansatourstravel@gmail.com</a>
                     <!-- <a href="questionForm.html" style="margin-bottom: 10px; font-style: italic; font-size: 16px; color: #E0B64A;">Question Form</a> -->
 
                 </div>
