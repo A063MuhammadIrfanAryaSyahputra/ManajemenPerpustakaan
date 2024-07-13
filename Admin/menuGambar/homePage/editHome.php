@@ -69,13 +69,13 @@ if (isset($_GET['id'])) {
                         <label for="name">Name:</label>
                         <input type="text" class="form-control" id="name" name="name" value="<?php echo $row['nama']; ?>">
                     </div>
-                    <div class="form-group">
+                    <!-- <div class="form-group">
                         <label for="image">Current Image:</label>
                         <br>
                         <img src="../../img/<?php echo $row['image']; ?>" width="200" alt="">
-                    </div>
+                    </div> -->
                     <div class="form-group">
-                        <label for="second_image">Current Second Image:</label>
+                        <label for="second_image">Gambar: </label>
                         <br>
                         <img src="../../img/<?php echo $row['cover']; ?>" width="200" alt="">
                     </div>
@@ -99,14 +99,20 @@ if (isset($_GET['id'])) {
                         <label for="name">Itenary 4:</label>
                         <input type="text" class="form-control" id="itenary4" name="itenary4" value="<?php echo $row['itenary4']; ?>">
                     </div>
-                    <div class="form-group">
+                    
+                    
+                    <!-- <div class="form-group">
                         <label for="new_image">Choose New Image:</label>
                         <input type="file" class="form-control-file" id="new_image" name="new_image">
-                    </div>
+                    </div> -->
+                    <br>
                     <div class="form-group">
-                        <label for="new_second_image">Choose New Second Image:</label>
+                        <label for="new_second_image">Pilih Gambar : </label>
                         <input type="file" class="form-control-file" id="new_second_image" name="new_second_image">
+                        
                     </div>
+
+                    <br>
                     <button type="submit" class="btn btn-primary">Upload New Image</button>
                 </form>
               </div>

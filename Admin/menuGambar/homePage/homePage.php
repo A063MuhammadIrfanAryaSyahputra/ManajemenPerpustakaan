@@ -110,7 +110,7 @@ if (isset($_POST["submit"])) {
         <td>#</td>
         <td>Name</td>
         <td>Image</td>
-        <td>Cover</td>
+        <!-- <td>Cover</td> -->
         <td>Deskripsi</td>
         <!-- <td>Itenary 1</td>
         <td>Itenary 2</td>
@@ -125,7 +125,7 @@ if (isset($_POST["submit"])) {
         <tr>
             <td><?php echo $i++; ?></td>
             <td><?php echo $row["nama"]; ?></td>
-            <td><img src="../../img/<?php echo $row['image']; ?>" width="200"  alt=""> </td>
+            <!-- <td><img src="../../img/<?php echo $row['image']; ?>" width="200"  alt=""> </td> -->
             <td><img src="../../img/<?php echo $row['cover']; ?>" width="200"  alt=""> </td>
             <td><?php echo $row["deskripsi"]; ?></td>
 
@@ -140,7 +140,7 @@ if (isset($_POST["submit"])) {
     <?php endforeach; ?> <!-- Closing the foreach loop -->
 </table>
 
-<a href="../../../index.php">Balik</a>
+<!-- <a href="../../../index.php">Balik</a> -->
                 </table>
               </div>
             </div>
