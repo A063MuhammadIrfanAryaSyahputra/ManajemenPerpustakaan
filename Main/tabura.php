@@ -1,7 +1,3 @@
-<?php
-require '../connection.php';
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -14,7 +10,6 @@ require '../connection.php';
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   <link rel="stylesheet" type="text/css" href="css/style.css" />
   <link rel="stylesheet" type="text/css" href="css/kemitraan.css" />
-
 </head>
 
 <style>
@@ -22,21 +17,17 @@ require '../connection.php';
     padding: 20% 0;
   }
 
-
   .h1,
   h1 {
     color: #0D3C63;
   }
 
-  .button33{
+  .button33 {
     border-color: aquamarine;
   }
 
-
-
   .parallax-1 {
     background-image: url("assets/koutubial.jpg");
-
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -45,44 +36,49 @@ require '../connection.php';
   }
 
   .paketUmroh {
-  height: 550px;
-  /* background-color: rgb(255, 20, 12); */
-  padding: 1em;
-  font-weight: 700;
-  color: black;
-  text-align: center;
-  /* border: 10px solid rgb(24, 24, 24); */
-  border-radius: 10px;
-  width: 350px;
-  
-}
+    height: 550px;
+    /* background-color: rgb(255, 20, 12); */
+    padding: 1em;
+    font-weight: 700;
+    color: black;
+    text-align: center;
+    /* border: 10px solid rgb(24, 24, 24); */
+    border-radius: 10px;
+    width: 350px;
+  }
+
+  .button-container {
+    text-align: center;
+    margin: 20px 0;
+  }
 </style>
 
 <body>
-
-
   <?php include 'navbarAmansa.php'; ?>
 
-
+ 
 
   <main>
-        <section class="mitra-banner">
-            <div class="mitra-card">
-                <img src="assets/kemitraan1.png" alt="Mitra Image 1">
-            </div>
-        </section>
-        <section class="mitra-info">
-            <h2>amansaumroh</h2>
-            <h3>Pendaftaran Mitra Amansa Batch 2</h3>
-            <p>Menjadi agen kebaikan adalah suatu pilihan yang harus kita tunaikan. Sebab ada keutamaan yang akan kita dapatkan..</p>
-            <p>Salah satu diantara kebaikan itu adalah merekomendasikan Travel Haji dan Umroh yang sesuai Sunnah & Tuntunan Nabi kepada setiap insan yang memiliki keinginan beribadah ke tanah suci</p>
-            <p>Selain dapat pahala kebaikan, anda juga akan dapat banyak benefitnya.</p>
-            <p>Berniat bergabung menjadi Mitra dan Agen Kebaikan Amansa? segera daftar dan raih keuntungannya sekarang</p>
-        </section>
-    </main>
-
-  
-
+    <section class="mitra-banner">
+      <div class="mitra-card">
+        <img src="assets/kemitraan1.png" alt="Mitra Image 1">
+      </div>
+    </section>
+    <section class="mitra-info">
+      <h2>amansaumroh</h2>
+      <h3>Pendaftaran Mitra Amansa Batch 2</h3>
+      <p>Menjadi agen kebaikan adalah suatu pilihan yang harus kita tunaikan. Sebab ada keutamaan yang akan kita dapatkan..</p>
+      <p>Salah satu diantara kebaikan itu adalah merekomendasikan Travel Haji dan Umroh yang sesuai Sunnah & Tuntunan Nabi kepada setiap insan yang memiliki keinginan beribadah ke tanah suci</p>
+      <p>Selain dapat pahala kebaikan, anda juga akan dapat banyak benefitnya.</p>
+      <p>Berniat bergabung menjadi Mitra dan Agen Kebaikan Amansa? segera daftar dan raih keuntungannya sekarang</p>
+    </section>
+    <div class="button-container">
+    <button class="button">
+  <a href="https://forms.gle/2PF5mfY2xRTqN3FR6"><span class="button-text">Klik Disini Untuk Mendaftar</span></a>
+  <div class="fill-container"></div>
+</button>
+  </div>
+  </main>
 
   <?php include 'footerAmansa.php'; ?>
 
