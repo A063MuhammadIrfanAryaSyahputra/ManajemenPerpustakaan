@@ -280,7 +280,7 @@ require 'connection.php';
   </div>
 
   <!-- footer -->
-  <?php include 'footerindex.php'; ?>
+  <?php include 'footerIndex.php'; ?>
   <script src="Main/js/script.js"></script>
 </body>
 
