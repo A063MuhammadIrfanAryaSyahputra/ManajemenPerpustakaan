@@ -8,7 +8,7 @@ if (isset($_GET['id'])) {
     $image_id = $_GET['id'];
 
     // Fetch image details from the database
-    $sql = "SELECT * FROM badal WHERE id = " . $image_id;
+    $sql = "SELECT * FROM kemitraan WHERE id = " . $image_id;
     $result = $conn->query($sql);
 
     if ($result->num_rows > 0) {
@@ -23,7 +23,7 @@ if (isset($_GET['id'])) {
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dashboard Admin - Edit Badal</title>
+    <title>Dashboard Admin - Edit Kemitraan</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" />
     <script src="https://kit.fontawesome.com/ae360af17e.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../../css/style.css" />
@@ -55,24 +55,24 @@ if (isset($_GET['id'])) {
             <!-- Table Element -->
             <div class="card border-0">
               <div class="card-header">
-                <h5 class="card-title">Tambah Data</h5>
-                <h6 class="card-subtitle text-muted">Tambah Data Paket Umroh Dibawah ini</h6>
+                <h5 class="card-title">Edit Data</h5>
+                <h6 class="card-subtitle text-muted">Edit Data Halaman Kemitraan Dibawah ini</h6>
               </div>
               <div class="card-body">
-                <h2 class="mb-3">Edit Image</h2>
-                <form action="updateBadal.php" method="POST" enctype="multipart/form-data">
+                <h2 class="mb-3">Edit Gambar</h2>
+                <form action="updateKemitraan.php" method="POST" enctype="multipart/form-data">
                     <input type="hidden" name="id" value="<?php echo $row['id']; ?>">
                     <div class="form-group">
-                        <label for="name">Name:</label>
+                        <label for="name">Nama:</label>
                         <input type="text" class="form-control" id="name" name="name" value="<?php echo $row['nama']; ?>">
                     </div>
                     <div class="form-group">
-                        <label for="image">Current Image:</label>
+                        <label for="image">Image Sekarang:</label>
                         <br>
                         <img src="../../img/<?php echo $row['image']; ?>" width="200" alt="">
                     </div>
                     <div class="form-group">
-                        <label for="second_image">Current Second Image:</label>
+                        <label for="second_image">Image Kedua Sekarang:</label>
                         <br>
                         <img src="../../img/<?php echo $row['cover']; ?>" width="200" alt="">
                     </div>
@@ -81,14 +81,14 @@ if (isset($_GET['id'])) {
                         <input type="text" class="form-control" id="deskripsi" name="deskripsi" value="<?php echo $row['deskripsi']; ?>">
                     </div>
                     <div class="form-group">
-                        <label for="new_image">Choose New Image:</label>
+                        <label for="new_image">Pilih Image Pertama Baru:</label>
                         <input type="file" class="form-control-file" id="new_image" name="new_image">
                     </div>
                     <div class="form-group">
-                        <label for="new_second_image">Choose New Second Image:</label>
+                        <label for="new_second_image">Pilih Image Kedua Baru</label>
                         <input type="file" class="form-control-file" id="new_second_image" name="new_second_image">
                     </div>
-                    <button type="submit" class="btn btn-primary">Upload New Image</button>
+                    <button type="submit" class="btn btn-primary">UPDATE</button>
                 </form>
               </div>
             </div>

@@ -1,88 +1,122 @@
+<?php
+require '../connection.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>Tabungan Umroh</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-  <link rel="stylesheet" type="text/css" href="css/style.css" />
-  <link rel="stylesheet" type="text/css" href="css/kemitraan.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Badal Haji</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+
 </head>
 
 <style>
-  .parallax-inner {
-    padding: 20% 0;
-  }
+    /* warna warna bg section */
+    .section1 {
+        width: 100%;
+        margin: auto;
+        height: auto;
+        /* border: 2px solid red; */
+        align-items: center;
+        text-align: center;
+    }
 
-  .h1,
-  h1 {
-    color: #0D3C63;
-  }
+    .section2 {
+        width: 100%;
+        margin: auto;
+        height: auto;
+        /* border: 2px solid red; */
+        align-items: center;
+        text-align: center;
+        background-color: #EEBE48;
+    }
 
-  .button33 {
-    border-color: aquamarine;
-  }
 
-  .parallax-1 {
-    background-image: url("assets/koutubial.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    margin-bottom: 4%;
-  }
+    .section3 {
+        width: 100%;
+        margin: auto;
+        height: auto;
+        /* border: 2px solid red; */
+        align-items: center;
+        text-align: center;
+        /* background-color: #FFDF7B; */
 
-  .paketUmroh {
-    height: 550px;
-    /* background-color: rgb(255, 20, 12); */
-    padding: 1em;
-    font-weight: 700;
-    color: black;
-    text-align: center;
-    /* border: 10px solid rgb(24, 24, 24); */
-    border-radius: 10px;
-    width: 350px;
-  }
-
-  .button-container {
-    text-align: center;
-    margin: 20px 0;
-  }
+    }
 </style>
 
 <body>
-  <?php include 'navbarAmansa.php'; ?>
 
- 
 
-  <main>
-    <section class="mitra-banner">
-      <div class="mitra-card">
-        <img src="assets/kemitraan1.png" alt="Mitra Image 1">
-      </div>
-    </section>
-    <section class="mitra-info">
-      <h2>amansaumroh</h2>
-      <h3>Pendaftaran Mitra Amansa Batch 2</h3>
-      <p>Menjadi agen kebaikan adalah suatu pilihan yang harus kita tunaikan. Sebab ada keutamaan yang akan kita dapatkan..</p>
-      <p>Salah satu diantara kebaikan itu adalah merekomendasikan Travel Haji dan Umroh yang sesuai Sunnah & Tuntunan Nabi kepada setiap insan yang memiliki keinginan beribadah ke tanah suci</p>
-      <p>Selain dapat pahala kebaikan, anda juga akan dapat banyak benefitnya.</p>
-      <p>Berniat bergabung menjadi Mitra dan Agen Kebaikan Amansa? segera daftar dan raih keuntungannya sekarang</p>
-    </section>
-    <div class="button-container">
-    <button class="button">
-  <a href="https://forms.gle/2PF5mfY2xRTqN3FR6"><span class="button-text">Klik Disini Untuk Mendaftar</span></a>
-  <div class="fill-container"></div>
-</button>
-  </div>
-  </main>
 
-  <?php include 'footerAmansa.php'; ?>
+    <!-- navbar -->
+    <?php include 'navbarAmansa.php'; ?>
 
-  <script src="js/script.js"></script>
+
+    <div class="containerHome section3">
+        <br>
+
+
+        <div class="row justify-content-center">
+            <div class="col-3" style="padding: 10px; margin: 10px; background: none; text-align: center; border: 0px solid black; border-radius: 8px; background-color: #FFDF7B;">
+                <?php
+                $i = 1;
+                $rows = mysqli_query($conn, "SELECT * FROM tabura WHERE id = 1"); ?>
+                <?php foreach ($rows as $row) : ?>
+                    <tr>
+                        <td>
+                            <!-- <h1><?php echo $row["nama"]; ?></h1> -->
+                        </td>
+                        <div class="">
+                            <td><img src="../Admin/img/<?php echo $row['image']; ?>" alt="" style="max-width: 100%; height: auto; display: block; margin: 0 auto;"></td>
+                        </div>
+                    </tr>
+                <?php endforeach; ?>
+
+            </div>
+            <br><br>
+        </div>
+
+        <div class="row justify-content-center">
+
+            <div class="col-3" style="text-align: left; color: white;width:75%; padding: 10px; margin: 10px; background: none; text-align: left; border: 0px solid black; border-radius: 8px; background-color: #0D3C63;font-weight: bold;">
+                <?php
+                $i = 1;
+                $rows = mysqli_query($conn, "SELECT * FROM tabura WHERE id = 1"); ?>
+                <?php foreach ($rows as $row) : ?>
+                    <tr>
+                        <td></td>
+                            <a style=""><?php echo $row["deskripsi"]; ?></a><br><br>
+                        </td>
+                        <div class="">
+                        </div>
+                    </tr>
+                    
+                <?php endforeach; ?>
+                
+
+            </div>
+            <br><br>
+        </div>
+        
+
+
+
+
+    </div>
+    <br>
+    <br>
+
+    <!-- footer -->
+    <?php include 'footerAmansa.php'; ?>
+
+    <script src="js/script.js"></script>
 </body>
 
 </html>

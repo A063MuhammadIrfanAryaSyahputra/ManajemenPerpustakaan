@@ -39,21 +39,12 @@ include '../../session.php';
       <li class="sidebar-item">
         <a href="../badal/badalHaji.php" class="sidebar-link">Badal</a>
       </li>
-
-      <!-- <li>
-        <a href="#" class="sidebar-link collapsed" data-bs-target="#subListGambar" data-bs-toggle="collapse" aria-expanded="false"><i class=""></i>
-          Badal
-        </a>
-        <ul id="subListGambar" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#subListGambar">
-          <li class="sidebar-item">
-            <a href="../badal/badalHaji.php" class="sidebar-link">Badal Haji</a>
-          </li>
-
-          <li class="sidebar-item">
-            <a href="../badal/badalUmrah.php" class="sidebar-link">Badal Umrah</a>
-          </li>
-        </ul>
-      </li> -->
+      <li class="sidebar-item">
+        <a href="../kemitraan/kemitraan.php" class="sidebar-link">Kemitraan</a>
+      </li>
+      <li class="sidebar-item">
+        <a href="../tabura/tabura.php" class="sidebar-link">Tabungan Umroh</a>
+      </li>
     </ul>
 
     
@@ -72,10 +63,6 @@ include '../../session.php';
       <li class="sidebar-item">
         <a href="../../loginPage/logout.php" class="sidebar-link">Log Out</a>
       </li>
-
-      <!-- <li class="sidebar-item">
-        <a href="#" class="sidebar-link">Forgot Password</a>
-      </li> -->
     </ul>
   </li>
 </ul>

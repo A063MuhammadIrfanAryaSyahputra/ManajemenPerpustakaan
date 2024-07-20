@@ -325,4 +325,18 @@ footer {
 
 
 
+        .tabura {
+          display: flex;
+          justify-content: center;
+          gap: 20px; /* Space between images */
+      }
+      
+      .tabura img {
+          max-width: 45%; /* Adjust the width of the images */
+          height: auto;
+          display: block;
+          margin: 0 auto;
+      }
+
+
 

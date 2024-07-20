@@ -64,9 +64,6 @@ require '../connection.php';
 
 
         <div class="row justify-content-center">
-
-            <!-- <p style="font-family: 'Montserrat', sans-serif; font-weight: 600; font-size: 30px;">Kesan Bersama Amansa</p> -->
-
             <div class="col-3" style="padding: 10px; margin: 10px; background: none; text-align: center; border: 0px solid black; border-radius: 8px; background-color: #FFDF7B;">
                 <?php
                 $i = 1;
@@ -89,8 +86,6 @@ require '../connection.php';
         </div>
 
         <div class="row justify-content-center">
-
-            <!-- <p style="font-family: 'Montserrat', sans-serif; font-weight: 600; font-size: 30px;">Kesan Bersama Amansa</p> -->
 
             <div class="col-3" style="text-align: left; color: white;width:75%; padding: 10px; margin: 10px; background: none; text-align: left; border: 0px solid black; border-radius: 8px; background-color: #0D3C63;font-weight: bold;">
                 <?php

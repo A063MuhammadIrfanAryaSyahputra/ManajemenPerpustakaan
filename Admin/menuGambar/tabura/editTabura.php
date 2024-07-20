@@ -8,7 +8,7 @@ if (isset($_GET['id'])) {
     $image_id = $_GET['id'];
 
     // Fetch image details from the database
-    $sql = "SELECT * FROM badal WHERE id = " . $image_id;
+    $sql = "SELECT * FROM tabura WHERE id = " . $image_id;
     $result = $conn->query($sql);
 
     if ($result->num_rows > 0) {
@@ -55,26 +55,21 @@ if (isset($_GET['id'])) {
             <!-- Table Element -->
             <div class="card border-0">
               <div class="card-header">
-                <h5 class="card-title">Tambah Data</h5>
-                <h6 class="card-subtitle text-muted">Tambah Data Paket Umroh Dibawah ini</h6>
+                <h5 class="card-title">Edit Data</h5>
+                <h6 class="card-subtitle text-muted">Edit Data Tabungan Umroh Dibawah ini</h6>
               </div>
               <div class="card-body">
-                <h2 class="mb-3">Edit Image</h2>
-                <form action="updateBadal.php" method="POST" enctype="multipart/form-data">
+                <h2 class="mb-3">Edit Gambar</h2>
+                <form action="updateTabura.php" method="POST" enctype="multipart/form-data">
                     <input type="hidden" name="id" value="<?php echo $row['id']; ?>">
                     <div class="form-group">
-                        <label for="name">Name:</label>
+                        <label for="name">Nama:</label>
                         <input type="text" class="form-control" id="name" name="name" value="<?php echo $row['nama']; ?>">
                     </div>
                     <div class="form-group">
-                        <label for="image">Current Image:</label>
+                        <label for="image">Gambar Sekarang:</label>
                         <br>
                         <img src="../../img/<?php echo $row['image']; ?>" width="200" alt="">
-                    </div>
-                    <div class="form-group">
-                        <label for="second_image">Current Second Image:</label>
-                        <br>
-                        <img src="../../img/<?php echo $row['cover']; ?>" width="200" alt="">
                     </div>
                     <div class="form-group">
                         <label for="name">Deskripsi:</label>
@@ -84,11 +79,7 @@ if (isset($_GET['id'])) {
                         <label for="new_image">Choose New Image:</label>
                         <input type="file" class="form-control-file" id="new_image" name="new_image">
                     </div>
-                    <div class="form-group">
-                        <label for="new_second_image">Choose New Second Image:</label>
-                        <input type="file" class="form-control-file" id="new_second_image" name="new_second_image">
-                    </div>
-                    <button type="submit" class="btn btn-primary">Upload New Image</button>
+                    <button type="submit" class="btn btn-primary">UPLOAD</button>
                 </form>
               </div>
             </div>
