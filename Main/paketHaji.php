@@ -29,6 +29,7 @@ if(isset($_GET['id'])) {
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
   <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <link rel="stylesheet" type="text/css" href="css/tentang.css" />
 
   <body>
   
@@ -54,6 +55,7 @@ if(isset($_GET['id'])) {
                 </div>
 
                 <div class="itenary">
+                  <br>
                     <h1>&nbsp;Itenary</h1>
                     <ul class="list">
                         <li><span><?php echo $row["itenary1"]; ?></span></li>
@@ -68,6 +70,12 @@ if(isset($_GET['id'])) {
         <?php endif; ?>
         </div>
         </div>
+
+        <section class="achievementss">
+    <br><br><br><br><br>
+
+    </div>
+  </section>
 
         <?php include 'footerAmansa.php'; ?>
 

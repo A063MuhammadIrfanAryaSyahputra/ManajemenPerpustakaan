@@ -19,7 +19,7 @@
       <ul class="dropdown-content">
         <li><a href="Haji.php">Haji Furoda</a></li>
         <li><a href="hajiKhusus.php">Haji Khusus</a></li>
-        <li><a href="tabungan.php">Tabungan Haji</a></li>
+        <!-- <li><a href="tabungan.php">Tabungan Haji</a></li> -->
         <li><a href="badalHaji.php">Badal Haji</a></li>
       </ul>
     </li>

@@ -31,6 +31,7 @@ if (isset($_GET['id'])) {
 <!-- <link rel="stylesheet" type="text/css" href="css/kemitraan.css" /> -->
 
 <link rel="stylesheet" type="text/css" href="css/style.css" />
+<link rel="stylesheet" type="text/css" href="css/tentang.css" />
 
 
 <body>
