@@ -23,6 +23,7 @@ if(isset($_GET['id'])) {
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Paket Umroh</title>
     <link rel="stylesheet" type="text/css" target="_blank" href="css/paketUmroh.css" />
+    <link rel="stylesheet" type="text/css" target="_blank" href="css/tentang.css" />
   </head>
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -35,18 +36,18 @@ if(isset($_GET['id'])) {
     <?php include 'navbarAmansa.php'; ?>
 
 
-
   <div class="containerUmroh">
     <?php if(isset($row)): ?>
       <div class="namaPaket">
             <h1></strong> <?php echo $row['nama']; ?></h1>
+            <br><br>
       </div>
 
-      <div class="containerGambarPaket">
+
       <div class="gambarPaket">
              <img src="../Admin/img/<?php echo $row['image']; ?>"  alt="">
       </div>
-      </div>
+
            
             <div class="containerDeskripsi">
                 <div class="deskripsi">
@@ -54,6 +55,7 @@ if(isset($_GET['id'])) {
                 </div>
 
                 <div class="itenary">
+                  <br>
                     <h1>&nbsp;Tentang</h1>
                     <ul class="list">
                         <li><span><?php echo $row["itenary1"]; ?></span></li>
@@ -68,6 +70,15 @@ if(isset($_GET['id'])) {
         <?php endif; ?>
         </div>
         </div>
+
+        <section class="achievementss">
+    <br><br><br><br><br><br><br>
+      </div>
+
+
+    </div>
+  </section>
+        
         
     <?php include 'footerAmansa.php'; ?>
 
