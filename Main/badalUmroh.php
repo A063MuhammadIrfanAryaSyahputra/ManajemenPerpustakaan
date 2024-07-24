@@ -121,8 +121,6 @@ require '../connection.php';
 
 
     </div>
-    <br>
-    <br>
 
     <section class="achievementss">
     <br><br><br><br>
