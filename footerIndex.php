@@ -12,6 +12,7 @@
         margin-left: 10px;
         margin-bottom: 4px;
         color: #E0B64A;
+        font-style: italic;
         /* margin-top: -5px; */
     }
 
@@ -37,17 +38,19 @@
 
                 <div class="d-flex align-items-center">
                     <i class="bi bi-whatsapp icon-color"></i>
-                    <span class="email-text">0822 2020 8300</span>
+                    <a href="https://wa.me/+6282220208300" class="email-text" style="color: #E0B64A;">0822 2020 8300</a>
                 </div>
 
                 <div class="d-flex align-items-center">
                     <i class="bi bi-question-circle icon-color"></i>
-                    <span class="email-text">Ada Pertanyaan?</span>
+                    <a href="http://localhost/ManajemenPerpustakaan/Main/questionForm.php" class="email-text" style="color: #E0B64A;">Ada Pertanyaan?</a>
                 </div>
 
                 <div class="d-flex align-items-center">
                     <i class="bi bi-envelope icon-color"></i>
-                    <span class="email-text">amansatourstravel@gmail.com</span>
+                    <a href="mailto:amansatourstravel@gmail.com">
+                        <span class="email-text">amansatourstravel@gmail.com</span>
+                    </a>
                 </div>
             </div>
 
