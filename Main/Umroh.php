@@ -200,6 +200,7 @@ require '../connection.php';
   <?php include 'footerAmansa.php'; ?>
 
   <script src="js/script.js"></script>
+  
 </body>
 
 </html>

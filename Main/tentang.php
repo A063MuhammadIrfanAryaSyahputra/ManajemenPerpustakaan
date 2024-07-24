@@ -128,6 +128,7 @@ require '../connection.php';
   <?php include 'footerTentang.php'; ?>
 
   <script src="js/script.js"></script>
+  
 </body>
 
 </html>
