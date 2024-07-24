@@ -57,8 +57,8 @@ require '../connection.php'; // Adjust path to your database connection script
       <div class="parallax-1">
         <div class="parallax-inner">
 
-          <h1 style="font-family: trocchi; font-size: 35px;">Umrah bersama Amansa</h1>
-          <h2 style="font-family: trocchi; font-size: 35px;"><em>Special Spiritual Moment to Baitullah</em></h2>
+          <h1 style="font-family: Spinnaker; font-size: 35px; font-weight: bold;">Umrah bersama Amansa</h1>
+          <h2 style="font-family: Spinnaker; font-size: 35px; font-weight: bold;"><em>Special Spiritual Moment to Baitullah</em></h2>
         </div>
       </div>
 
@@ -72,20 +72,33 @@ require '../connection.php'; // Adjust path to your database connection script
         if (mysqli_num_rows($result) > 0) {
           $gallery = mysqli_fetch_assoc($result);
       ?>
-          <div class="slider">
-            <div class="gallery-title"><?php echo htmlspecialchars($gallery['name']); ?></div>
-            <div class="slide-track">
-              <?php for ($i = 1; $i <= 7; $i++) :
-                $imageField = 'image' . $i;
-                if (!empty($gallery[$imageField])) :
-              ?>
-                  <div class="slide"><img src="<?php echo htmlspecialchars('../Admin/img/' . $gallery[$imageField]); ?>" alt="Gallery Image <?php echo $i; ?>"></div>
-              <?php
-                endif;
-              endfor;
-              ?>
-            </div>
-          </div>
+ <div class="slider">
+  <div class="gallery-title"><h4><?php echo htmlspecialchars($gallery['name']); ?></h4></div>
+  <div class="slide-track">
+    <?php for ($i = 1; $i <= 7; $i++) :
+      $imageField = 'image' . $i;
+      if (!empty($gallery[$imageField])) :
+    ?>
+      <div class="slide"><img src="<?php echo htmlspecialchars('../Admin/img/' . $gallery[$imageField]); ?>" alt="Gallery Image <?php echo $i; ?>"></div>
+    <?php
+      endif;
+    endfor;
+    ?>
+    <!-- Duplicate the images for seamless scrolling -->
+    <?php for ($i = 1; $i <= 7; $i++) :
+      $imageField = 'image' . $i;
+      if (!empty($gallery[$imageField])) :
+    ?>
+      <div class="slide"><img src="<?php echo htmlspecialchars('../Admin/img/' . $gallery[$imageField]); ?>" alt="Gallery Image <?php echo $i; ?>"></div>
+    <?php
+      endif;
+    endfor;
+    ?>
+  </div>
+</div>
+
+
+
       <?php
         } else {
           echo "<p>No gallery found for ID $galleryId.</p>";
