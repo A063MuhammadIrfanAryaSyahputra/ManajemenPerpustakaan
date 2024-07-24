@@ -277,11 +277,15 @@ require 'connection.php';
 
 
 
+
   </div>
 
   <!-- footer -->
   <?php include 'footerIndex.php'; ?>
+  <?php include 'wa.php'; ?>
+
   <script src="Main/js/script.js"></script>
+
 </body>
 
 </html>
