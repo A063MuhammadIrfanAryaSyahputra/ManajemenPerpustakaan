@@ -47,6 +47,10 @@ require '../connection.php'; // Adjust path to your database connection script
     background-attachment: fixed;
     margin-bottom: 4%;
   }
+
+  #whatsapp-widget-icon {
+    width: 50px;
+}
 </style>
 
 <body>
