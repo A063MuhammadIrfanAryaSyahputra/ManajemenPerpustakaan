@@ -40,7 +40,7 @@ nav .logo h1 {
   -webkit-text-fill-color: transparent;
 }
 
-nav ul {
+/* nav ul {
   list-style: none;
   display: flex;
 }
@@ -55,7 +55,7 @@ nav ul li a {
   padding: 4px 8px;
   border-radius: 5px;
   color: #e0b64a;
-}
+} */
 
 nav ul li a:hover {
   background-color: #2573b3;

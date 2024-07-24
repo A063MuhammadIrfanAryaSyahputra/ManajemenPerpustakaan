@@ -30,7 +30,6 @@ if(isset($_GET['id'])) {
 
   <link rel="stylesheet" type="text/css" href="css/style.css" />
 
-  
   <body>
   
   <?php include 'navbarAmansa.php'; ?>
