@@ -9,12 +9,12 @@ let paramsDefault = {
     },
     optionsChat: {
         buttonTarget: `https://api.whatsapp.com/send?`,
-        message:'Permisi mas faiq',
-        phone:'+6281578220475',
+        message:'Permisi',
+        phone:'+6282220208300',
         text: 'Kirim'
     },
     optionsBot: {
-        name: 'Faiq',
+        name: 'Amansa',
         image: 'assets/amansalogo.png',
         messageDefault: 'Assalamualaikum, ada yang bisa dibantu?',
         messageTyping: 'sedang mengetik...'
