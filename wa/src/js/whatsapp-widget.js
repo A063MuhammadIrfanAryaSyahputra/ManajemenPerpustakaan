@@ -15,7 +15,7 @@ let paramsDefault = {
     },
     optionsBot: {
         name: 'Amansa',
-        image: 'assets/amansalogo.png',
+        image: 'Main/assets/amansalogo.png',
         messageDefault: 'Assalamualaikum, ada yang bisa dibantu?',
         messageTyping: 'sedang mengetik...'
     }
