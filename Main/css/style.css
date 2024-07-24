@@ -28,7 +28,7 @@ body {
 }
 
 .containerCoverDotIcon img {
-  width:60%;
+  width: 60%;
   border-radius: 72px 13px 18px 10px;
   /* -webkit-border-radius: 72px 13px 18px 10px; */
   /* -moz-border-radius: 72px 13px 18px 10px; */
@@ -52,6 +52,7 @@ body {
   font-size: 30px;
   text-align: center;
 }
+
 .parallax-1 h2 {
   font-size: 20px;
   text-align: center;
@@ -70,7 +71,7 @@ body {
   text-align: center;
 }
 
-.containerUmroh h1{
+.containerUmroh h1 {
   font-weight: bolder;
 }
 
@@ -83,7 +84,7 @@ body {
   text-align: center;
 }
 
-.containerHome h1{
+.containerHome h1 {
   font-weight: bold;
 }
 
@@ -242,12 +243,15 @@ footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 10px; /* Increased gap for more spacing */
+  gap: 10px;
+  /* Increased gap for more spacing */
 }
 
 .instagram-item {
-  flex: 1 1 calc(30% - 30px); /* Adjusted size to fit 3 per row */
-  max-width: calc(30% - 30px); /* Adjusted size to fit 3 per row */
+  flex: 1 1 calc(30% - 30px);
+  /* Adjusted size to fit 3 per row */
+  max-width: calc(30% - 30px);
+  /* Adjusted size to fit 3 per row */
   background: #fff;
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -294,15 +298,18 @@ footer {
 .testimonial-content:hover {
   transform: scale(1.05);
 }
+
 .carousel-item.active,
 .carousel-item-next,
 .carousel-item-prev {
   display: block;
 }
+
 .carousel-item {
   display: none;
-    padding: 10px;
+  padding: 10px;
 }
+
 .testimonial-title {
   font-family: "Spinnaker", sans-serif;
   font-weight: 600;
@@ -310,33 +317,34 @@ footer {
   text-align: center;
   margin-bottom: 20px;
 }
+
 .testimonial-container {
   max-width: 1432px;
   margin: 0 auto;
 }
+
 .testimonial-content {
   transition: transform 0.3s ease-in-out;
 }
 
 .carousel-control-prev-icon,
-        .carousel-control-next-icon {
-            background-color: black;
-        }
+.carousel-control-next-icon {
+  background-color: black;
+}
 
 
 
-        .tabura {
-          display: flex;
-          justify-content: center;
-          gap: 20px; /* Space between images */
-      }
-      
-      .tabura img {
-          max-width: 45%; /* Adjust the width of the images */
-          height: auto;
-          display: block;
-          margin: 0 auto;
-      }
+.tabura {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  /* Space between images */
+}
 
-
-
+.tabura img {
+  max-width: 45%;
+  /* Adjust the width of the images */
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}

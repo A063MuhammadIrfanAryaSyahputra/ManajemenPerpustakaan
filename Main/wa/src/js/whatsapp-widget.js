@@ -44,7 +44,7 @@ function createElements(params) {
         paramsDefault = params;
 
     const strTarget = ` <a href="#" id="whatsapp-widget-target" class="whatsapp-widget-target pulse">
-                            <img id="whatsapp-widget-icon" class="whatsapp-widget-icon" src="https://imagepng.org/wp-content/uploads/2017/08/WhatsApp-icone.png"/>
+                            <img id="whatsapp-widget-icon" class="whatsapp-widget-icon" src="assets/wa.png"/>
                         </a>`;
 
     const strChat = `<div class="whatsapp-widget-chat" id="whatsapp-widget-chat">
