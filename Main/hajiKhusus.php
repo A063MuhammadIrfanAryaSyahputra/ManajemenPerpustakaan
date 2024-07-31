@@ -83,7 +83,6 @@ require '../connection.php';
         <?php foreach ($rows as $row) : ?>
           <tr>
             <td>
-              <!-- <h1><?php echo $row["nama"]; ?></h1> -->
             </td>
             <div class="containerCoverUmroh">
               <td><img src="../Admin/img/<?php echo $row['cover']; ?>" alt=""></td>

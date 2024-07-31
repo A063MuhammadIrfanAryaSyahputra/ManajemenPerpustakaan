@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Spinnaker&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Spinnaker&display=swap");
 
 * {
   box-sizing: border-box;
@@ -46,7 +46,6 @@ body {
   margin-bottom: 4%;
 }
 
-
 /* <img src="https://live.staticflickr.com/5582/14498364048_6a4c09f18c_h.jpg"> */
 .parallax-1 h1 {
   font-size: 30px;
@@ -60,15 +59,6 @@ body {
 
 .parallax-inner {
   padding: 10% 0;
-}
-
-.containerUmroh {
-  width: 80%;
-  margin: auto;
-  height: auto;
-  /* border: 2px solid red; */
-  align-items: center;
-  text-align: center;
 }
 
 .containerUmroh h1 {
@@ -154,7 +144,7 @@ body {
   border-radius: 0px;
   border-radius: 0px 0px 13px 13px;
   /* box-shadow: rgba(13, 60, 99, 0.75) 0 -25px 18px -14px inset, rgba(13, 60, 99, 0.75) 0 1px 2px, rgba(13, 60, 99, 0.75) 0 2px 4px, rgba(13, 60, 99, 0.75) 0 4px 8px, rgba(13, 60, 99, 0.75) 0 8px 16px, rgba(13, 60, 99, 0.75) 0 16px 32px; */
-  color: #EEBE48;
+  color: #eebe48;
   cursor: pointer;
   display: inline-block;
   width: 100%;
@@ -227,7 +217,6 @@ footer {
   margin: 0;
   font-size: 0.9em;
 }
-
 
 .section4 {
   width: 70%;
@@ -331,8 +320,6 @@ footer {
 .carousel-control-next-icon {
   background-color: black;
 }
-
-
 
 .tabura {
   display: flex;

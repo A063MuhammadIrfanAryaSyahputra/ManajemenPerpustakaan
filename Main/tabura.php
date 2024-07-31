@@ -15,115 +15,53 @@ require '../connection.php';
 
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link rel="stylesheet" type="text/css" href="css/tentang.css" />
-
 </head>
 
-<style>
-    /* warna warna bg section */
-    .section1 {
-        width: 100%;
-        margin: auto;
-        height: auto;
-        /* border: 2px solid red; */
-        align-items: center;
-        text-align: center;
-    }
-
-    .section2 {
-        width: 100%;
-        margin: auto;
-        height: auto;
-        /* border: 2px solid red; */
-        align-items: center;
-        text-align: center;
-        background-color: #EEBE48;
-    }
-
-
-    .section3 {
-        width: 100%;
-        margin: auto;
-        height: auto;
-        /* border: 2px solid red; */
-        align-items: center;
-        text-align: center;
-        /* background-color: #FFDF7B; */
-
-    }
-</style>
-
 <body>
-
-
-
     <!-- navbar -->
     <?php include 'navbarAmansa.php'; ?>
 
-
     <div class="containerHome section3">
         <br>
-
-
         <div class="row justify-content-center">
-            <div class="col-3" style="padding: 10px; margin: 10px; background: none; text-align: center; border: 0px solid black; border-radius: 8px; background-color: #FFDF7B;">
+            <div class="col-3 shadow-container" style="">
                 <?php
                 $i = 1;
                 $rows = mysqli_query($conn, "SELECT * FROM tabura WHERE id = 1"); ?>
                 <?php foreach ($rows as $row) : ?>
-                    <tr>
-                        <td>
-                            <!-- <h1><?php echo $row["nama"]; ?></h1> -->
-                        </td>
-                        <div class="">
-                            <td><img src="../Admin/img/<?php echo $row['image']; ?>" alt="" style="max-width: 100%; height: auto; display: block; margin: 0 auto;"></td>
-                        </div>
-                    </tr>
+                    <div class="">
+                        <br><br>
+                        <img class="shadow-image" src="../Admin/img/<?php echo $row['image']; ?>" alt="" style="max-width: 100%; height: auto; display: block; margin: 0 auto; border-radius: 8px; box-shadow: 2px 2px 52px 19px rgba(13,60,99,0.75);
+-webkit-box-shadow: 2px 2px 52px 19px rgba(13,60,99,0.75);
+-moz-box-shadow: 2px 2px 52px 19px rgba(13,60,99,0.75);"><br><br>
+                    </div>
                 <?php endforeach; ?>
-
             </div>
             <br><br>
         </div>
 
         <div class="row justify-content-center">
-
-            <div class="col-3" style="text-align: left; color: white;width:75%; padding: 10px; margin: 10px; background: none; text-align: left; border: 0px solid black; border-radius: 8px; background-color: #0D3C63;font-weight: bold;">
+            <div class="col-3" style="text-align: justify; color: white; width: 50%; padding: 10px; margin: 10px; background: none;  border: 0px solid black; border-radius: 8px; background-color: #0D3C63; ">
                 <?php
                 $i = 1;
                 $rows = mysqli_query($conn, "SELECT * FROM tabura WHERE id = 1"); ?>
                 <?php foreach ($rows as $row) : ?>
-                    <tr>
-                        <td></td>
-                            <a style=""><?php echo $row["deskripsi"]; ?></a><br><br>
-                        </td>
-                        <div class="">
-                        </div>
-                    </tr>
-                    
+                    <a><?php echo $row["deskripsi"]; ?></a><br><br>
                 <?php endforeach; ?>
-                
-
             </div>
             <br><br>
         </div>
-        
-
-
-
-
     </div>
     <br>
     <br>
 
     <section class="achievementss">
-    <br><br><br><br>
-
-    </div>
-  </section>
+        <br><br><br><br>
+    </section>
 
     <!-- footer -->
     <?php include 'footerAmansa.php'; ?>
 
     <script src="js/script.js"></script>
 </body>
-
 </html>

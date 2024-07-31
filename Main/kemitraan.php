@@ -22,21 +22,30 @@ require '../connection.php';
     <div class="containerHome section3">
         <br>
         <div class="row justify-content-center">
-            <div class="col-6" style="padding: 10px; margin: 10px; background: none; text-align: center; border: 0px solid black; border-radius: 8px; background-color: #FFDF7B;">
+            <div class="col-6" style="">
                 <?php
                 $rows = mysqli_query($conn, "SELECT * FROM kemitraan WHERE id = 1"); 
                 foreach ($rows as $row) :
                 ?>
+                <br><br>
                     <div class="tabura">
-                        <img src="../Admin/img/<?php echo $row['image']; ?>" alt="" class="img-fluid">
-                        <img src="../Admin/img/<?php echo $row['cover']; ?>" alt="" class="img-fluid">
+                        <br>
+                        <img src="../Admin/img/<?php echo $row['image']; ?>" alt="" class="img-fluid" style="box-shadow: 2px 2px 52px 19px rgba(13,60,99,0.75);
+-webkit-box-shadow: 2px 2px 52px 19px rgba(13,60,99,0.75);
+-moz-box-shadow: 2px 2px 52px 19px rgba(13,60,99,0.75);  border-radius: 8px;">
+<br><br>
+                        <img src="../Admin/img/<?php echo $row['cover']; ?>" alt="" class="img-fluid" style="box-shadow: 2px 2px 52px 19px rgba(13,60,99,0.75);
+-webkit-box-shadow: 2px 2px 52px 19px rgba(13,60,99,0.75);
+-moz-box-shadow: 2px 2px 52px 19px rgba(13,60,99,0.75);  border-radius: 8px;">
+<br>
                     </div>
                 <?php endforeach; ?>
             </div>
-            <br><br>
+            
         </div>
+        <br><br>
         <div class="row justify-content-center">
-            <div class="col-8" style="text-align: left; color: white; padding: 10px; margin: 10px; background: none; text-align: left; border: 0px solid black; border-radius: 8px; background-color: #0D3C63; font-weight: bold;">
+            <div class="col-8" style="text-align: justify; text-justify: inter-word; width: 60%; inter-word; color: white; padding: 10px; margin: 10px; background: none;  border: 0px solid black; border-radius: 8px; background-color: #0D3C63; ">
                 <?php
                 $rows = mysqli_query($conn, "SELECT * FROM kemitraan WHERE id = 1"); 
                 foreach ($rows as $row) :

@@ -18,40 +18,6 @@ require '../connection.php';
 
 </head>
 
-<style>
-    /* warna warna bg section */
-    .section1 {
-        width: 100%;
-        margin: auto;
-        height: auto;
-        /* border: 2px solid red; */
-        align-items: center;
-        text-align: center;
-    }
-
-    .section2 {
-        width: 100%;
-        margin: auto;
-        height: auto;
-        /* border: 2px solid red; */
-        align-items: center;
-        text-align: center;
-        background-color: #EEBE48;
-    }
-
-
-    .section3 {
-        width: 100%;
-        margin: auto;
-        height: auto;
-        /* border: 2px solid red; */
-        align-items: center;
-        text-align: center;
-        /* background-color: #FFDF7B; */
-
-    }
-</style>
-
 <body>
 
 
@@ -68,7 +34,7 @@ require '../connection.php';
 
             <!-- <p style="font-family: 'Montserrat', sans-serif; font-weight: 600; font-size: 30px;">Kesan Bersama Amansa</p> -->
 
-            <div class="col-3" style="padding: 10px; margin: 10px; background: none; text-align: center; border: 0px solid black; border-radius: 8px; background-color: #FFDF7B;">
+            <div class="col-3" style="">
                 <?php
                 $i = 1;
                 $rows = mysqli_query($conn, "SELECT * FROM badal WHERE id = 2"); ?>
@@ -78,9 +44,11 @@ require '../connection.php';
                             <!-- <h1><?php echo $row["nama"]; ?></h1> -->
                         </td>
                         <div class="">
-                            <!-- <td><img src="../Admin/img/<?php echo $row['cover']; ?>" alt=""></td> -->
-                            <!-- <img src="https://marketplace.canva.com/EAFvCLo1gPg/1/0/900w/canva-krem-%26-putih-minimalis-testimonial-cerita-instagram-sGI_LpwQ8-Y.jpg" style="max-width: 100%; height: auto; display: block; margin: 0 auto;" alt="Placeholder Image"> -->
-                            <td><img src="../Admin/img/<?php echo $row['cover']; ?>" alt="" style="max-width: 100%; height: auto; display: block; margin: 0 auto;"></td>
+                            <br><br>
+                            <td><img src="../Admin/img/<?php echo $row['cover']; ?>" alt="" style="max-width: 100%; height: auto; display: block; margin: 0 auto; max-width: 100%; height: auto; display: block; margin: 0 auto; border-radius: 8px; box-shadow: 2px 2px 52px 19px rgba(13,60,99,0.75);
+-webkit-box-shadow: 2px 2px 52px 19px rgba(13,60,99,0.75);
+-moz-box-shadow: 2px 2px 52px 19px rgba(13,60,99,0.75)"></td>
+<br><br>
                         </div>
                     </tr>
                 <?php endforeach; ?>
@@ -93,7 +61,7 @@ require '../connection.php';
 
             <!-- <p style="font-family: 'Montserrat', sans-serif; font-weight: 600; font-size: 30px;">Kesan Bersama Amansa</p> -->
 
-            <div class="col-3" style="text-align: left; color: white;width:75%; padding: 10px; margin: 10px; background: none; text-align: left; border: 0px solid black; border-radius: 8px; background-color: #0D3C63;font-weight: bold;">
+            <div class="col-3" style="color: white;width:50%; padding: 10px; margin: 10px; background: none; text-align: justify; border: 0px solid black; border-radius: 8px; background-color: #0D3C63;">
                 <?php
                 $i = 1;
                 $rows = mysqli_query($conn, "SELECT * FROM badal WHERE id = 2"); ?>
