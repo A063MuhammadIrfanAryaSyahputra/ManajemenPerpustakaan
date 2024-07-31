@@ -54,7 +54,6 @@ if(isset($_GET['id'])) {
                 <div class="deskripsi">
                     <p> <?php echo $row['deskripsi']; ?></p>
                 </div>
-
                 <div class="itenary">
                     <h1>&nbsp;Itenary</h1>
                     <ul class="list">
@@ -64,7 +63,6 @@ if(isset($_GET['id'])) {
                         <li><span><?php echo $row["itenary4"]; ?></span></li>
                     </ul>
                 </div>
-            
         <?php else: ?>
             <p>No data found for the provided ID.</p>
         <?php endif; ?>

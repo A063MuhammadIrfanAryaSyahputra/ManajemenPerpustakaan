@@ -16,84 +16,71 @@ require '../connection.php';
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link rel="stylesheet" type="text/css" href="css/tentang.css" />
 
+    <style>
+        @media (max-width: 768px) {
+            .shadow-container img {
+                width: 70%; /* Make the image take the full width of its container */
+                height: auto; /* Maintain aspect ratio */
+            }
+
+            .shadow-container {
+                width: 90%; /* Adjust the container width for better fit on mobile */
+                margin: 0 auto; /* Center the container */
+            }
+
+            .containerHome .col-4 {
+                width: 1000%;
+                font-size: small; /* Adjust text size for better readability on mobile */
+            }
+        }
+    </style>
 </head>
+
 <body>
-
-
-
     <!-- navbar -->
     <?php include 'navbarAmansa.php'; ?>
 
-
     <div class="containerHome section3">
         <br>
-
-
         <div class="row justify-content-center">
-            <div class="col-3" style="">
+            <div class="col-3 shadow-container" style="">
                 <?php
                 $i = 1;
                 $rows = mysqli_query($conn, "SELECT * FROM badal WHERE id = 1"); ?>
                 <?php foreach ($rows as $row) : ?>
-                    <tr>
-                        <td>
-                        </td>
-                        <div class="">
-                            <br><br>
-
-                            <td><img src="../Admin/img/<?php echo $row['cover']; ?>" alt="" style="max-width: 100%; height: auto; display: block; margin: 0 auto; box-shadow: 2px 2px 52px 19px rgba(13,60,99,0.75);
--webkit-box-shadow: 2px 2px 52px 19px rgba(13,60,99,0.75);
--moz-box-shadow: 2px 2px 52px 19px rgba(13,60,99,0.75);  border-radius: 8px;"></td>
-<br><br>
-                        </div>
-                    </tr>
+                    <div class="">
+                        <br><br>
+                        <img class="shadow-image" src="../Admin/img/<?php echo $row['image']; ?>" alt="" style="max-width: 100%; height: auto; display: block; margin: 0 auto; border-radius: 8px; box-shadow: 2px 2px 52px 19px rgba(13,60,99,0.75);
+                        -webkit-box-shadow: 2px 2px 52px 19px rgba(13,60,99,0.75);
+                        -moz-box-shadow: 2px 2px 52px 19px rgba(13,60,99,0.75);"><br><br>
+                    </div>
                 <?php endforeach; ?>
-
             </div>
             <br><br>
         </div>
 
         <div class="row justify-content-center">
-
-            <div class="col-3" style="text-align: justify;  text-justify: inter-word; color: white;width:50%; padding: 10px; margin: 10px; background: none; border: 0px solid black; border-radius: 8px; background-color: #0D3C63;">
+            <div class="col-4" style="text-align: justify; color: white; width: 50%; padding: 10px; margin: 10px; background: none;  border: 0px solid black; border-radius: 8px; background-color: #0D3C63; ">
                 <?php
                 $i = 1;
                 $rows = mysqli_query($conn, "SELECT * FROM badal WHERE id = 1"); ?>
                 <?php foreach ($rows as $row) : ?>
-                    <tr>
-                        <td></td>
-                            <a style=""><?php echo $row["deskripsi"]; ?></a><br><br>
-                        </td>
-                        <div class="">
-                        </div>
-                    </tr>
-                    
+                    <a><?php echo $row["deskripsi"]; ?></a><br><br>
                 <?php endforeach; ?>
-                
-
             </div>
             <br><br>
         </div>
-        
-
-
-
-
     </div>
     <br>
     <br>
 
     <section class="achievementss">
-    <br><br><br><br><br>
-
-    </div>
-  </section>
+        <br><br><br><br>
+    </section>
 
     <!-- footer -->
     <?php include 'footerAmansa.php'; ?>
-    
 
     <script src="js/script.js"></script>
 </body>
-
 </html>

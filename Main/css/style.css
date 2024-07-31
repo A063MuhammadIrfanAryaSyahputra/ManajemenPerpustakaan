@@ -335,3 +335,42 @@ footer {
   display: block;
   margin: 0 auto;
 }
+
+.containerCoverUmroh img {
+  width: 100%;
+  border-radius: 0px 0px 0px 0px;
+  -webkit-border-radius: 0px 0px 0px 0px;
+  -moz-border-radius: 0px 0px 0px 0px;
+  box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 51px -7px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 51px -7px rgba(0, 0, 0, 0.75);
+}
+
+@media (max-width: 768px) {
+  .gambarPaket img {
+    width: 100%;
+    height: auto;
+  }
+
+  .containerDeskripsi {
+    flex-direction: column;
+  }
+
+  .itenary {
+    order: -1;
+  }
+
+  .deskripsi p{
+    font-size: small;
+  }
+
+  .itenary h1{
+    font-size:medium;
+  }
+
+  .itenary ul li{
+    font-size: small;
+  }
+
+  
+}

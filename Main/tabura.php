@@ -15,6 +15,25 @@ require '../connection.php';
 
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link rel="stylesheet" type="text/css" href="css/tentang.css" />
+
+    <style>
+        @media (max-width: 768px) {
+            .shadow-container img {
+                width: 70%; /* Make the image take the full width of its container */
+                height: auto; /* Maintain aspect ratio */
+            }
+
+            .shadow-container {
+                width: 90%; /* Adjust the container width for better fit on mobile */
+                margin: 0 auto; /* Center the container */
+            }
+
+            .containerHome .col-4 {
+                width: 1000%;
+                font-size: small; /* Adjust text size for better readability on mobile */
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -32,8 +51,8 @@ require '../connection.php';
                     <div class="">
                         <br><br>
                         <img class="shadow-image" src="../Admin/img/<?php echo $row['image']; ?>" alt="" style="max-width: 100%; height: auto; display: block; margin: 0 auto; border-radius: 8px; box-shadow: 2px 2px 52px 19px rgba(13,60,99,0.75);
--webkit-box-shadow: 2px 2px 52px 19px rgba(13,60,99,0.75);
--moz-box-shadow: 2px 2px 52px 19px rgba(13,60,99,0.75);"><br><br>
+                        -webkit-box-shadow: 2px 2px 52px 19px rgba(13,60,99,0.75);
+                        -moz-box-shadow: 2px 2px 52px 19px rgba(13,60,99,0.75);"><br><br>
                     </div>
                 <?php endforeach; ?>
             </div>
@@ -41,7 +60,7 @@ require '../connection.php';
         </div>
 
         <div class="row justify-content-center">
-            <div class="col-3" style="text-align: justify; color: white; width: 50%; padding: 10px; margin: 10px; background: none;  border: 0px solid black; border-radius: 8px; background-color: #0D3C63; ">
+            <div class="col-4" style="text-align: justify; color: white; width: 50%; padding: 10px; margin: 10px; background: none;  border: 0px solid black; border-radius: 8px; background-color: #0D3C63; ">
                 <?php
                 $i = 1;
                 $rows = mysqli_query($conn, "SELECT * FROM tabura WHERE id = 1"); ?>

@@ -36,39 +36,37 @@ if(isset($_GET['id'])) {
     <?php include 'navbarAmansa.php'; ?>
 
 
-  <div class="containerUmroh">
-    <?php if(isset($row)): ?>
-      <div class="namaPaket">
-            <h1></strong> <?php echo $row['nama']; ?></h1>
-            <br><br>
+    <div class="containerUmroh">
+  <?php if(isset($row)): ?>
+    <div class="namaPaket">
+      <h1></strong> <?php echo $row['nama']; ?></h1>
+      <br><br>
+    </div>
+
+    <div class="gambarPaket">
+      <img src="../Admin/img/<?php echo $row['image']; ?>" alt="">
+    </div>
+
+    <div class="containerDeskripsi">
+      <div class="itenary">
+        <br>
+        <h1>&nbsp;Tentang</h1>
+        <ul class="list">
+          <li><span><?php echo $row["itenary1"]; ?></span></li>
+          <li><span><?php echo $row["itenary2"]; ?></span></li>
+          <li><span><?php echo $row["itenary3"]; ?></span></li>
+          <li><span><?php echo $row["itenary4"]; ?></span></li>
+        </ul>
       </div>
 
-
-      <div class="gambarPaket">
-             <img src="../Admin/img/<?php echo $row['image']; ?>"  alt="">
+      <div class="deskripsi">
+        <p> <?php echo $row['deskripsi']; ?></p>
       </div>
-
-           
-            <div class="containerDeskripsi">
-                <div class="deskripsi">
-                    <p> <?php echo $row['deskripsi']; ?></p>
-                </div>
-
-                <div class="itenary">
-                  <br>
-                    <h1>&nbsp;Tentang</h1>
-                    <ul class="list">
-                        <li><span><?php echo $row["itenary1"]; ?></span></li>
-                        <li><span><?php echo $row["itenary2"]; ?></span></li>
-                        <li><span><?php echo $row["itenary3"]; ?></span></li>
-                        <li><span><?php echo $row["itenary4"]; ?></span></li>
-                    </ul>
-                </div>
-            
-        <?php else: ?>
-            <p>No data found for the provided ID.</p>
-        <?php endif; ?>
-        </div>
+    </div>
+  <?php else: ?>
+    <p>No data found for the provided ID.</p>
+  <?php endif; ?>
+</div>
         </div>
 
         <section class="achievementss">

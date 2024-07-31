@@ -1,0 +1,51 @@
+/* Add this to your css/style.css file */
+
+/* Default styles */
+.shadow-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 2px 2px 52px 19px rgba(13,60,99,0.75);
+    -webkit-box-shadow: 2px 2px 52px 19px rgba(13,60,99,0.75);
+    -moz-box-shadow: 2px 2px 52px 19px rgba(13,60,99,0.75);
+}
+
+.description-container {
+    text-align: justify;
+    color: white;
+    width: 50%;
+    padding: 10px;
+    margin: 10px;
+    background: none;
+    border: 0px solid black;
+    border-radius: 8px;
+    background-color: #0D3C63;
+}
+
+/* Styles for devices with a max-width of 768px */
+@media (max-width: 768px) {
+    .shadow-image {
+        width: 100%;
+        height: auto;
+    }
+
+    .description-container {
+        width: 80%;
+        font-size: 0.9rem;
+    }
+}
+
+/* Styles for devices with a max-width of 480px */
+@media (max-width: 480px) {
+    .shadow-image {
+        width: 100%;
+        height: auto;
+    }
+
+    .description-container {
+        width: 90%;
+        font-size: 0.8rem;
+    }
+}

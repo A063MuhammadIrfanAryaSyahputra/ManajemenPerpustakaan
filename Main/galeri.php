@@ -72,24 +72,6 @@ require '../connection.php'; // Adjust path to your database connection script
 
 <!-- <p style="font-family: 'Montserrat', sans-serif; font-weight: 600; font-size: 30px;">Kesan Bersama Amansa</p> -->
 
-<div class="col-3" style="text-align: left; color: white;width:75%; padding: 10px; margin: 10px; background: none; text-align: left; border: 0px solid black; border-radius: 8px; background-color: #0D3C63;font-weight: bold;">
-    <?php
-    $i = 1;
-    $rows = mysqli_query($conn, "SELECT * FROM badal WHERE id = 2"); ?>
-    <?php foreach ($rows as $row) : ?>
-        <tr>
-            <td></td>
-                <a style=""><?php echo $row["deskripsi"]; ?></a><br><br>
-            </td>
-            <div class="">
-
-            </div>
-        </tr>
-        
-    <?php endforeach; ?>
-    
-
-</div>
 <br><br>
 </div>
 
