@@ -83,7 +83,7 @@ if (isset($_GET['id'])) {
                         <label for="name">Deskripsi:</label>
                         <input type="text" class="form-control" id="deskripsi" name="deskripsi" value="<?php echo $row['deskripsi']; ?>">
                     </div>
-                    <!-- <div class="form-group">
+                    <div class="form-group">
                         <label for="name">Itenary 1:</label>
                         <input type="text" class="form-control" id="itenary1" name="itenary1" value="<?php echo $row['itenary1']; ?>">
                     </div>
@@ -98,7 +98,7 @@ if (isset($_GET['id'])) {
                     <div class="form-group">
                         <label for="name">Itenary 4:</label>
                         <input type="text" class="form-control" id="itenary4" name="itenary4" value="<?php echo $row['itenary4']; ?>">
-                    </div> -->
+                    </div>
                     <br>
                     <div class="form-group">
                         <label for="new_second_image">Pilih Gambar : </label>

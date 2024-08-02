@@ -74,6 +74,15 @@ require '../connection.php';
         </div>
       </div>
 
+      <div class="cara-pendaftaran-section">
+  <h2 class="section-title">Cara Pendaftaran</h2>
+  <div class="steps-image">
+    <img src="../Admin/img/cara1.png" alt="Cara Pendaftaran" class="cara-pendaftaran-img">
+    <img src="../Admin/img/cara2.png" alt="Cara Pendaftaran" class="cara-pendaftaran-img">
+  </div>
+</div>
+
+
   <div class="containerUmroh">
     <h1>Layanan Umroh Kami</h1>
     <br><br>

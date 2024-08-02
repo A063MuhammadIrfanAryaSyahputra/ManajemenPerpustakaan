@@ -374,3 +374,60 @@ footer {
 
   
 }
+
+
+.cara-pendaftaran-section {
+  background-color: #ffffff;
+  padding: 50px 20px;
+  text-align: center;
+  display: flex; /* Add flexbox */
+  flex-direction: column; /* Stack elements vertically */
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+}
+
+.section-title {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #0D3C63;
+}
+
+.steps-image {
+  display: flex;
+  overflow-x: auto; /* Allow horizontal scrolling if needed */
+  padding: 10px 0; /* Add padding if needed */
+  gap: 10px; /* Space between images */
+  margin-bottom: 20px;
+  scroll-snap-type: x mandatory; /* Smooth scrolling */
+  justify-content: center; /* Center images horizontally within the container */
+}
+
+.cara-pendaftaran-img {
+  flex: 1 0 auto; /* Ensure images don't shrink or grow too much */
+  max-width: 40%; /* Scale images within the container */
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  scroll-snap-align: start; /* Align images to the start */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 1.5em; /* Adjust title size for smaller screens */
+  }
+
+  .cara-pendaftaran-img {
+    max-width: 80%; /* Adjust image size if necessary */
+  }
+}
+
+@media (max-width: 480px) {
+  .section-title {
+    font-size: 1.2em; /* Further reduce title size for very small screens */
+  }
+
+  .cara-pendaftaran-img {
+    max-width: 70%; /* Adjust image size if necessary */
+  }
+}
