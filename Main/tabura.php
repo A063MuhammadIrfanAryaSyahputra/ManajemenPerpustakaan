@@ -70,6 +70,9 @@ require '../connection.php';
             </div>
             <br><br>
         </div>
+        <div class="btn-wrapper">
+  <a class="center-btn btn btn-default" href="https://forms.gle/2PF5mfY2xRTqN3FR6">Daftar Disini</a>
+</div>
     </div>
     <br>
     <br>
