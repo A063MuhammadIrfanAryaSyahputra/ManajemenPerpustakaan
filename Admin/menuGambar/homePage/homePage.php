@@ -95,7 +95,7 @@ if (isset($_POST["submit"])) {
         <main class="content px-3 py-2">
           <div class="container-fluid">
             <div class="mb-3">
-              <h4>List Gambar Homepage</h4>
+              <h4>List Gambar - Homepage</h4>
             </div>
 
             <!-- Table Element -->
