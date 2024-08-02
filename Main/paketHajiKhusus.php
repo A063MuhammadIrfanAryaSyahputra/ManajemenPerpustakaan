@@ -61,6 +61,12 @@ if(isset($_GET['id'])) {
                         <li><span><?php echo $row["itenary2"]; ?></span></li>
                         <li><span><?php echo $row["itenary3"]; ?></span></li>
                         <li><span><?php echo $row["itenary4"]; ?></span></li>
+                        <li>      <div class="button-container">
+        <a href="paketHajiKhususDownload.php?id=<?php echo $row['id']; ?>" class="btn btn-primary" style="background-color: #0e2f4f;">Klik Disini Untuk Download Selengkapnya</a>
+      </div></li>
+      <li>  <div class="button-container">
+        <a href="" class="btn btn-primary" style="background-color: #0e2f4f;">Atau Klik Disini Untuk Daftar</a>
+      </div></li>
                     </ul>
                 </div>
         <?php else: ?>

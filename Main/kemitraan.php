@@ -51,10 +51,11 @@ require '../connection.php';
                         <img src="../Admin/img/<?php echo $row['cover']; ?>" alt="" class="img-fluid" style="box-shadow: 2px 2px 52px 19px rgba(13,60,99,0.75);
 -webkit-box-shadow: 2px 2px 52px 19px rgba(13,60,99,0.75);
 -moz-box-shadow: 2px 2px 52px 19px rgba(13,60,99,0.75);  border-radius: 8px;">
-<br>
                     </div>
                 <?php endforeach; ?>
+                <br><br>
             </div>
+            
             <div class="col-md-8 text-container" style="text-align: justify; text-justify: inter-word; width: 60%; inter-word; color: white; padding: 10px; margin: 10px; background: none;  border: 0px solid black; border-radius: 8px; background-color: #0D3C63; ">
                 <?php
                 $rows = mysqli_query($conn, "SELECT * FROM kemitraan WHERE id = 1"); 

@@ -258,6 +258,7 @@ nav ul li a:hover {
 
 .gambarPaket img {
   width: 30%;
+  border-radius: 10px;
   box-shadow: 6px 2px 183px 17px rgba(224, 182, 74, 1);
   -webkit-box-shadow: 6px 2px 183px 17px rgba(224, 182, 74, 1);
   -moz-box-shadow: 6px 2px 183px 17px rgba(224, 182, 74, 1);
