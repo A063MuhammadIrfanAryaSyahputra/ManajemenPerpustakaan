@@ -85,7 +85,7 @@
 
                 <div class="d-flex align-items-center tengahin">
                     <i class="bi bi-question-circle icon-color "></i>
-                    <a href="http://localhost/ManajemenPerpustakaan/Main/questionForm.php" class="email-text" style="color: #E0B64A;">Ada Pertanyaan?</a>
+                    <a href="Main/questionForm.php" class="email-text" style="color: #E0B64A;">Ada Pertanyaan?</a>
                 </div>
 
                 <div class="d-flex align-items-center tengahin">
