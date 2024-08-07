@@ -90,7 +90,7 @@ if (isset($_GET['id'])) {
   </section>
 
   <?php include 'footerAmansa.php'; ?>
-
+  <?php include 'wa.php'; ?>
 
 
 

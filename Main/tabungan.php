@@ -48,6 +48,7 @@ if (isset($_GET['id'])) {
     </div>
 
     <?php include 'footerAmansa.php'; ?>
+    <?php include 'wa.php'; ?>
 
 
 

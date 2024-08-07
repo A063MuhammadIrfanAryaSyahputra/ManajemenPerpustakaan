@@ -113,9 +113,9 @@ require '../connection.php';
       <div class="achievement-itemm">
       <img src="assets/bankJateng.png" alt="Jateng Logo">
       </div>
-      <div class="achievement-itemm">
+      <!-- <div class="achievement-itemm">
       <img src="assets/BSI.png" alt="BSI Logo">
-      </div>
+      </div> -->
 
 
     </div>
@@ -126,6 +126,7 @@ require '../connection.php';
     </div>
   </section>
   <?php include 'footerTentang.php'; ?>
+  <?php include 'wa.php'; ?>
 
   <script src="js/script.js"></script>
   

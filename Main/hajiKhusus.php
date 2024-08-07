@@ -211,6 +211,7 @@ require '../connection.php';
     </div>
   </section>
   <?php include 'footerAmansa.php'; ?>
+  <?php include 'wa.php'; ?>
 </body>
 
 </html>

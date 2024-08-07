@@ -89,6 +89,7 @@ if (isset($_GET['id'])) {
 
 
   <?php include 'footerAmansa.php'; ?>
+  <?php include 'wa.php'; ?>
 
 
 

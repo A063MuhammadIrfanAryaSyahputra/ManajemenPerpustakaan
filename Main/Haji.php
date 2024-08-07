@@ -201,12 +201,13 @@ require '../connection.php';
     </div>
   </div>
   <script src="js/script.js"></script>
-  <  <section class="achievementss">
+  <section class="achievementss">
     <br><br><br><br><br>
 
     </div>
   </section>
   <?php include 'footerAmansa.php'; ?>
+  <?php include 'wa.php'; ?>
 </body>
 
 </html>

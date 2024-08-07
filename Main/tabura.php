@@ -83,7 +83,9 @@ require '../connection.php';
 
     <!-- footer -->
     <?php include 'footerAmansa.php'; ?>
+    <?php include 'wa.php'; ?>
 
     <script src="js/script.js"></script>
+    
 </body>
 </html>

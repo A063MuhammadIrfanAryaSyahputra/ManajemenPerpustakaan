@@ -143,6 +143,7 @@ require '../connection.php'; // Adjust path to your database connection script
   </section>
 
     <?php include 'footerAmansa.php'; ?>
+    <?php include 'wa.php'; ?>
 
 </body>
 
