@@ -51,7 +51,7 @@
 
         .pembayaran {
             padding-left: 10px;
-            
+
         }
 
 
