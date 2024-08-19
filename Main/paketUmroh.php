@@ -57,12 +57,16 @@ if (isset($_GET['id'])) {
             <li><span><?php echo $row["itenary2"]; ?></span></li>
             <li><span><?php echo $row["itenary3"]; ?></span></li>
             <li><span><?php echo $row["itenary4"]; ?></span></li>
-            <li>      <div class="button-container">
-        <a href="paketUmrohDownload.php?id=<?php echo $row['id']; ?>" class="btn btn-primary" style="background-color: #0e2f4f; color:white;">Klik Disini Untuk Download Selengkapnya</a>
-      </div></li>
-      <li>  <div class="button-container">
-        <a href="https://api.whatsapp.com/send/?phone=6282220208300&text&type=phone_number&app_absent=0" class="btn btn-primary" style="background-color: #0e2f4f; color:white;">Atau Klik Disini Untuk Daftar</a>
-      </div></li>
+            <li>
+              <div class="button-container">
+                <a href="paketUmrohDownload.php?id=<?php echo $row['id']; ?>" class="btn btn-primary" style="background-color: #0e2f4f; color:white;">Klik Disini Untuk Download Selengkapnya</a>
+              </div>
+            </li>
+            <li>
+              <div class="button-container">
+                <a href="https://api.whatsapp.com/send/?phone=6282220208300&text&type=phone_number&app_absent=0" class="btn btn-primary" style="background-color: #0e2f4f; color:white;">Atau Klik Disini Untuk Daftar</a>
+              </div>
+            </li>
           </ul>
         </div>
 
