@@ -65,7 +65,7 @@ if (isset($_GET['id'])) {
 
             <li>
               <div class="button-container">
-                <a href="paketUmrohDownload.php?id=<?php echo $row['id']; ?>" class="btn btn-primary" style="background-color: #0e2f4f; color:white;">Klik Disini Untuk Download Selengkapnya</a>
+                <a href="https://api.whatsapp.com/send/?phone=6282220208300&text&type=phone_number&app_absent=0" class="btn btn-primary" style="background-color: #0e2f4f; color:white;">Klik Disini Untuk Download Selengkapnya</a>
               </div>
             </li>
 
