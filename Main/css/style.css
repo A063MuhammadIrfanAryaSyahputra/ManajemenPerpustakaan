@@ -173,7 +173,7 @@ footer {
 }
 
 .footer-container {
-  /* display: flex; */
+  display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: flex-start;
@@ -264,11 +264,19 @@ footer {
   color: inherit;
 }
 
+
 @media (max-width: 768px) {
   .instagram-item {
     flex: 1 1 calc(45% - 20px);
     max-width: calc(45% - 20px);
   }
+  
+  .footer-container {
+  display: block;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+}
 }
 
 @media (max-width: 480px) {
@@ -276,6 +284,14 @@ footer {
     flex: 1 1 calc(90% - 15px);
     max-width: calc(90% - 15px);
   }
+  
+    .footer-container {
+  display: block;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
 }
 
 .testimonial-content img {

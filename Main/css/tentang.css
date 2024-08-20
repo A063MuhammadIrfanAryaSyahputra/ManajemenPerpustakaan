@@ -266,7 +266,7 @@ footer {
 }
 
 .footer-container {
-  /* display: flex; */
+  display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: flex-start;
@@ -380,6 +380,13 @@ footer {
   .achievement-listt {
     flex-direction: column;
   }
+  
+  .footer-container {
+  display: block;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+}
 }
 
 .achievement-itemm img {
