@@ -91,7 +91,7 @@
                 <div class="d-flex align-items-center tengahin">
                     <i class="bi bi-envelope icon-color"></i>
                     <a href="mailto:amansatourstravel@gmail.com">
-                        <span class="email-text">amansatourstravel@gmail.com</span>
+                        <span class="email-text">amansatourtravel@gmail.com</span>
                     </a>
                 </div>
             </div>
